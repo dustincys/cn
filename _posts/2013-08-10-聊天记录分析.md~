@@ -5,7 +5,7 @@ description: ""
 category: Statistics
 tags: [R,Python,Gephi]
 ---
-
+{% include JB/setup %}
 
 2天前在[R客](http://shaw.blogcn.com/articles/qqgroup.html)上看见有人关于使用R来分析聊天记录。
 初次看该条消息我没什么反应，但之后不久我自我证明了强迫症会使人多么不务正业。

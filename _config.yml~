@@ -1,6 +1,6 @@
 markdown: rdiscount
 permalink: /:year/:month/:title/
-url: http://dustincys.github.com/cn
-author: 初砚硕
+url: http://dustincys.github.com/en
+author: Chu Yanshuo
 pygments: true
 
