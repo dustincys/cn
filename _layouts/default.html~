@@ -18,12 +18,12 @@
         <h1>{{ page.title }}</h1>
         </header>
         <nav>
-        <span><a title="home page" class="" href="{{ site.url }}/">home</a></span>
-        <span><a title="about" class="" href="{{ site.url }}/about/">about</a></span>
-        <span><a title="vitae" class="" href="{{ site.url }}/vitae/">vitae</a></span>
-        <span><a title="categories" class="" href="{{ site.url }}/categories/">categories</a></span>
-        <span><a title="tags" class="" href="{{ site.url }}/tags/">tags</a></span>
-        <span><a title="subscribe by RSS" class="" href="{{ site.url }}/feed/">subscribe</a></span>
+        <span><a title="home page" class="" href="{{ site.url }}/">主页</a></span>
+        <span><a title="about" class="" href="{{ site.url }}/about/">关于</a></span>
+        <span><a title="vitae" class="" href="{{ site.url }}/vitae/">个人简介</a></span>
+        <span><a title="categories" class="" href="{{ site.url }}/categories/">类别</a></span>
+        <span><a title="tags" class="" href="{{ site.url }}/tags/">标签</a></span>
+        <span><a title="subscribe by RSS" class="" href="{{ site.url }}/feed/">订阅我</a></span>
         </nav>
         <article class="content">
         {{ content }}

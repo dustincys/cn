@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Curriculumn Vitae
+title: 个人简介
 ---
 
 

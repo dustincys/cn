@@ -1,8 +1,18 @@
 ---
 layout: page
-title: About
-comments: yes
+title: 关于
+comments: no
 ---
+
+该博客主题克隆自[谢益辉](http://yihui.name)的博客。  
+因为这个主题实在是太好了，很简约，很美观。
+
+
+
+
+
+
+
 
 
 
