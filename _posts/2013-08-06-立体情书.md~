@@ -20,7 +20,7 @@ tags : [math, R]
 
 ####代码
 
-{% highlight r  %}
+{% highlight r %}
 	require(rgl)
 	beta<-matrix(seq(0, 2*pi, len=50),50,50)
 	r<-16*sin(t(beta/2))^3
