@@ -16,12 +16,11 @@ tags : [math, R]
 
 
 ####立体情书
-<img src="http://fmn.rrimg.com/fmn066/20130807/1410/original_nmJD_153e000111c81191.gif" width="500" height="500">
-<iframe src="https://skydrive.live.com/embed?cid=1F329DBD33DDBE26&resid=1F329DBD33DDBE26%21660&authkey=ALt2nnXC9cwvQWc" width="320" height="320" frameborder="0" scrolling="no"></iframe>
+<img src="http://i.imgur.com/CkNRhNC.gif" width="500" height="500">
 
 ####代码
 
-
+{% highlight r  %}
 	require(rgl)
 	beta<-matrix(seq(0, 2*pi, len=50),50,50)
 	r<-16*sin(t(beta/2))^3
@@ -34,7 +33,7 @@ tags : [math, R]
 	text3d(0, y =10, z = -5, texts="I love you",col="red")
 	text3d(0, y =-10, z = -5, texts="I love you",col="hotpink")
 	movie3d( spin3d(), duration=5 )
-
+{% endhighlight %}
 
 
 ####参考
