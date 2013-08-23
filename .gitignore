@@ -1,6 +1,7 @@
 _site/
 _posts/_figure
 _posts/_cache
+_posts/*~
 media/
 nohup.out
 *~
