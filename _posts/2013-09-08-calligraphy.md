@@ -6,3 +6,5 @@ tags : [math, R]
 ---
 
 ![pic](http://i.imgur.com/Ew8QS2P.jpg)
+
+> 宝剑锋从磨砺出，梅花香自苦寒来
