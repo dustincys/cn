@@ -1,7 +1,7 @@
 ---
 layout:	post
 title:	硕士回眸
-category:	研究
+category:	life
 tags:	[总结]
 ---
 
