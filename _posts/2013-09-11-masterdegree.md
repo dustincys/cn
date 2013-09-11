@@ -1,6 +1,6 @@
 ---
 layout:	post
-title:	我的硕士研究工作总结
+title:	硕士回眸
 category:	研究
 tags:	[总结]
 ---
