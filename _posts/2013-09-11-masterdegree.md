@@ -1,4 +1,5 @@
 ---
+layout:	post
 title:	我的硕士研究工作总结
 category:	[research]
 tags:	[总结]
