@@ -1,5 +1,5 @@
 ---
-title: 博文类别
+title: 日志类别
 layout: page
 ---
 
