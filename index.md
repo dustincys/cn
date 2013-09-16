@@ -1,5 +1,5 @@
 ---
-title: 首页
+title: 博文目录
 layout: page
 ---
 
