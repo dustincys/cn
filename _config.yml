@@ -1,6 +1,7 @@
 markdown: rdiscount
 permalink: /:year/:month/:title/
 url: http://yanshuo.name/cn
+homepage: http://yanshuo.name
 author: 初砚硕
 pygments: true
 
