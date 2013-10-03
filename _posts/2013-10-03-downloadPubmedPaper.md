@@ -17,7 +17,7 @@ tags : [python, Pubmed, XML, 下载]
 Function: Download literature base on PubMed ID
 Author:  Chu Yanshuo
 Version: Python 2.75
-Contact: chu@yanshuo.name
+Contact: chu at yanshuo.name
 """
 import sys
 import xml.dom.minidom
