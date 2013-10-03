@@ -2,7 +2,7 @@
 layout: post
 category : tool
 title: 批量下载Pubmed文献
-tags : [python, Pubmed, XML, 下载, bioinformatics]
+tags : [Python, Pubmed, XML, 下载, bioinformatics]
 ---
 小代码写了就扔，下次再用再花个1个小时从头写真是头疼。
 多少次百度`pyhon+正则式`都记不清了————，
