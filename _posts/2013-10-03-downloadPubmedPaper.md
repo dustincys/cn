@@ -10,7 +10,6 @@ tags : [python, Pubmed, XML, 下载]
 唉…书呆很呆。
 批量从Pubmed网站下载文献摘要、Mesh Terms有木有？
 
-### 代码
 
 {% highlight python %}
 #coding:	utf-8
