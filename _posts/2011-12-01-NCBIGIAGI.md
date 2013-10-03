@@ -1,8 +1,8 @@
 ---
 layout: post
 title: NCBI GI号转AGI号， 互转换
-category : tool
-tags : [java, bioinformatics]
+category : Tool
+tags : [Java, Bioinformatics]
 ---
 
 小工具一枚，用来批量地互转换GI号和AGI号。  

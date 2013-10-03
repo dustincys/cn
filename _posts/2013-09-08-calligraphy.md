@@ -1,6 +1,6 @@
 ---
 layout: post
-category : life
+category : Life
 title: 获好友赠墨宝一枚
 tags : [书法]
 ---
