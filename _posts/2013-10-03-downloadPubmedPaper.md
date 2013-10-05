@@ -11,7 +11,7 @@ tags : [Python, Pubmed, XML, 下载, Bioinformatics]
 批量从Pubmed网站下载文献摘要、Mesh Terms有木有？
 
 
-{% highlight python %}
+{% highlight python linenos %}
 #coding:	utf-8
 """
 Function: Download literature base on PubMed ID
