@@ -1,5 +1,7 @@
 ---
 layout: post
+comments: yes
+share: yes
 category : Life
 title: 获好友赠墨宝一枚
 tags : [书法]

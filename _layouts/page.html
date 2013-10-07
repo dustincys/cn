@@ -5,6 +5,10 @@ layout: default
 <section class="post">
 {{ content }}
 </section>
+{% if page.share %}
+{% include baidubutton.md %}
+{% endif %}
+
 {% if page.comments %}
 {% include commentscn.md %}
 {% endif %}

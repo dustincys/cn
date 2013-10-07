@@ -1,6 +1,8 @@
 ---
 layout:	post
 title:	硕士回眸
+comments: yes
+share: yes
 category:	Life
 tags:	[总结]
 ---

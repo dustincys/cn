@@ -34,7 +34,14 @@ layout: default
 </span>
 {% endif %}
 </section>
+
+{% if page.share %}
+{% include baidubutton.md %}
+{% endif %}
+
+{% if page.comments %}
 {% include commentscn.md %}
+{% endif %}
 <script type="text/javascript">
 $(function(){
   $(document).keydown(function(e) {

@@ -2,6 +2,8 @@
 layout: post
 category : Tool
 title: 批量下载Pubmed文献
+comments: yes
+share: yes
 tags : [Python, Pubmed, XML, 下载, Bioinformatics]
 ---
 小代码写了就扔，下次再用再花个1个小时从头写真是头疼。
