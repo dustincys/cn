@@ -42,6 +42,10 @@ tags : [LaTeX, XeLaTeX, 排版]
 2. 遇到莫名奇妙的错误就在百度上谷歌一下（这一条很重要！）。
 3. 本模板的原型是哈工大硕士毕业论文LaTeX模板，延续了很多命令（只有列表命令和公式引用命令不一致，分别是 `nefulist` 和 `nefuEqRef`），该模板的[详细说明][detail]中详述了如何使用LaTeX编辑论文，包括图片处理、公式、表格、参考文献自动生成等等，首先看看该说明，定是极好的。
 
+#### 关于该模板
+
+该模板还需要我们诸多东林校友协同努力，共同完善、维护。 
+该模板git地址 <https://github.com/dustincys/NEFUXeLaTeX>
 
 [detail]: http://yunpan.cn/QU68ILB2TT7Iw 
 [latex]: http://www.ctex.org/CTeXDownload "下载地址"
