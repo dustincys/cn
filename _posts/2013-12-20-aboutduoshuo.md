@@ -23,9 +23,11 @@ tags : [CSS,评论]
 {% endhighlight %}
 
 没耐心也许是件好事，没耐心就不断地想去尝试新事物，找刺激。
-书呆发现一些有意思的东西：
+于是，书呆发现一些有意思的东西：
+
 - [codepen](http://codepen.io)
 - [particleslider](http://particleslider.com)
+
 看到particleslider、codepen如下的魔力之后,就不淡定了……
 <p data-height="268" data-theme-id="0" data-slug-hash="ELGev" data-user="EsambinoHsieh" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/EsambinoHsieh/pen/ELGev'>Tribute to Rorschach</a> by Wei-Cheng Hsieh (<a href='http://codepen.io/EsambinoHsieh'>@EsambinoHsieh</a>) on <a href='http://codepen.io'>CodePen</a></p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
