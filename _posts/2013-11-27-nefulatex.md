@@ -4,7 +4,7 @@ category : 科研
 title: 东北林业大学硕、博士毕业论文 XeLaTeX 模板使用说明
 comments: yes
 share: no
-tags : [LaTeX, XeLaTeX, 排版]
+tags : [LATEX, XELATEX, 排版]
 ---
 
 

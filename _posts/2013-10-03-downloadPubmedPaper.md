@@ -1,10 +1,10 @@
 ---
 layout: post
-category : Tool
+category : TOOL
 title: 批量下载Pubmed文献
 comments: yes
 share: yes
-tags : [Python, Pubmed, XML, 下载, Bioinformatics]
+tags : [PYTHON, PUBMED, XML, 下载, BIOINFORMATICS]
 ---
 小代码写了就扔，下次再用再花个1个小时从头写真是头疼。
 多少次百度`pyhon+正则式`都记不清了————，
