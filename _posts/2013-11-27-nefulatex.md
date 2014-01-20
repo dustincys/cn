@@ -1,10 +1,10 @@
 ---
 layout: post 
-category : 科研
+category : 学术 
 title: 东北林业大学硕、博士毕业论文 XeLaTeX 模板使用说明
 comments: yes
 share: no
-tags : [LATEX, XELATEX, 排版]
+tags : [latex, xelatex, 排版]
 ---
 
 

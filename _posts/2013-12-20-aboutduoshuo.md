@@ -1,10 +1,10 @@
 ---
 layout: post 
-category : WEB
+category :  学术
 title: 剪不断、理还乱
 comments: yes
 share: no
-tags : [CSS,评论]
+tags : [css,评论]
 ---
 
 网站如人，有的漂亮，有的丑陋；有的高雅，有的庸姿俗粉；有的时尚，有的老土。

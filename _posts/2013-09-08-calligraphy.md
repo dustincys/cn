@@ -2,7 +2,7 @@
 layout: post
 comments: yes
 share: yes
-category : LIFE
+category :  生活
 title: 获好友赠墨宝一枚
 tags : [书法]
 ---

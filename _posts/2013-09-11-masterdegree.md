@@ -3,7 +3,7 @@ layout:	post
 title:	硕士回眸
 comments: yes
 share: yes
-category:	LIFE
+category:	 生活
 tags:	[总结]
 ---
 
