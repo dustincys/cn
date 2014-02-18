@@ -1,6 +1,7 @@
 ---
 layout: post 
 category : 学术 
+recentvisitors: yes
 title: 东北林业大学硕、博士毕业论文 XeLaTeX 模板使用说明
 comments: yes
 share: no

@@ -38,8 +38,14 @@ layout: default
 
 
 {% if page.comments %}
-{% include commentscn.md %}
+	{% include commentscn.md %}
+	{% if page.recentvisitors%}
+		{% include recentVisitors.md%}
+	{% endif %}
 {% endif %}
+
+
+
 <script type="text/javascript">
 $(function(){
   $(document).keydown(function(e) {

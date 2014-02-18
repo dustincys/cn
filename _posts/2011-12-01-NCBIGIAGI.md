@@ -1,6 +1,7 @@
 ---
 layout: post
 title: NCBI GI号转AGI号， 互转换
+recentvisitors: yes
 comments: yes
 share: yes
 category :  学术

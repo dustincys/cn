@@ -1,6 +1,7 @@
 ---
 layout: post
 category :  学术
+recentvisitors: yes
 title: 批量下载Pubmed文献
 comments: yes
 share: yes

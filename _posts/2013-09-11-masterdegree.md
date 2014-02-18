@@ -1,6 +1,7 @@
 ---
 layout:	post
 title:	硕士回眸
+recentvisitors: yes
 comments: yes
 share: yes
 category:	 生活

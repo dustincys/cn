@@ -1,6 +1,7 @@
 ---
 layout: post
 comments: yes
+recentvisitors: yes
 share: yes
 category :  生活
 title: 获好友赠墨宝一枚

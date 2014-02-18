@@ -1,6 +1,7 @@
 ---
 layout: post 
 category : 学术
+recentvisitors: yes
 title: 贝叶斯网络（一）————模型选择与狄利克雷分布
 comments: yes
 share: no

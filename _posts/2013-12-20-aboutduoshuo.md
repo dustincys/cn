@@ -1,6 +1,7 @@
 ---
 layout: post 
 category :  学术
+recentvisitors: yes
 title: 剪不断、理还乱
 comments: yes
 share: no
