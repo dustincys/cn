@@ -35,18 +35,23 @@ $$P(B\_S,D)=P(B\_S)\int \_{B\_P}\\left[ \\prod\\limits\_{h=1}^{m} P(C\_h | B\_S,
 $$P(B\_S,D)=P(B\_S) \\idotsint\\limits\_{\\theta\_{ijk}}  \\left[ \\prod\\limits\_{i=1}^{n} \\prod\\limits\_{j=1}^{q\_i} \\prod\\limits\_{k=1}^{r\_i} \\theta\_{ijk}^{N\_{ijk}} \\right] \\left[ \\prod\\limits\_{i=1}^{n} \\prod\\limits\_{j=1}^{q\_i} f(\\theta\_{ij1},\\ldots , \\theta\_{ijr\_i} ) \\right] d\\theta\_{111},\\ldots , d\\theta\_{nq\_nr\_n} $$
 这里，\\(n\\)表示网络中变量个数（假设\\(D\\)中的变量是网络中的全部变量），\\(q\_i\\)是该变量的父节点不同的赋值个数，\\(r\_i\\)表示该变量所有可取值的个数，\\(\\theta\_{ijk}\\)表示当前状态下，该变量为第\\(k\\)个值的概率，\\(N\_{ijk}\\)表示\\(D\\)中出现当前状态的变量的次数。
 
-\\(D\\)中各个实例独立，所以上面的公式的右侧\\(f(\\theta\_{ij1,\\ldots,\\theta\_{ijr\_i}})\\)为一常数密度（一根水平直线）。
-设\\(f(\\theta\_{ij1,\\ldots,\\theta\_{ijr\_i}})=C\_{ij}\\)，在所有的\\(k\\)上积分为1
-$$\\idotsint\\limits\_{\\theta\_{ijk}} C\_{ij} d\\theta\_{ij1},\\ldots, d\\theta\_{ijr\_i = 1}$$
+\\(D\\)中各个实例独立，所以上面的公式的右侧\\(f(\\theta\_{ij1},\\ldots,\\theta\_{ijr\_i})\\)为一常数密度（一根水平直线）。
+设\\(f(\\theta\_{ij1},\\ldots,\\theta\_{ijr\_i})=C\_{ij}\\)，在所有的\\(k\\)上积分为1
+$$\\idotsint\\limits\_{\\theta\_{ijk}} C\_{ij} d\\theta\_{ij1},\\ldots, d\\theta\_{ijr\_i} = 1$$
 
 
 就是在这里，狄利克雷开始发挥有意思的作用了。
 作为多项分布的共轭分布，狄利克雷分布用来判断多项分布模型对应的不同数据集下，该多项分布模型的可信度。
 为什么要用共轭分布？
-直观上，选择模型的参数的过程类似一个不断进行最大似然的过程。
+
+> 2014/2/20 更正：
+> 为了计算的方便，通常将似然的效应融入到先验概率分布中，也就是削减似然对后验的影响。
+> 因为我们仅仅想得到一个后验值就可以了。
+
+<del>直观上，选择模型的参数的过程类似一个不断进行最大似然的过程。
 随着观察样本个数的逐渐增加，上一次的参数后验又变为下一次参数的先验。
 所以这里后验概率和先验概率应该服从统一分布，也就是共轭分布。
-最大化后验的过程就是不断修正参数的过程。
+最大化后验的过程就是不断修正参数的过程。</del>
 
 上式进一步变形为
 $$P(B\_S,D)=P(B\_S) \\prod\\limits\_{i=1}^n \\prod\\limits\_{j=1}^{q\_i} C\_{ij} \\idotsint\\limits\_{\\theta\_{ijk}} \\prod\\limits\_{k=1}^{r\_i} \\theta\_{ijk}^{N\_{ijk}} d\\theta\_{ij1}, \\ldots, d\\theta\_{ijr\_{i}}$$
