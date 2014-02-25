@@ -1,2 +1,0 @@
-
-(gedit:2518): Gtk-CRITICAL **: gtk_widget_event: assertion `WIDGET_REALIZED_FOR_EVENT (widget, event)' failed
