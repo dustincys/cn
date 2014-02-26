@@ -27,7 +27,7 @@ $$FWER=P\\left\\{ \\bigcup\\limits\_{I\_0} \\left(p\_i \\le \\frac{\\alpha}{m} \
 所以直观上“无知型”自然要更保守。
 这个“读书并非无用论”可通过级数展开得到：
 设\\(f(\\alpha)= 1-(1-\\alpha)^{\\frac{1}{m}}\\)，由于\\(0 \\le \\alpha \\le 1\\)，将该式在\\(0\\)处泰勒级数展开得到：
-$$ f(\\alpha) = f(0) + f^{(1)}(0)\\alpha + \\frac{f^{(2)}}{2!}\\alpha + \\ldots$$
+$$ f(\\alpha) = f(0) + f^{(1)}(0)\\alpha + \\frac{f^{(2)}}{2!}\\alpha^2 + \\ldots$$
 带入公式得到
 $$ f(\\alpha) = 0 + \\frac{\\alpha}{m} +...  $$ 
 所以\\(\\frac{\\alpha}{m} \\le 1-(1-\\alpha)^{\\frac{1}{m}} \\)，邦费罗尼纠正更保守。
