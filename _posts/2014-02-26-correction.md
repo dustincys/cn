@@ -8,7 +8,7 @@ share: no
 tags : [多重比较, 邦费罗尼纠正, šidák纠正，生物信息，统计] 
 ---
 
-在同一个数据集上做的假设检验越多，那么出现真假设的错误就越多。
+在同一个数据集上做的假设检验越多，那么出现拒绝真假设的错误就越多。
 正如对于某个特定的人，言多必失。 
 有意思的是，不让此人说话如同杀了他，那怎么办？
 只能让他严谨点说。
@@ -18,7 +18,7 @@ tags : [多重比较, 邦费罗尼纠正, šidák纠正，生物信息，统计]
 \\(I\_0\\)为这段话中正确的断定集合，大小为\\(m\_0\\)。
 邦费罗尼纠正的方法是拒绝每一个\\(p\_i < \\frac{\\alpha}{m}\\)对应的断定。
 因为拒绝了\\(I\_0\\)中任何一个的概率为
-$$FWER=P\\left\\{ \\bigcup\\limits\_{I\_0} (p\_i \\le \\frac{\\alpha}{m} )\\right\\} \\le \\sum\\limits\_{I\_0} \\left\\{ p \\left(p\_i\\le \\frac{\\alpha}{m}\\right) \\right\\} \\le m\_0 \\frac{\\alpha}{m} \\le m \\frac{\\alpha}{m} = \\alpha$$
+$$FWER=P\\left\\{ \\bigcup\\limits\_{I\_0} \\left(p\_i \\le \\frac{\\alpha}{m} \\right)\\right\\} \\le \\sum\\limits\_{I\_0} \\left\\{ p \\left(p\_i\\le \\frac{\\alpha}{m}\\right) \\right\\} \\le m\_0 \\frac{\\alpha}{m} \\le m \\frac{\\alpha}{m} = \\alpha$$
 Šidák纠正的方法假设各个假设独立，这样概率就可以直接相乘。
 所以只要直接拒绝每一个\\(p\_i < 1-(1-\\alpha)^{\\frac{1}{m}}\\)对应的断定，就可使\\(FWER\\)小到特定程度\\(\\alpha\\)。
 以上两种纠正方法属于“不求有功，但求无过”型，过于保守。
