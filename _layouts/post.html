@@ -6,7 +6,11 @@ layout: default
 {% include mathjax.md %}
 {% endif %}
 
+
 <section class="post">
+{% if page.toc %}
+{% include toc.md %}
+{% endif %}
 {{ content }}
 </section>
 <section class="meta">
