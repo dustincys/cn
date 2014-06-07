@@ -40,8 +40,8 @@ $(document).ready(function() {
 });
 </script>
 <div class="toc-header">
+<div class="toc-title" style="text-align:center;"> 内容索引 </div>
 <hr>
-<div class="toc-title"> 内容索引 </div>
 <div class="toc"></div>
 <hr>
 </div>
