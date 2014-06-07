@@ -10,8 +10,8 @@ $(document).ready(function() {
 
   var get_level = function(ele) { return parseInt(ele.nodeName.replace("H", ""), 10) }
   var highest_level = headers.map(function(_, ele) { return get_level(ele) }).get().sort()[0]
-  // var return_to_top = '<i class="icon-arrow-up back-to-top"> ^ </i>'
-  var return_to_top = ''
+  var return_to_top = '<i class="icon-arrow-up back-to-top">&uarr;</i>'
+  //var return_to_top = ''
 
   var level = get_level(headers[0]), this_level, html = "<i></i> <ul>";
   headers.on('click', function() {
