@@ -20,7 +20,7 @@ tags : [math, r]
 
 
 ####立体情书
-<img src="http://i.imgur.com/CkNRhNC.gif" width="500" height="500">
+<img src="http://i.imgur.com/CkNRhNC.gif" >
 
 ####代码
 
