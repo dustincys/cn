@@ -30,7 +30,7 @@ tags : [css,评论]
 - [particleslider](http://particleslider.com)
 
 用particleslider做出来的网页，效果很绚。
-<iframe src="http://codepen.io/EsambinoHsieh/full/ELGev" width="680" height="400">
+<iframe src="http://codepen.io/EsambinoHsieh/full/ELGev" width="90%" height="400">
 </iframe>
 
 这也许就是做网站的乐趣。
