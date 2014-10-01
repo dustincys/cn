@@ -1,6 +1,7 @@
 ---
 title: 日志目录
 layout: page
+matheq: yes
 ---
 
 <ul class="listing">
