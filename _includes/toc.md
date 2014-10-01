@@ -40,7 +40,7 @@ $(document).ready(function() {
 });
 </script>
 <div class="toc-header">
-<div class="toc-title" style="text-align:center;"> 内容索引 </div>
+<div class="toc-title" style="font-size:14px; font-weight: bold;"> 内容索引 </div>
 <hr>
 <div class="toc"></div>
 <hr>
