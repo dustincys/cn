@@ -45,9 +45,4 @@ movie3d( spin3d(), duration=5 )
 - [wiki 笛卡尔](http://zh.wikipedia.org/wiki/%E7%AC%9B%E5%8D%A1%E5%B0%94)
 - [用R绘制情人节的礼物](http://cos.name/2012/02/valentines-gift-by-using-r/)
 
-####源
-
-<a href="http://www.renren.com/221312252?ss=17095&origin=920001" target="_blank"><p style="text-align:right;"><img src="http://signature.xnimg.cn/badge/signature/sig/221312252/bcfab252ffb89339d330c712a9c383d9/0/11.png"  ></p></a>  
-
-
 
