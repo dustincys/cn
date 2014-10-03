@@ -1,6 +1,7 @@
 ---
-title: 日志类别
+title: 博文类别
 layout: page
+matheq: yes
 ---
 
 <div id='tag_cloud'>

@@ -1,5 +1,5 @@
 ---
-title: 日志目录
+title: 博文目录
 layout: page
 matheq: yes
 ---
