@@ -25,7 +25,11 @@ toc: yes
 
 ####各类烧具应用场合
 如果采用炭烤箱，十分不建议采用如下的方式：
-![有网的炭烤箱](https://2s66lw.bl3301.livefilestore.com/y2pHtEDX6Cw0dcQK1zoGvG-Gqo0c3xxswJzUkx1JZwq_UslrJbQNSoZJ3oGYXssRlySkmoeBZVx2kz0dOPGW3CdcFwBlGASE0EGSu2ytI1hEIs/withNet.jpg "有网的炭烤箱")
+
+<a class="fancybox" rel="gallary1" href="https://2s66lw.bl3301.livefilestore.com/y2pHtEDX6Cw0dcQK1zoGvG-Gqo0c3xxswJzUkx1JZwq_UslrJbQNSoZJ3oGYXssRlySkmoeBZVx2kz0dOPGW3CdcFwBlGASE0EGSu2ytI1hEIs/withNet.jpg" title="有网的炭烤箱">
+	<img src="https://2s66lw.bl3301.livefilestore.com/y2pHtEDX6Cw0dcQK1zoGvG-Gqo0c3xxswJzUkx1JZwq_UslrJbQNSoZJ3oGYXssRlySkmoeBZVx2kz0dOPGW3CdcFwBlGASE0EGSu2ytI1hEIs/withNet.jpg" alt="有网的炭烤箱" />
+</a>
+
 实际操作中炭火常常会燃烧不均匀，通常是中心温度高边缘温度低。
 如果将肉串直接放在钢网之上，这使得肉串上的肉处于同一个火焰高度，其结果往往是靠近中心的肉串先熟，而边缘还生。
 等到都烤熟，中心的肉串糊了。
@@ -39,10 +43,18 @@ toc: yes
 
 正确的烤肉方法是既要确保受热均匀，又要确保不被有害物质污染。
 如果采用如下方式：
-![没有网的烤箱](https://2s66lw.bl3301.livefilestore.com/y2pOYNHJFLjVFV4dfRJ_mp0JB2rGNWwdzV-aIoWWxEOnvrtHh4znhq2NBqhw2wX2LK30GXmeVDDiYN77U_KL6nuUWBbH9s47REwlLtmEPsLWHQ/withoutNet.jpg "没有网的烤箱")
+
+<a class="fancybox" rel="gallary1" href="https://2s66lw.bl3301.livefilestore.com/y2pOYNHJFLjVFV4dfRJ_mp0JB2rGNWwdzV-aIoWWxEOnvrtHh4znhq2NBqhw2wX2LK30GXmeVDDiYN77U_KL6nuUWBbH9s47REwlLtmEPsLWHQ/withoutNet.jpg" title="没有网的烤箱">
+	<img src="https://2s66lw.bl3301.livefilestore.com/y2pOYNHJFLjVFV4dfRJ_mp0JB2rGNWwdzV-aIoWWxEOnvrtHh4znhq2NBqhw2wX2LK30GXmeVDDiYN77U_KL6nuUWBbH9s47REwlLtmEPsLWHQ/withoutNet.jpg" alt="没有网的烤箱"/>
+</a>
+
 一定要有人监督，如果滴油产生烟立即将食物移开。
 其实最理想的烤肉箱、烤肉领域的绝世利器在这里：
-![斜坡式烤肉利器](https://2s66lw.bl3301.livefilestore.com/y2p6vmATkcv9vAAREFqp-07OMxFbi_8i2_pNuYFCLl52v_72AwNxtPusLL9eFe0i_I03BL--P2b_YD2Z9R6UDg6WwkSOXPovFKAw-aQEy7wFc0/incline.jpg "斜坡式烤肉利器")
+
+<a class="fancybox" rel="gallary1" href="https://2s66lw.bl3301.livefilestore.com/y2p6vmATkcv9vAAREFqp-07OMxFbi_8i2_pNuYFCLl52v_72AwNxtPusLL9eFe0i_I03BL--P2b_YD2Z9R6UDg6WwkSOXPovFKAw-aQEy7wFc0/incline.jpg" title="斜坡式烤肉利器">
+	<img src="https://2s66lw.bl3301.livefilestore.com/y2p6vmATkcv9vAAREFqp-07OMxFbi_8i2_pNuYFCLl52v_72AwNxtPusLL9eFe0i_I03BL--P2b_YD2Z9R6UDg6WwkSOXPovFKAw-aQEy7wFc0/incline.jpg" alt="斜坡式烤肉利器"/>
+</a>
+
 斜坡方式，烟熏不到，油滴不着。
 烤侠使用把手通过齿轮传动一次转动一排肉串，有眼光选用这枚烤器的烤侠已臻化境。
 ###烧烤领域的其他技能
