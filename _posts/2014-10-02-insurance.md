@@ -1,6 +1,6 @@
 ---
 layout: post 
-category : life
+category : 生活
 title: 烧烤理论
 matheq: yes
 comments: yes

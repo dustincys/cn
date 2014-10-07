@@ -50,8 +50,9 @@ tags:	[总结]
 下面的硕士论文盲审回执是熟悉我研究领域的审稿人的回执。  
 以此回执来结束我的硕士生涯，我已无憾。
 
-![huizhi](http://i.imgur.com/VVaxy1p.jpg)
-![回执](http://i.imgur.com/BeZ4L80.jpg)
+<a class="fancybox" rel="gallary1" href="http://i.imgur.com/VVaxy1p.jpg" title="huizhi"><img src="http://i.imgur.com/VVaxy1p.jpg" alt="huizhi"/></a>
+
+<a class="fancybox" rel="gallary1" href="http://i.imgur.com/BeZ4L80.jpg" title="回执"><img src="http://i.imgur.com/BeZ4L80.jpg" alt="回执"/></a>
 
 
 

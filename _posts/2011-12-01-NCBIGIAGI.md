@@ -13,7 +13,7 @@ PS： 一生命学院老师试了多个具有该转换功能网页失败之后�
 
 ### 用户界面
 
-![UI of tool](http://i.imgur.com/0xvA7Ac.jpg)
+<a class="fancybox" rel="gallary1" href="http://i.imgur.com/0xvA7Ac.jpg" title="UI of tool"><img src="http://i.imgur.com/0xvA7Ac.jpg" alt="UI of tool"/></a>
 
 [下载地址](http://ishare.iask.sina.com.cn/f/21695346.html)
 
