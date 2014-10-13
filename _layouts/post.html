@@ -1,9 +1,6 @@
 ---
 layout: default
 ---
-
-
-
 <section class="post">
 {% if page.toc %}
 {% include toc.md %}
@@ -41,7 +38,9 @@ layout: default
 {% endif %}
 </section>
 
-
+{% if page.share %}
+{% include baidubutton.md %}
+{% endif %}
 
 {% if page.comments %}
 	{% include commentscn.md %}
@@ -49,8 +48,6 @@ layout: default
 		{% include recentVisitors.md%}
 	{% endif %}
 {% endif %}
-
-
 
 <script type="text/javascript">
 $(function(){
