@@ -28,6 +28,7 @@
 		$(".fancybox").fancybox();
 	});
 </script>
+<script type="text/javascript" src="/media/js/go-top.js"></script>
 </head>
   <body>
 	      {% if page.matheq %}
@@ -54,5 +55,17 @@
         </article>
       </div>
     </div>
+<script>
+/* <![CDATA[ */
+(new GoTop()).init({
+	pageWidth		:600,
+	nodeId			:'go-top',
+	nodeWidth		:50,
+	distanceToBottom	:125,
+	hideRegionHeight	:130,
+        text			:''
+});
+/* ]]> */
+</script>
   </body>
 </html>
