@@ -6,6 +6,7 @@ matheq: no
 comments: yes
 share: no
 tags : [计算机领域四大俗, 中机枪了吧]  
+share: yes
 ---
 
 有人说，[云计算、深度学习、机器学习、大数据并称计算机界四大俗](http://epaper.oeeee.com/G/html/2013-10/14/content_1949803.htm)。一时之间众说纷纭，百家争鸣！如：物联网，电动汽车，风能发电，纳米材料并称当今工程界四张牛皮之类。

@@ -6,6 +6,7 @@ matheq: yes
 comments: :yes
 share: no
 tags : [多重比较, 邦费罗尼纠正, šidák纠正, 生物信息, 统计, 读书并非无用论证明] 
+share: yes
 ---
 
 在同一个数据集上做的假设检验越多，那么出现拒绝真假设的错误就越多。

@@ -7,6 +7,7 @@ title: 批量下载Pubmed文献
 comments: yes
 share: yes
 tags : [python, pubmed, xml, 下载, bioinformatics]
+share: yes
 ---
 小代码写了就扔，下次再用再花个1个小时从头写真是头疼。
 多少次百度`pyhon+正则式`都记不清了————，

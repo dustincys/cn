@@ -5,6 +5,7 @@ title: 好奇害死猫
 matheq: no
 comments: yes
 tags : [我又重装系统了]  
+share: yes
 
 ---
 

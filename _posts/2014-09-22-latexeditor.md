@@ -5,6 +5,7 @@ title: LaTeX编辑器大杀器
 matheq: no
 comments: yes
 tags : [latex, 编辑器, kile]
+share: yes
 
 ---
 

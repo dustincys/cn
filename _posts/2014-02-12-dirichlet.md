@@ -7,6 +7,7 @@ title: 贝叶斯网络（一）————模型选择与狄利克雷分布
 comments: yes
 share: no
 tags : [dirichlet distribution, bayesian network, 狄利克雷分布, 贝叶斯网络, 模型选择, 机器学习 ]
+share: yes
 ---
 
 机器学习中的各个学习模型具备其自身特点，如果各个模型都一样，为什么还有很多人在研究机器学习？

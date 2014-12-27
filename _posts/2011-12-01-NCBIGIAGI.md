@@ -6,6 +6,7 @@ comments: yes
 share: yes
 category :  学术
 tags : [java, bioinformatics]
+share: yes
 ---
 
 小工具一枚，用来批量地互转换GI号和AGI号。  

@@ -5,6 +5,7 @@ title: ubuntu用户，改改鼠标吧！
 matheq: no
 comments: yes
 tags : [ubuntu, 鼠标主题那么难看……]
+share: yes
 
 ---
 

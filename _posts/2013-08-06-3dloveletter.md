@@ -7,6 +7,7 @@ comments: yes
 share: yes
 title: 立体情书
 tags : [math, r]
+share: yes
 ---
 
 

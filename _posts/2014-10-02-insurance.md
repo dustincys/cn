@@ -5,6 +5,7 @@ title: 烧烤理论
 matheq: yes
 comments: yes
 tags : [烧烤, 买保险]
+share: yes
 toc: yes
 
 ---

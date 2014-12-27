@@ -5,6 +5,7 @@ title: “土法炼钢”——“反复制造车轮子”
 matheq: no
 comments: yes
 tags : [土法炼钢, 反复制造车轮子, 链接, 访问量] 
+share: yes
 ---
 
 有一天偷听到老板说一嘴：“土法炼钢”。
