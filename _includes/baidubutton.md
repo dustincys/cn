@@ -39,7 +39,7 @@
 			break;
 	}
 	if(shareDesc.length > 50){
-		shareDesc = shareDesc.slice(0, 50);
+		shareDesc = shareDesc.slice(9, 50);
 	}
 	shareDesc += "……";
 
