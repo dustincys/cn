@@ -47,7 +47,7 @@ share: yes
 #### 关于该模板
 
 该模板还需要我们诸多东林校友协同努力，共同完善、维护。 
-该模板git地址 <https://github.com/dustincys/NEFUXeLaTeX>
+该模板git地址 <https://github.com/dustincys/NEFUThesis>
 
 [detail]: http://yunpan.cn/QU68ILB2TT7Iw 
 [latex]: http://www.ctex.org/CTeXDownload "下载地址"
