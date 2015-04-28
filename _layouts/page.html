@@ -3,6 +3,9 @@ layout: default
 ---
 
 <section class="post">
+{% if page.toc %}
+{% include toc.md %}
+{% endif %}
 {{ content }}
 </section>
 {% if page.share %}
