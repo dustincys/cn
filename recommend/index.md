@@ -2,7 +2,7 @@
 layout: page 
 title: 软件工具推荐
 comments: yes
-toc: yes
+toc: no
 share: yes
 
 ---
@@ -11,41 +11,100 @@ share: yes
 
 
 ## Goldendict
-Linux系统下的字典软件有一些如星际译王、有道Linux版等，数量不少，最好用的绝对不是有道。
-[GoldenDict](http://goldendict.org/ "应该是地球上最好的字典了吧？")的优势如下：
-
-- 整合了网页字典，即在GoldenDict中就可同时查有道、海词、必应、百度词典、生化大辞典、Wiki....
-- GoldenDict可以查本地词典，如牛津高阶英英词典，灵格斯英英词典，轻松应对专业的词典用来学英语、英文写作翻译等。
-- GoldenDict开源，这意味着没广告、可定制
 
 ### 软件截图
+<a class="fancybox" rel="gallery1" href="https://2s66lw.bl3301.livefilestore.com/y2pdz3zqVvX6skpgKScFHas7Pq2jkdA88uueX9-UR3mFNtv66I91pvSGgVbiIPKn4PpftPytaafPw7I7m0pxhsSktFePyD49mMZtgDXpVN7iGCNvzEOF-jzam_J_xZRZ5KIYdwJxM53zk_3IWl0Y57mA7xN4pJKvKQu96OwOO9ZRm0/goldendict.png" title="Goldendict"><img src="https://2s66lw.bl3301.livefilestore.com/y2pdz3zqVvX6skpgKScFHas7Pq2jkdA88uueX9-UR3mFNtv66I91pvSGgVbiIPKn4PpftPytaafPw7I7m0pxhsSktFePyD49mMZtgDXpVN7iGCNvzEOF-jzam_J_xZRZ5KIYdwJxM53zk_3IWl0Y57mA7xN4pJKvKQu96OwOO9ZRm0/goldendict.png" alt="Goldendict" /></a>
 
 ### 设置方法
 
-一般设置如声音、本地字典文件夹、字典序、添加网络字典等在GoldenDict菜单中都能找到。
-这里说其他的有用设置。
-书呆是黑色控，原因也是抛弃win的理由：截面一定要黑色，不刺眼。
-GoldenDict的截面CSS文件放在了`~/.GoldenDict/`中的`article-style.css`和`qt-style.css`中。
+GoldenDict的CSS文件放在了`~/.GoldenDict/`中的`article-style.css`和`qt-style.css`中。 另一必要的设置：当词典窗口改变时，本地词典中的图片不超过窗口大小，这个设置在上面两个文件中有。
 
-必要的设置：当词典窗口改变时，本地词典中的图片不超过窗口大小，这个设置在上面两个文件中有。
-
-article-style.css  下载地址  
-qt-style.css	下载地址
-
+article-style.css  [下载地址](https://gist.github.com/dustincys/8471489)
+qt-style.css	[下载地址](https://gist.github.com/dustincys/9739972)  
 ### 应用举例
 
 vim下英文写作／翻译时使用goldendict方法，
+	nnoremap <leader>d  :silent !goldendict <cword><CR>
 
 ## Rednotebook
 
+### 软件截图
+<a class="fancybox" rel="gallery1" href="https://2s66lw.bl3301.livefilestore.com/y2pqsmYB8dWoASLLAdBHGhkj-6J7Or4gMSLNDh78eoK4VCqgkOAmJbzPWf8YQNUkq1jTZsVlnzZKE3eQQANNVcedeYl828f0L3WhWj5B0X0r0wqEf78wXwXfaa6iROYCAovXXNXjUN5StBemGsQWZwUZCNR1a-ktQKOL4AejUTdrEY/rednotebook.png" title="rednotebook"><img src="https://2s66lw.bl3301.livefilestore.com/y2pqsmYB8dWoASLLAdBHGhkj-6J7Or4gMSLNDh78eoK4VCqgkOAmJbzPWf8YQNUkq1jTZsVlnzZKE3eQQANNVcedeYl828f0L3WhWj5B0X0r0wqEf78wXwXfaa6iROYCAovXXNXjUN5StBemGsQWZwUZCNR1a-ktQKOL4AejUTdrEY/rednotebook.png" alt="rednotebook" /></a>
+
+### 设置方法
+- 软件安装位置：
+	/user/share/rednotebook/rednotebook/
+- 改标签云颜色的css设置在下面的文件中：
+	/gui/clouds.py
+
+	CLOUD_CSS = """\
+	<style type="text/css">
+	    body {
+		font-family: %(font)s;
+		text-align: center;
+		background: black;
+		color: gray;
+	    }
+	    a:link { color: gray; text-decoration:none; }
+	    a:visited { color: gray; text-decoration:none; }
+	    a:focus { color: gray; text-decoration:none; }
+	    a:hover { color: gray; text-decoration:none; }
+	    a:active { color: gray; text-decoration:none; }
+	    h1 { border-bottom: 1px solid grey; margin: 0; margin-bottom: 8px;
+		 padding: 0; font-size: 15px; line-height: 1; text-align: left;
+		 font-weight: normal; }
+	</style>
+	"""
+- 改预览界面颜色，修改显示公式编号等在下面的文件中：
+	/util/markup.py
+
+	CHARSET_UTF8 = '<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />'
+
+	CSS = """\
+	<style type="text/css">
+	    body {
+		font-family: %(font)s;
+		background: black;
+		color: gray;
+	    }
+	    <!-- Don't split last line between pages.
+
+- 改编辑器背景为黑色在下面的文件中：
+	/gui/editor.py
+
+
+只需要在下面的函数中添加两行代码：
+{% highlight python linenos %}
+def __init__(self, day_text_view, undo_redo_manager):
+	self.day_text_view = day_text_view self.day_text_buffer = t2t_highlight.get_highlight_buffer()
+	self.day_text_view.set_buffer(self.day_text_buffer)
+	self.day_text_view.modify_base(gtk.STATE_NORMAL, gtk.gdk.color_parse('black'))
+	self.day_text_view.modify_text(gtk.STATE_NORMAL, gtk.gdk.color_parse('white'))
+{% endhighlight %}
 ## Newsbeuter
+
+### 软件截图
+<a class="fancybox" rel="gallery1" href="https://2s66lw.bl3301.livefilestore.com/y2pPLGSxB1EwSVBe4Xc2mfCEJ8Ap9ue3HuSwgK7E543O_IQ3od7nouwNValZB8GWlfZpFbudr9coDPsUbrRphVgqOxWHlJiJjkdZcf_qwtcSkhaXq04H-89v0R_oEvxxXn0hYCWNA-EN_rYQuTOsV0-bA/newsbeuter.png" title="newsbeuter"><img src="https://2s66lw.bl3301.livefilestore.com/y2pPLGSxB1EwSVBe4Xc2mfCEJ8Ap9ue3HuSwgK7E543O_IQ3od7nouwNValZB8GWlfZpFbudr9coDPsUbrRphVgqOxWHlJiJjkdZcf_qwtcSkhaXq04H-89v0R_oEvxxXn0hYCWNA-EN_rYQuTOsV0-bA/newsbeuter.png" alt="newsbeuter" /></a>
+
+### 设置方法
+生物信息学相关的xml文件[下载地址](https://gist.github.com/dustincys/0eebb15c7891b4b50936)
 
 ## Okular
 
+### 软件截图
+<a class="fancybox" rel="gallery1" href="https://2s66lw.bl3301.livefilestore.com/y2pHJunrSvKSsym6f9i5xigmyBP0AUsf3P08ASBIe6-V5rIosqpqxPwCRnywWqWcRC6qS2GPYymcL_MPVyDHJgP6bwP_vwwrX0nWf2FO4BSkw-qcj761hKWVh3XUuYvuHTz3yULuaKgdkCRvEew5KSCrnWiHd1mQdbShS0Rg-dPdYo/okular.png" title="Okular"><img src="https://2s66lw.bl3301.livefilestore.com/y2pHJunrSvKSsym6f9i5xigmyBP0AUsf3P08ASBIe6-V5rIosqpqxPwCRnywWqWcRC6qS2GPYymcL_MPVyDHJgP6bwP_vwwrX0nWf2FO4BSkw-qcj761hKWVh3XUuYvuHTz3yULuaKgdkCRvEew5KSCrnWiHd1mQdbShS0Rg-dPdYo/okular.png" alt="Okular" /></a>
+
+### 设置方法
+
+在菜单中的改变颜色设置改变纸张颜色，在注释选项中改变注释颜色。
+
 ## Firefox 
+推荐zotero插件、Stylish插件。
+### 软件截图
+<a class="fancybox" rel="gallery1" href="https://2s66lw.bl3301.livefilestore.com/y2pvy0Pae81GlyW08y5SbpiwWdE2zvuR8EkVPujLiZxBnWFb3hIWZiyhd3ng4mcdFYaw_TCo0myU48pgO5UtjtG7KV1KDaVWLvMpsaJ5KK9D3BBqCmBHTEK-FoVCWcnTuRZD9WXuS1ATxJ8t-NOFOYQiDoASsB-DrJgqEKkvLoTjrI/firefox.png" title="Stylish"><img src="https://2s66lw.bl3301.livefilestore.com/y2pvy0Pae81GlyW08y5SbpiwWdE2zvuR8EkVPujLiZxBnWFb3hIWZiyhd3ng4mcdFYaw_TCo0myU48pgO5UtjtG7KV1KDaVWLvMpsaJ5KK9D3BBqCmBHTEK-FoVCWcnTuRZD9WXuS1ATxJ8t-NOFOYQiDoASsB-DrJgqEKkvLoTjrI/firefox.png" alt="Stylish" /></a>
 
 ## 哈工大PlutoThesis模板XeLaTeX版本
 
-目前没人维护了（除了我？），这个应该是此时唯一一个能用的版本（XeLaTeX版）。
+目前没人维护了（除了我？），这个应该是此时[唯一一个能用的版本](http://yanshuo.name/PlutoThesis/)（xelatex版）。
 
 
