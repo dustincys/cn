@@ -24,56 +24,37 @@ qt-style.css	[下载地址](https://gist.github.com/dustincys/9739972)
 ### 应用举例
 
 vim下英文写作／翻译时使用goldendict方法，
+
 	nnoremap <leader>d  :silent !goldendict <cword><CR>
 
 ## Rednotebook
 
 ### 软件截图
+
 <a class="fancybox" rel="gallery1" href="https://2s66lw.bl3301.livefilestore.com/y2pqsmYB8dWoASLLAdBHGhkj-6J7Or4gMSLNDh78eoK4VCqgkOAmJbzPWf8YQNUkq1jTZsVlnzZKE3eQQANNVcedeYl828f0L3WhWj5B0X0r0wqEf78wXwXfaa6iROYCAovXXNXjUN5StBemGsQWZwUZCNR1a-ktQKOL4AejUTdrEY/rednotebook.png" title="rednotebook"><img src="https://2s66lw.bl3301.livefilestore.com/y2pqsmYB8dWoASLLAdBHGhkj-6J7Or4gMSLNDh78eoK4VCqgkOAmJbzPWf8YQNUkq1jTZsVlnzZKE3eQQANNVcedeYl828f0L3WhWj5B0X0r0wqEf78wXwXfaa6iROYCAovXXNXjUN5StBemGsQWZwUZCNR1a-ktQKOL4AejUTdrEY/rednotebook.png" alt="rednotebook" /></a>
 
 ### 设置方法
 - 软件安装位置：
+
 	/user/share/rednotebook/rednotebook/
+
 - 改标签云颜色的css设置在下面的文件中：
+
 	/gui/clouds.py
 
-	CLOUD_CSS = """\
-	<style type="text/css">
-	    body {
-		font-family: %(font)s;
-		text-align: center;
-		background: black;
-		color: gray;
-	    }
-	    a:link { color: gray; text-decoration:none; }
-	    a:visited { color: gray; text-decoration:none; }
-	    a:focus { color: gray; text-decoration:none; }
-	    a:hover { color: gray; text-decoration:none; }
-	    a:active { color: gray; text-decoration:none; }
-	    h1 { border-bottom: 1px solid grey; margin: 0; margin-bottom: 8px;
-		 padding: 0; font-size: 15px; line-height: 1; text-align: left;
-		 font-weight: normal; }
-	</style>
-	"""
+<script src="https://gist.github.com/dustincys/6ea8484ed0394eb04db8.js"></script>
+
 - 改预览界面颜色，修改显示公式编号等在下面的文件中：
+
 	/util/markup.py
 
-	CHARSET_UTF8 = '<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />'
-
-	CSS = """\
-	<style type="text/css">
-	    body {
-		font-family: %(font)s;
-		background: black;
-		color: gray;
-	    }
-	    <!-- Don't split last line between pages.
-
+<script src="https://gist.github.com/dustincys/ad0c571edf3e630e08cc.js"></script>
 - 改编辑器背景为黑色在下面的文件中：
+
 	/gui/editor.py
 
+	只需要在下面的函数中添加两行代码：
 
-只需要在下面的函数中添加两行代码：
 {% highlight python linenos %}
 def __init__(self, day_text_view, undo_redo_manager):
 	self.day_text_view = day_text_view self.day_text_buffer = t2t_highlight.get_highlight_buffer()
@@ -81,6 +62,7 @@ def __init__(self, day_text_view, undo_redo_manager):
 	self.day_text_view.modify_base(gtk.STATE_NORMAL, gtk.gdk.color_parse('black'))
 	self.day_text_view.modify_text(gtk.STATE_NORMAL, gtk.gdk.color_parse('white'))
 {% endhighlight %}
+
 ## Newsbeuter
 
 ### 软件截图
