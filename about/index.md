@@ -19,4 +19,4 @@ comments: yes
 
 此间网址 <http://yanshuo.name> 为书呆吐槽之所在，己见愚浅，不妄图语出惊人，但求言之有物。
 书呆部分代码挂在<del> <http://code.yanshuo.name> </del>，此地为[BitBucket](http://bitbucket.org "BitBucket")掌管，不限疆域，愚部诸码即将屯兵于此（土鸡瓦犬耳……）。该博客主题克隆自[谢益辉](http://yihui.name)的博客。因为这个主题实在是太好了，很简约，很美观。关于该网站如何制作，在原作者的博客里有详细说明。
-> 2015-04-29：Bitbucket 不支持了CNAME了，这个账户主要用来接入多小组私有代码，所以爱咋咋地对我影响不大。就是要[Github](https://github.com/dustincys/)和[Bitbucket](https://bitbucket.org/dustincys/)混用。
+> 2015-04-29：Bitbucket 不支持了CNAME了，这个账户主要用来接入小组私有代码，所以爱咋咋地对我影响不大。就是要[Github](https://github.com/dustincys/)和[Bitbucket](https://bitbucket.org/dustincys/)混用。
