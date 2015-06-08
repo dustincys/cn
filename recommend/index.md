@@ -9,6 +9,15 @@ share: yes
 
 > 这里推荐一些Linux系统下好用的工具和相应的设置方法。
 
+少林寺藏经阁里的七十二绝技，是不是在所有的武侠小说、电影里都有，所以这等博大精深家喻户晓的武学就不用宣传了。
+少林弟子满天下，随便到江湖中一打听，各种宣传普及都有了。
+这里想要讲述的是江湖中那些神秘的刀客（Doctor？）、剑客、侠客、浪子、隐士的武功秘笈……
+
+> “大侠，先说说哪些算‘七十二绝技’？”  
+> “Vim, Emacs, Fvwm, Awesome, Mutt……”  
+> “大侠，哪些是神秘的刀客、剑客、浪子、隐士？”  
+> “烟波钓叟，白首太玄经的作者，迎风一刀斩……”
+
 ## 听广播
 
 推荐个广播流媒体：[CRI轻松调频](http://english.cri.cn/easyfm/index.htm)。
@@ -18,6 +27,11 @@ share: yes
 一定会有像书呆所遇到的这种[“大网络中心提供的不咋地网速只够听广播”](http://yanshuo.name/cn/2014/05/radio/)的情况，这时候就要不停地死循环地尝试链接流媒体。
 
 <script src="https://gist.github.com/dustincys/7c9a20a8ac555b9d04f6.js"></script>
+
+## Tmux
+
+这货能解决“开多个终端蒙圈了”之问题。
+配置文件`.tmux.conf`[下载地址](https://gist.github.com/dustincys/5593b68fed0cb23a9766)
 
 ## Goldendict
 
