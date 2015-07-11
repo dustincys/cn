@@ -31,6 +31,8 @@ share: yes
 ## Tmux
 
 这货能解决“开多个终端蒙圈了”之问题。
+也有许多大侠喜欢用这个加上vim和debug工具组成一个类似IDE的截面。
+另外也有大侠喜欢用这个替代screen。
 配置文件`.tmux.conf`[下载地址](https://gist.github.com/dustincys/5593b68fed0cb23a9766)
 
 ## Goldendict
