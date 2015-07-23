@@ -35,6 +35,20 @@ share: yes
 另外也有大侠喜欢用这个替代screen。
 配置文件`.tmux.conf`[下载地址](https://gist.github.com/dustincys/5593b68fed0cb23a9766)
 
+使用Tmux最大的好处是可以一键打开工作环境。
+举个例子，书呆开机后需要在终端逐个打开以下程序：
+
+1. 谷歌代理，goagent，有时候谷歌代理不好用，需要查看错误输出信息
+2. 打开广播，就是上面的广播脚本，mplayer 死循环，即可以随时检验网络链接状况，又可以随时薅起耳机听广播
+3. 打开邮件，mutt，收发和阅读邮件
+4. 打开rss阅读器，newsbeauter，查看最新的博客、文献
+5. 打开本机工作文件夹
+6. 打开实验室服务器ssh链接
+
+每次开机之后，只需要执行以下脚本就可以一次打开所有的环境：
+
+<script src="https://gist.github.com/dustincys/7f7769d7d585a31cff39.js"></script>
+
 ## Goldendict
 
 ### 软件截图
@@ -110,8 +124,7 @@ def __init__(self, day_text_view, undo_redo_manager):
 ### 软件截图
 <a class="fancybox" rel="gallery1" href="https://2s66lw.bl3301.livefilestore.com/y2pvy0Pae81GlyW08y5SbpiwWdE2zvuR8EkVPujLiZxBnWFb3hIWZiyhd3ng4mcdFYaw_TCo0myU48pgO5UtjtG7KV1KDaVWLvMpsaJ5KK9D3BBqCmBHTEK-FoVCWcnTuRZD9WXuS1ATxJ8t-NOFOYQiDoASsB-DrJgqEKkvLoTjrI/firefox.png" title="Stylish"><img src="https://2s66lw.bl3301.livefilestore.com/y2pvy0Pae81GlyW08y5SbpiwWdE2zvuR8EkVPujLiZxBnWFb3hIWZiyhd3ng4mcdFYaw_TCo0myU48pgO5UtjtG7KV1KDaVWLvMpsaJ5KK9D3BBqCmBHTEK-FoVCWcnTuRZD9WXuS1ATxJ8t-NOFOYQiDoASsB-DrJgqEKkvLoTjrI/firefox.png" alt="Stylish" /></a>
 
-## 哈工大PlutoThesis模板XeLaTeX版本
-
-目前没人维护了（除了我？），这个应该是此时[唯一一个能用的版本](http://yanshuo.name/PlutoThesis/)（xelatex版）。
+## 毕业论文模板 
+哈工大PlutoThesis模板XeLaTeX版本，这个应该是此时[唯一一个完美的版本](http://yanshuo.name/PlutoThesis/)（xelatex版）。
 
 
