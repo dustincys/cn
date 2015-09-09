@@ -21,64 +21,30 @@
 <script type="text/javascript" src="/media/js/go-top.js"></script>
 <script type="text/javascript" src="/media/js/classie.js"></script>
 
-
-
-
 </head>
   <body class="cbp-spmenu-push">
 	      {% if page.matheq %}
 		{% include mathjax.md %}
 		{% endif %}
     <div id="container">
-      <div id="main" role="main">
-        <header>
-        <h1>{{ page.title }}</h1>
-<!-- body has the class "cbp-spmenu-push" -->
-<div class="container">
-	<div class="main">
-		<section class="buttonset">
-			<!-- Class "cbp-spmenu-open" gets applied to menu and "cbp-spmenu-push-toleft" or "cbp-spmenu-push-toright" to the body -->
-			<button id="showRightPush">&#9776;</button>
-		</section>
-	</div>
-</div>
-        </header>
-        <nav>
-	<span><a title="关于" class="" href="{{ site.url }}/about/">关于</a></span>
-        <span><a title="博文目录" class="" href="{{ site.url }}/">博文目录</a></span>
-	<span><a title="软件工具推荐" class="" href="{{ site.url }}/recommend/">软件工具推荐</a></span>        
-        <span><a title="类别" class="" href="{{ site.url }}/categories/">类别</a></span>
-        <span><a title="标签" class="" href="{{ site.url }}/tags/">标签</a></span>
-	<span><a title="链接" class="" href="{{ site.url }}/links/">链接</a></span>        
-	<span><a title="订阅我" class="" href="{{ site.url }}/feed/">订阅我</a></span>
-	<span><a title="返回首页" class="" href="{{ site.homepage }}/">返回首页</a></span>
-	<span><a title="英文版" class="" href="{{ site.homepage }}/en/">英文版</a></span>
-        </nav>
-<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
-	<p><img class="miniAvata" src="http://ww1.sinaimg.cn/small/61dccbaajw1e9gxs6dc5tj20dc0de40a.jpg" ></img></p>
-	<a title="关于" class="" href="{{ site.url }}/about/">关于</a>
-        <a title="博文目录" class="" href="{{ site.url }}/">博文目录</a>
-	<a title="软件工具推荐" class="" href="{{ site.url }}/recommend/">软件工具推荐</a>        
-        <a title="类别" class="" href="{{ site.url }}/categories/">类别</a>
-        <a title="标签" class="" href="{{ site.url }}/tags/">标签</a>
-	<a title="链接" class="" href="{{ site.url }}/links/">链接</a>        
-	<a title="订阅我" class="" href="{{ site.url }}/feed/">订阅我</a>
-	<a title="返回首页" class="" href="{{ site.homepage }}/">返回首页</a>
-	<a title="英文版" class="" href="{{ site.homepage }}/en/">英文版</a>
-</nav>
-        <article class="content">
         {{ content }}
-        </article>
-      </div>
     </div>
 <script type="text/javascript">
 var showRightPush = document.getElementById( 'showRightPush' );
+var showLeft = document.getElementById( 'showLeft' );
 var menuRight = document.getElementById( 'cbp-spmenu-s2' );
+var menuLeft = document.getElementById( 'cbp-spmenu-s1' );
 var body = document.body;
 showRightPush.onclick = function() {
 	classie.toggle( this, 'active' );
 	classie.toggle( body, 'cbp-spmenu-push-toleft' );
 	classie.toggle( menuRight, 'cbp-spmenu-open' );
+	disableOther( 'showRightPush' );
+};
+showLeft.onclick = function() {
+	classie.toggle( this, 'active' );
+	classie.toggle( menuLeft, 'cbp-spmenu-open' );
+	disableOther( 'showLeft' );
 };
 $(document).click(function(event) {
 	if(!$(event.target).is('nav')&& !$(event.target).is('button') && classie.has( menuRight,'cbp-spmenu-open'))
@@ -86,7 +52,34 @@ $(document).click(function(event) {
 		classie.toggle( showRightPush, 'active' );
 		classie.toggle( body, 'cbp-spmenu-push-toleft' );
 		classie.toggle( menuRight, 'cbp-spmenu-open' );
-}});
+	};
+	if(!$(event.target).is('nav')&& !$(event.target).is('button') && classie.has( menuLeft,'cbp-spmenu-open'))
+	{
+		classie.toggle( showLeft, 'active' );
+		classie.toggle( menuLeft, 'cbp-spmenu-open' );
+	};
+
+});
+function disableOther( button ) {
+	if( button !== 'showLeft' ) {
+		classie.toggle( showLeft, 'disabled' );
+	}
+	if( button !== 'showRight' ) {
+		classie.toggle( showRight, 'disabled' );
+	}
+	if( button !== 'showTop' ) {
+		classie.toggle( showTop, 'disabled' );
+	}
+	if( button !== 'showBottom' ) {
+		classie.toggle( showBottom, 'disabled' );
+	}
+	if( button !== 'showLeftPush' ) {
+		classie.toggle( showLeftPush, 'disabled' );
+	}
+	if( button !== 'showRightPush' ) {
+		classie.toggle( showRightPush, 'disabled' );
+	}
+}
 </script>
 <script>
 /* <![CDATA[ */

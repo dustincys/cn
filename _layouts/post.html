@@ -1,17 +1,57 @@
 ---
 layout: default
 ---
-<section class="post">
+<div class="ubutton">
+<button id="showLeft" style="background-color:transparent; border-color:transparent;position: absolute;
+margin-left: -25px;"><img src="http://dustincys.github.com/slides/clip.png" height="65"/></button>
+</div>
+<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+	<p><img class="miniAvata" src="http://ww1.sinaimg.cn/small/61dccbaajw1e9gxs6dc5tj20dc0de40a.jpg" ></img></p>
+	<a title="关于" class="" href="{{ site.url }}/about/">关于</a>
+        <a title="博文目录" class="" href="{{ site.url }}/">博文目录</a>
+	<a title="软件工具推荐" class="" href="{{ site.url }}/recommend/">软件工具推荐</a>        
+        <a title="类别" class="" href="{{ site.url }}/categories/">类别</a>
+        <a title="标签" class="" href="{{ site.url }}/tags/">标签</a>
+	<a title="链接" class="" href="{{ site.url }}/links/">链接</a>        
+	<a title="订阅我" class="" href="{{ site.url }}/feed/">订阅我</a>
+	<a title="返回首页" class="" href="{{ site.homepage }}/">返回首页</a>
+	<a title="英文版" class="" href="{{ site.homepage }}/en/">英文版</a>
+</nav>
+<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+	<p><img class="miniAvata" src="http://ww1.sinaimg.cn/small/61dccbaajw1e9gxs6dc5tj20dc0de40a.jpg" ></img></p>
+	<a title="关于" class="" href="{{ site.url }}/about/">关于</a>
+        <a title="博文目录" class="" href="{{ site.url }}/">博文目录</a>
+	<a title="软件工具推荐" class="" href="{{ site.url }}/recommend/">软件工具推荐</a>        
+        <a title="类别" class="" href="{{ site.url }}/categories/">类别</a>
+        <a title="标签" class="" href="{{ site.url }}/tags/">标签</a>
+	<a title="链接" class="" href="{{ site.url }}/links/">链接</a>        
+	<a title="订阅我" class="" href="{{ site.url }}/feed/">订阅我</a>
+	<a title="返回首页" class="" href="{{ site.homepage }}/">返回首页</a>
+	<a title="英文版" class="" href="{{ site.homepage }}/en/">英文版</a>
+</nav>
+<div class="post">
+        <header>
+        <h1>{{ page.title }}</h1>
+<!-- body has the class "cbp-spmenu-push" -->
+<div class="container">
+	<div class="main">
+		<section class="buttonset">
+			<!-- Class "cbp-spmenu-open" gets applied to menu and "cbp-spmenu-push-toleft" or "cbp-spmenu-push-toright" to the body -->
+			<button id="showRightPush">&lt;</button>
+		</section>
+	</div>
+</div>
+        </header>
+
 {% if page.toc %}
 {% include toc.md %}
 {% endif %}
 {{ content }}
-</section>
+</div>
 
 {% if page.share %}
+<div class="baidubutton">
 {% include baidubutton.md %}
-{% endif %}
-
 <section class="meta">
 <span class="author">
   <a href="http://dustincys.github.com">{{ site.author }}</a>
@@ -44,13 +84,16 @@ layout: default
 </span>
 {% endif %}
 </section>
-
+</div>
+{% endif %}
 
 {% if page.comments %}
+<div class="comments">
 	{% include commentscn.md %}
 	{% if page.recentvisitors%}
 		{% include recentVisitors.md%}
 	{% endif %}
+</div>
 {% endif %}
 
 <script type="text/javascript">
