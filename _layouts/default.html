@@ -60,6 +60,16 @@ $(document).click(function(event) {
 	};
 
 });
+$(function(){
+	$(document).keydown(function(e) {
+		if (e.target.nodeName.toUpperCase() != 'BODY') return;
+		if (e.which == 77){// M
+			classie.toggle( showLeft, 'active' );
+			classie.toggle( menuLeft, 'cbp-spmenu-open' );
+			disableOther( 'showLeft' );
+		}
+	});
+});
 function disableOther( button ) {
 	if( button !== 'showLeft' ) {
 		classie.toggle( showLeft, 'disabled' );

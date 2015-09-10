@@ -29,7 +29,7 @@ margin-left: -25px;"><img src="http://dustincys.github.com/slides/clip.png" heig
 	<a title="返回首页" class="" href="{{ site.homepage }}/">返回首页</a>
 	<a title="英文版" class="" href="{{ site.homepage }}/en/">英文版</a>
 </nav>
-<div class="post">
+<div class="post" id="div1">
         <header>
         <h1>{{ page.title }}</h1>
 <!-- body has the class "cbp-spmenu-push" -->
@@ -50,7 +50,7 @@ margin-left: -25px;"><img src="http://dustincys.github.com/slides/clip.png" heig
 </div>
 
 {% if page.share %}
-<div class="baidubutton">
+<div class="baidubutton" id="div2">
 {% include baidubutton.md %}
 <section class="meta">
 <span class="author">
@@ -88,7 +88,7 @@ margin-left: -25px;"><img src="http://dustincys.github.com/slides/clip.png" heig
 {% endif %}
 
 {% if page.comments %}
-<div class="comments">
+<div class="comments" id="div3">
 	{% include commentscn.md %}
 	{% if page.recentvisitors%}
 		{% include recentVisitors.md%}
@@ -97,25 +97,32 @@ margin-left: -25px;"><img src="http://dustincys.github.com/slides/clip.png" heig
 {% endif %}
 
 <script type="text/javascript">
-$(function(){
-  $(document).keydown(function(e) {
-    if (e.target.nodeName.toUpperCase() != 'BODY') return;
-    var url = false;
-        if (e.which == 37 || e.which == 74) {  // Left arrow and J
-            {% if page.previous %}
-        url = '{{ site.url }}{{ page.previous.url }}';
-        {% endif %}
-        }
-        else if (e.which == 39 || e.which == 75) {  // Right arrow and K
-            {% if page.next %}
-        url = '{{ site.url }}{{ page.next.url }}';
-        {% endif %}
-        }
-        if (url) {
-            window.location = url;
-        }
-  });
-})
+	$(function(){
+		$(document).keydown(function(e) {
+			if (e.target.nodeName.toUpperCase() != 'BODY') return;
+			var url = false;
+			if (e.which == 37 || e.which == 72) {  // Left arrow and H
+				{% if page.previous %}
+				url = '{{ site.url }}{{ page.previous.url }}';
+				{% endif %}
+			}
+			else if (e.which == 39 || e.which == 76) {  // Right arrow and L
+				{% if page.next %}
+				url = '{{ site.url }}{{ page.next.url }}';
+				{% endif %}
+			}else if (e.which == 83){// S
+				url = '{{site.url}}{{page.url}}#div2';
+			}else if (e.which == 67){// C
+				url = '{{site.url}}{{page.url}}#div3';
+			}else if (e.which == 80){// P
+				url = '{{site.url}}{{page.url}}#div1';
+			}
+
+			if (url) {
+				window.location = url;
+			}
+		});
+	})
 </script>
 
 
