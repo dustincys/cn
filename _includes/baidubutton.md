@@ -22,8 +22,8 @@
 	var sharePicture;
 	var imgs = getImgs();
 
-	if(imgs != null && imgs.length > 0){
-		sharePicture = imgs[0].src;
+	if(imgs != null && imgs.length > 1){
+		sharePicture = imgs[1].src;
 	}
 
 	sharePicture = sharePicture || 'https://2s66lw.bl3301.livefilestore.com/y2pIlAqf_XWwsDHjEaTPBHGkXmKLncn3uUoXwx-ViqlHkaF8BT-1wp1teBnSgDDnVcu7MsqiOeARHr_LfRos5IJfaCkMLBqp-L9NX7_9gpIDvU_cwqRQ0PCaOwVN1_rDQCeIijX4pW8dIhZxLcy_j_TQQ/h_large_LtVW_53710001b3612f76.jpg';
