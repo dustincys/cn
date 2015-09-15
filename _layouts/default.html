@@ -53,7 +53,7 @@ $(document).click(function(event) {
 		classie.toggle( body, 'cbp-spmenu-push-toleft' );
 		classie.toggle( menuRight, 'cbp-spmenu-open' );
 	};
-	if(!$(event.target).is('nav')&& !$(event.target).is('button') && classie.has( menuLeft,'cbp-spmenu-open'))
+	if(!$(event.target).is('nav')&& !$(event.target).is('img')&& !$(event.target).is('button') && classie.has( menuLeft,'cbp-spmenu-open'))
 	{
 		classie.toggle( showLeft, 'active' );
 		classie.toggle( menuLeft, 'cbp-spmenu-open' );
