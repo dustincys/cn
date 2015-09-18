@@ -2,7 +2,7 @@
 layout: page 
 title: 软件工具推荐
 comments: yes
-toc: no
+toc: yes
 share: yes
 
 ---
@@ -101,6 +101,8 @@ def __init__(self, day_text_view, undo_redo_manager):
 	self.day_text_view.modify_base(gtk.STATE_NORMAL, gtk.gdk.color_parse('black'))
 	self.day_text_view.modify_text(gtk.STATE_NORMAL, gtk.gdk.color_parse('white'))
 {% endhighlight %}
+
+也可以直接用书呆修改好的：[下载地址](https://github.com/dustincys/rednotebook)。
 
 ## Newsbeuter
 
