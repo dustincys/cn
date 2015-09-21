@@ -99,10 +99,14 @@ margin-left: -25px;"><img src="http://dustincys.github.com/slides/clip.png" heig
 				url = '{{ site.url }}{{ page.next.url }}';
 				{% endif %}
 			}else if (e.which == 83){// S
+				 $("#div2").show();
 				url = '{{site.url}}{{page.url}}#div2';
 			}else if (e.which == 67){// C
+				 $("#div3").show();
 				url = '{{site.url}}{{page.url}}#div3';
 			}else if (e.which == 80){// P
+				 $("#div2").hide();
+				 $("#div3").hide();
 				url = '{{site.url}}{{page.url}}#div1';
 			}
 
