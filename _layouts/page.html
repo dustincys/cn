@@ -17,7 +17,7 @@ margin-left: -25px;"><img src="http://dustincys.github.com/slides/clip.png" heig
 	<a title="返回首页" class="" href="{{ site.homepage }}/">返回首页</a>
 	<a title="英文版" class="" href="{{ site.homepage }}/en/">英文版</a>
 </nav>
-<div class="post">
+<div id="div1" class="post">
         <header>
         <h1>{{ page.title }}
 <!-- body has the class "cbp-spmenu-push" -->
@@ -38,13 +38,13 @@ margin-left: -25px;"><img src="http://dustincys.github.com/slides/clip.png" heig
 </div>
 
 {% if page.share %}
-<div class="baidubutton">
+<div id="div2" class="baidubutton">
 {% include baidubutton.md %}
 </div>
 {% endif %}
 
 {% if page.comments %}
-<div class="comments">
+<div id="div3" class="comments">
 	{% include commentscn.md %}
 	{% if page.recentvisitors%}
 		{% include recentVisitors.md%}
