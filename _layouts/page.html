@@ -53,4 +53,33 @@ margin-left: -25px;"><img src="http://dustincys.github.com/slides/clip.png" heig
 {% endif %}
 
 
+{% if page.share %}
+<script>
+/* <![CDATA[ */
+(new Share()).init({
+	pageWidth		:600,
+	nodeId			:'share',
+	nodeWidth		:50,
+	distanceToBottom	:225,
+	hideRegionHeight	:0,
+        text			:'<i class="fa fa-share-alt fa-2x"></i>'
+});
+/* ]]> */
+</script>
+{% endif %}
+
+{% if page.comments %}
+<script>
+/* <![CDATA[ */
+(new Comment()).init({
+	pageWidth		:600,
+	nodeId			:'comment',
+	nodeWidth		:50,
+	distanceToBottom	:175,
+	hideRegionHeight	:0,
+        text			:'<i class="fa fa-commenting-o fa-2x"></i>'
+});
+/* ]]> */
+</script>
+{% endif %}
 
