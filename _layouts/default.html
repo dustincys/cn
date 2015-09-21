@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" media="screen and (min-width:850px)" href="/media/css/cnstyle.css"/>
     <link rel="stylesheet" type="text/css" media="screen and (max-width:850px)" href="/media/css/cntinystyle.css"/>
     <link rel="stylesheet" href="/media/css/highlight.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
  <link rel="stylesheet" href="/media/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
 <script type="text/javascript" src="/media/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
@@ -29,6 +30,48 @@
     <div id="container">
         {{ content }}
     </div>
+    <script>
+/* <![CDATA[ */
+(new Bars()).init({
+	pageWidth		:600,
+	nodeId			:'bars',
+	nodeWidth		:50,
+	distanceToBottom	:275,
+	hideRegionHeight	:0,
+        text			:'<i class="fa fa-bars fa-2x"></i>'
+});
+/* ]]> */
+/* <![CDATA[ */
+(new Share()).init({
+	pageWidth		:600,
+	nodeId			:'share',
+	nodeWidth		:50,
+	distanceToBottom	:225,
+	hideRegionHeight	:0,
+        text			:'<i class="fa fa-share-alt fa-2x"></i>'
+});
+/* ]]> */
+/* <![CDATA[ */
+(new Comment()).init({
+	pageWidth		:600,
+	nodeId			:'comment',
+	nodeWidth		:50,
+	distanceToBottom	:175,
+	hideRegionHeight	:0,
+        text			:'<i class="fa fa-commenting-o fa-2x"></i>'
+});
+/* ]]> */
+/* <![CDATA[ */
+(new GoTop()).init({
+	pageWidth		:600,
+	nodeId			:'go-top',
+	nodeWidth		:50,
+	distanceToBottom	:125,
+	hideRegionHeight	:130,
+        text			:'<i class="fa fa-angle-double-up fa-2x"></i>'
+});
+/* ]]> */
+    </script>
 <script type="text/javascript">
 var showRightPush = document.getElementById( 'showRightPush' );
 var showLeft = document.getElementById( 'showLeft' );
@@ -46,14 +89,15 @@ showLeft.onclick = function() {
 	disableOther( 'showLeft' );
 };
 $(document).click(function(event) {
-	if(!$(event.target).is('nav')&& !$(event.target).is('button') && classie.has( menu,'cbp-spmenu-open'))
+	if(!$(event.target).is('i')&&!$(event.target).is('nav')&& !$(event.target).is('button') && classie.has( menu,'cbp-spmenu-open'))
 	{
 		classie.toggle( showRightPush, 'active' );
 		classie.toggle( body, 'cbp-spmenu-push-toleft' );
 		classie.toggle( menu, 'cbp-spmenu-open' );
 	};
-	if(!$(event.target).is('nav')&& !$(event.target).is('img')&& !$(event.target).is('button') && classie.has( menu,'cbp-spmenu-open'))
+	if(!$(event.target).is('i')&&!$(event.target).is('nav')&& !$(event.target).is('img')&& !$(event.target).is('button') && classie.has( menu,'cbp-spmenu-open'))
 	{
+		alert(event.target.id)
 		classie.toggle( showLeft, 'active' );
 		classie.toggle( menu, 'cbp-spmenu-open' );
 	};
@@ -77,18 +121,6 @@ function disableOther( button ) {
 		classie.toggle( showRightPush, 'disabled' );
 	}
 }
-</script>
-<script>
-/* <![CDATA[ */
-(new GoTop()).init({
-	pageWidth		:600,
-	nodeId			:'go-top',
-	nodeWidth		:50,
-	distanceToBottom	:125,
-	hideRegionHeight	:130,
-        text			:''
-});
-/* ]]> */
 </script>
 <script type="text/javascript" src="http://tajs.qq.com/stats?sId=40045081" charset="UTF-8"></script> 
   </body>
