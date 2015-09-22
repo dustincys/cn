@@ -73,6 +73,9 @@ margin-left: -25px;"><img src="http://dustincys.github.com/slides/clip.png" heig
 {% endif %}
 </section>
 </div>
+{% assign isshare='1' %}
+{% else %}
+{% assign isshare='0' %}
 {% endif %}
 
 {% if page.comments %}
@@ -82,6 +85,9 @@ margin-left: -25px;"><img src="http://dustincys.github.com/slides/clip.png" heig
 		{% include recentVisitors.md%}
 	{% endif %}
 </div>
+{% assign iscomments='1' %}
+{% else %}
+{% assign iscomments='0' %}
 {% endif %}
 
 <script type="text/javascript">
@@ -117,14 +123,29 @@ margin-left: -25px;"><img src="http://dustincys.github.com/slides/clip.png" heig
 	})
 </script>
 
+{% assign barsDTB='1' %}
+<script>
+/* <![CDATA[ */
+(new Bars()).init({
+	pageWidth		:600,
+	nodeId			:'bars',
+	nodeWidth		:50,
+	distanceToBottom	:{{barsDTB | plus: isshare| plus:  iscomments| times: 50 | plus: 125 }},
+	hideRegionHeight	:-1,
+        text			:'<i class="fa fa-bars fa-2x"></i>'
+});
+/* ]]> */
+</script>
+
 {% if page.share %}
+{% assign shareDTB='0' %}
 <script>
 /* <![CDATA[ */
 (new Share()).init({
 	pageWidth		:600,
 	nodeId			:'share',
 	nodeWidth		:50,
-	distanceToBottom	:225,
+	distanceToBottom	:{{ shareDTB| plus: iscomments| plus:isshare | times: 50 | plus: 125 }},
 	hideRegionHeight	:-1,
         text			:'<i class="fa fa-share-alt fa-2x"></i>'
 });
@@ -133,13 +154,14 @@ margin-left: -25px;"><img src="http://dustincys.github.com/slides/clip.png" heig
 {% endif %}
 
 {% if page.comments %}
+{% assign commentsDTB='0' %}
 <script>
 /* <![CDATA[ */
 (new Comment()).init({
 	pageWidth		:600,
 	nodeId			:'comment',
 	nodeWidth		:50,
-	distanceToBottom	:175,
+	distanceToBottom	:{{ commentsDTB| plus:iscomments | times: 50 | plus: 125 }},
 	hideRegionHeight	:-1,
         text			:'<i class="fa fa-commenting-o fa-2x"></i>'
 });
