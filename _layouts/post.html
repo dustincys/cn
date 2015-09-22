@@ -17,7 +17,7 @@ margin-left: -25px;"><img src="http://dustincys.github.com/slides/clip.png" heig
 	<a title="返回首页" class="" href="{{ site.homepage }}/">返回首页</a>
 	<a title="英文版" class="" href="{{ site.homepage }}/en/">英文版</a>
 </nav>
-<div class="post" id="div1">
+<div class="post" id="headofpost">
         <header>
         <h1>{{ page.title }}
 <!-- body has the class "cbp-spmenu-push" -->
@@ -38,7 +38,7 @@ margin-left: -25px;"><img src="http://dustincys.github.com/slides/clip.png" heig
 </div>
 
 {% if page.share %}
-<div class="baidubutton" id="div2">
+<div class="baidubutton" id="baidusharebuttons">
 {% include baidubutton.md %}
 <section class="meta">
 <span class="author">
@@ -79,7 +79,7 @@ margin-left: -25px;"><img src="http://dustincys.github.com/slides/clip.png" heig
 {% endif %}
 
 {% if page.comments %}
-<div class="comments" id="div3">
+<div class="comments" id="duoshuocomments">
 	{% include commentscn.md %}
 	{% if page.recentvisitors%}
 		{% include recentVisitors.md%}
@@ -105,15 +105,15 @@ margin-left: -25px;"><img src="http://dustincys.github.com/slides/clip.png" heig
 				url = '{{ site.url }}{{ page.next.url }}';
 				{% endif %}
 			}else if (e.which == 83){// S
-				 $("#div2").show();
-				url = '{{site.url}}{{page.url}}#div2';
+				 $("#baidusharebuttons").show();
+				url = '{{site.url}}{{page.url}}#baidusharebuttons';
 			}else if (e.which == 67){// C
-				 $("#div3").show();
-				url = '{{site.url}}{{page.url}}#div3';
+				 $("#duoshuocomments").show();
+				url = '{{site.url}}{{page.url}}#duoshuocomments';
 			}else if (e.which == 80){// P
-				 $("#div2").hide();
-				 $("#div3").hide();
-				url = '{{site.url}}{{page.url}}#div1';
+				 $("#baidusharebuttons").hide();
+				 $("#duoshuocomments").hide();
+				url = '{{site.url}}{{page.url}}#headofpost';
 			}
 
 			if (url) {
