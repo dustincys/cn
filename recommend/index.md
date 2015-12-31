@@ -104,6 +104,8 @@ def __init__(self, day_text_view, undo_redo_manager):
 
 也可以直接用书呆修改好的：[下载地址](https://github.com/dustincys/rednotebook)。
 
+> 注: 同类工具任何一种均不如 emacs orgmode
+
 ## Newsbeuter
 
 ### 软件截图
