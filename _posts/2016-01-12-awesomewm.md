@@ -44,6 +44,7 @@ end)
 
 {% highlight lua  %}
 local function minimize_all_else(c)
+    c:raise()
     thisScreen = client.focus.screen
     for _, cc in ipairs(client.get(c.screen)) do
         if current(cc, thisScreen) and cc.window ~= c.window then
@@ -54,6 +55,7 @@ end
 {% endhighlight %}
 
 `thisScreen` 必须要在循环之前获取到，否则会导致在最小化其他应用窗口时候，由于窗口的浮动层次不同出现有的窗口突然浮动到当前窗口之上导致聚焦变化，而导致出现聚焦不到异常。
+另外，由于采用的是sloppy鼠标模式，需要将当前窗口提到最上一层`c:raise()`，否则会出现最大化窗口后窗口没有被聚焦，然后在进行恢复操作时出现异常。
 
 
 
