@@ -28,6 +28,8 @@ share: yes
 
 <script src="https://gist.github.com/dustincys/7c9a20a8ac555b9d04f6.js"></script>
 
+> 2016-01-12 注： 广播地址失效
+
 ## Tmux
 
 这货能解决“开多个终端蒙圈了”之问题。
@@ -49,6 +51,15 @@ share: yes
 
 <script src="https://gist.github.com/dustincys/7f7769d7d585a31cff39.js"></script>
 
+## ranger
+
+一款终端的轻量文件管理器，其中的书签功能可节约输入文件路径操作的步骤。
+
+## rofi
+
+索引式启动、切换程序的利器。
+看似比较低效，因为需要输入才能切换程序，但如果使用多显示器，每个显示器使用了多个桌面（如awesome wm），用该利器是效率倍增器。
+
 ## Goldendict
 
 ### 软件截图
@@ -60,6 +71,7 @@ GoldenDict的CSS文件放在了`~/.GoldenDict/`中的`article-style.css`和`qt-s
 
 article-style.css  [下载地址](https://gist.github.com/dustincys/8471489)
 qt-style.css	[下载地址](https://gist.github.com/dustincys/9739972)  
+
 ### 应用举例
 
 vim下英文写作／翻译时使用goldendict方法，
