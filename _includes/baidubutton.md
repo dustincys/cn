@@ -9,6 +9,9 @@
 	<a class="bds_more" data-cmd="more" href="#"></a>
 </div>
 </div>
+<div>
+<span>小伙伴觉得好也可以<a class="fancybox" rel="donate" href="http://ww3.sinaimg.cn/large/61dccbaajw1f11ag3tq66j20he0nn75l.jpg" title="title">捐赠</a>我……</span>
+</div>
 <script>
 	function getImgs() {
 		var all = document.getElementsByTagName('img');
