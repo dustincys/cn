@@ -20,11 +20,11 @@ share: yes
 笛卡尔死后300年，书呆我也借用大师之心形线写一封立体情书。
 
 
-####立体情书
+#### 立体情书
 
 <a class="fancybox" rel="gallary1" href="http://i.imgur.com/CkNRhNC.gif" title="立体情书"><img src="http://i.imgur.com/CkNRhNC.gif" alt="立体情书"/></a>
 
-####代码
+#### 代码
 
 {% highlight r %}
 require(rgl)
@@ -42,7 +42,7 @@ movie3d( spin3d(), duration=5 )
 {% endhighlight %}
 
 
-####参考
+#### 参考
 
 - [wiki 笛卡尔](http://zh.wikipedia.org/wiki/%E7%AC%9B%E5%8D%A1%E5%B0%94)
 - [用R绘制情人节的礼物](http://cos.name/2012/02/valentines-gift-by-using-r/)
