@@ -1,6 +1,14 @@
 markdown:       kramdown
-redcarpet:
-  extensions:   ["with_toc_data"]
+kramdown:
+        input: GFM
+        extensions:
+                - autolink
+                - footnotes
+                - smart
+        enable_coderay: true
+        syntax_highlighter: rouge
+        coderay:
+                coderay_line_numbers:  nil
 permalink: /:year/:month/:title/
 url: http://yanshuo.name/cn
 homepage: http://yanshuo.name
