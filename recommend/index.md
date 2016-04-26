@@ -28,8 +28,6 @@ share: yes
 
 <script src="https://gist.github.com/dustincys/7c9a20a8ac555b9d04f6.js"></script>
 
-> 2016-01-12 注： 广播地址失效
-
 ## Tmux
 
 这货能解决“开多个终端蒙圈了”之问题。
@@ -50,6 +48,10 @@ share: yes
 每次开机之后，只需要执行以下脚本就可以一次打开所有的环境：
 
 <script src="https://gist.github.com/dustincys/7f7769d7d585a31cff39.js"></script>
+
+## fontconfig-infinality
+
+[fontconfig-infinality](http://www.webupd8.org/2013/06/better-font-rendering-in-linux-with.html "fontconfig-infinality")是一只调整字体风格的工具，呆萌的操作，傲娇的效果！
 
 ## ranger
 
