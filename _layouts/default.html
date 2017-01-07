@@ -44,6 +44,7 @@
 var showRightPush = document.getElementById( 'showRightPush' );
 var menu = document.getElementById( 'cbp-spmenu-s1' );
 var body = document.body;
+var contain = document.getElementById( 'container' );
 showRightPush.onclick = function() {
 	classie.toggle( this, 'active' );
 	classie.toggle( body, 'cbp-spmenu-push-toleft' );
@@ -64,6 +65,11 @@ $(document).click(function(event) {
 	if(!$(event.target).is('i')&&!$(event.target).is('nav')&& !$(event.target).is('img')&& !$(event.target).is('button') && classie.has( menu,'cbp-bigpage'))
 	{
 		classie.toggle( menu, 'cbp-bigpage' );
+		if ( classie.has( menu, 'cbp-bigpage' ) ){
+			classie.add(contain, 'ccbp-bigpage' ) // add new class
+		}else{
+			classie.remove(contain, 'ccbp-bigpage' ) // remove class
+		}
 	};
 });
 $(function(){
@@ -71,6 +77,11 @@ $(function(){
 		if (e.target.nodeName.toUpperCase() != 'BODY') return;
 		if (e.which == 77){// M
 			classie.toggle( menu, 'cbp-bigpage' );
+			if ( classie.has( menu, 'cbp-bigpage' ) ){
+				classie.add(contain, 'ccbp-bigpage' ) // add new class
+			}else{
+				classie.remove(contain, 'ccbp-bigpage' ) // remove class
+			}
 		}
 	});
 });
