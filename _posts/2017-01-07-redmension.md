@@ -8,6 +8,9 @@ tags: [红楼梦, 林黛玉]
 share: yes
 toc: no
 ---
+
+<a class="fancybox" rel="gallery1" href="http://ww2.sinaimg.cn/large/61dccbaajw1fby3a5pvsdj20ci0iotb8.jpg" title="林黛玉"><img src="http://ww2.sinaimg.cn/large/61dccbaajw1fby3a5pvsdj20ci0iotb8.jpg" alt="林黛玉" /></a>
+
 书呆一度认为林黛玉是：
 
 > 心比比干多一窍， 病如西子胜三分。
