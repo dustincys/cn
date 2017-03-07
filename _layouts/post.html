@@ -23,7 +23,7 @@ layout: default
 	<div class="main">
 		<section class="buttonset">
 			<!-- Class "cbp-spmenu-open" gets applied to menu and "cbp-spmenu-push-toleft" or "cbp-spmenu-push-toright" to the body -->
-			<button id="showRightPush">&lt;</button>
+			<button id="showRightPush"><i class="fa fa-bars"></i></button>
 		</section>
 	</div>
 </div></h1>
@@ -131,7 +131,7 @@ layout: default
 	nodeWidth		:50,
 	distanceToBottom	:{{barsDTB | plus: isshare| plus:  iscomments| times: 50 | plus: 125 }},
 	hideRegionHeight	:-1,
-        text			:'<i class="fa fa-bars fa-2x"></i>'
+        text			:'<i class="fa fa-bars fa-2x down"></i>'
 });
 /* ]]> */
 </script>
@@ -146,7 +146,7 @@ layout: default
 	nodeWidth		:50,
 	distanceToBottom	:{{ shareDTB| plus: iscomments| plus:isshare | times: 50 | plus: 125 }},
 	hideRegionHeight	:-1,
-        text			:'<i class="fa fa-share-alt fa-2x"></i>'
+        text			:'<i class="fa fa-share-alt fa-2x down"></i>'
 });
 /* ]]> */
 </script>
@@ -162,7 +162,7 @@ layout: default
 	nodeWidth		:50,
 	distanceToBottom	:{{ commentsDTB| plus:iscomments | times: 50 | plus: 125 }},
 	hideRegionHeight	:-1,
-        text			:'<i class="fa fa-commenting-o fa-2x"></i>'
+        text			:'<i class="fa fa-commenting-o fa-2x down"></i>'
 });
 /* ]]> */
 </script>

@@ -7,8 +7,8 @@ kramdown:
                 - smart
         enable_coderay: true
         syntax_highlighter: rouge
-        coderay:
-                coderay_line_numbers:  nil
+        syntax_highlighter_opts:
+                ine_numbers:  nil
 permalink: /:year/:month/:title/
 url: http://yanshuo.name/cn
 homepage: http://yanshuo.name
