@@ -18,6 +18,10 @@ share: yes
 > “大侠，哪些是神秘的刀客、剑客、浪子、隐士？”  
 > “烟波钓叟，白首太玄经的作者，迎风一刀斩……”
 
+## 毕业论文模板
+
+哈工大毕业论文模板[hithesis](https://github.com/dustincys/hithesis)。
+
 ## 听广播
 
 推荐个广播流媒体：[CRI轻松调频](http://english.cri.cn/easyfm/index.htm)。
@@ -141,8 +145,5 @@ def __init__(self, day_text_view, undo_redo_manager):
 推荐zotero插件、Stylish插件。
 ### 软件截图
 <a class="fancybox" rel="gallery1" href="https://2s66lw.bl3301.livefilestore.com/y2pvy0Pae81GlyW08y5SbpiwWdE2zvuR8EkVPujLiZxBnWFb3hIWZiyhd3ng4mcdFYaw_TCo0myU48pgO5UtjtG7KV1KDaVWLvMpsaJ5KK9D3BBqCmBHTEK-FoVCWcnTuRZD9WXuS1ATxJ8t-NOFOYQiDoASsB-DrJgqEKkvLoTjrI/firefox.png" title="Stylish"><img src="https://2s66lw.bl3301.livefilestore.com/y2pvy0Pae81GlyW08y5SbpiwWdE2zvuR8EkVPujLiZxBnWFb3hIWZiyhd3ng4mcdFYaw_TCo0myU48pgO5UtjtG7KV1KDaVWLvMpsaJ5KK9D3BBqCmBHTEK-FoVCWcnTuRZD9WXuS1ATxJ8t-NOFOYQiDoASsB-DrJgqEKkvLoTjrI/firefox.png" alt="Stylish" /></a>
-
-## 毕业论文模板 
-哈工大PlutoThesis模板XeLaTeX版本，这个应该是此时[唯一一个完美的版本](http://yanshuo.name/PlutoThesis/)（xelatex版）。
 
 
