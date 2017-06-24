@@ -2,7 +2,7 @@
 layout: post
 category: 学术
 title: 规范的正确打开方式
-matheq: no
+matheq: yes
 comments: yes
 tags: [hithesis, 歧义, latex]
 share: yes
