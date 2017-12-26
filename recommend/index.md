@@ -22,6 +22,10 @@ share: yes
 
 哈工大毕业论文模板[hithesis](https://github.com/dustincys/hithesis)。
 
+## 最好的桌面UI
+
+[hifvwm](https://github.com/dustincys/hifvwm)，符合人类思维直觉，打开再多的窗口也不会“蒙圈”。
+
 ## 听广播
 
 推荐个广播流媒体：[CRI轻松调频](http://english.cri.cn/easyfm/index.htm)。
