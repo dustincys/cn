@@ -12,6 +12,6 @@ kramdown:
 permalink: /:year/:month/:title/
 url: http://yanshuo.name/cn
 homepage: http://yanshuo.name
-author: 石见石页_
+author: 石见石页
 highlighter: rouge
 
