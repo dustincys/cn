@@ -92,8 +92,8 @@ b_3) / 2$$。
 [^chapterskip]: [hithesis][hithesis]中的设置方法与word习惯一致，空章标题格式的一行，段前为标题之上，一行为字号+行间距。
 [^banxin]: 为了规格严格、功夫到家，[hithesis][hithesis]给出两种版芯设置。
 
-[bachelorregulation]: http://jwc.hit.edu.cn/2566/list.htm
-[masterregulation]: http://hitgs.hit.edu.cn/aa/fd/c3425a109309/page.htm
-[hithesishangjv]: http://yanshuo.name/cn/2017/06/hithesissiyuan/
+[bachelorregulation]: https://jwc.hit.edu.cn/2566/list.htm
+[masterregulation]: https://hitgs.hit.edu.cn/aa/fd/c3425a109309/page.htm
+[hithesishangjv]: https://yanshuo.name/cn/2017/06/hithesissiyuan/
 [plutothesis]: https://github.com/dustincys/PlutoThesis
 [hithesis]: https://github.com/dustincys/hithesis

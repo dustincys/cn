@@ -10,8 +10,7 @@ kramdown:
         syntax_highlighter_opts:
                 ine_numbers:  nil
 permalink: /:year/:month/:title/
-url: http://yanshuo.name/cn
-homepage: http://yanshuo.name
+url: https://yanshuo.name/cn
+homepage: https://yanshuo.name
 author: 石见石页
 highlighter: rouge
-
