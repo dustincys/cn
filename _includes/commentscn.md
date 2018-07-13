@@ -1,6 +1,18 @@
-<!-- UY BEGIN -->
-<!--<div id="uyan_frame"></div>-->
-（暂时关闭评论系统）
-<!--<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2141856">-->
-<!--</script>-->
-<!-- UY END -->
+<!-- 来必力City版安装代码 -->
+<div id="lv-container" data-id="city" data-uid="undefined">
+	<script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+
+       if (typeof LivereTower === 'function') { return; }
+
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+	</script>
+<noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+</div>
+<!-- City版安装代码已完成 -->
