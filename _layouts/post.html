@@ -79,12 +79,7 @@ layout: default
 {% endif %}
 
 {% if page.comments %}
-<div class="comments" id="duoshuocomments">
 	{% include commentscn.md %}
-	{% if page.recentvisitors%}
-		{% include recentVisitors.md%}
-	{% endif %}
-</div>
 {% assign iscomments='1' %}
 {% else %}
 {% assign iscomments='0' %}
