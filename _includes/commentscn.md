@@ -1,6 +1,6 @@
 <!-- 来必力City版安装代码 -->
-<div id="lv-container" data-id="city" data-uid="undefined">
-	<script type="text/javascript">
+<div id="lv-container" data-id="city" data-uid="MTAyMC8zODAzNS8xNDU2NQ==">
+<script type="text/javascript">
    (function(d, s) {
        var j, e = d.getElementsByTagName(s)[0];
 
@@ -12,7 +12,7 @@
 
        e.parentNode.insertBefore(j, e);
    })(document, 'script');
-	</script>
-<noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+</script>
+<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
 </div>
 <!-- City版安装代码已完成 -->
