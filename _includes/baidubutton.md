@@ -55,5 +55,5 @@
 			"bdSize" : 32
 		}]
 	}
-	with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//yanshuo.name/media/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+	with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//yanshuo.name/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
 </script>
