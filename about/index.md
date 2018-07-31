@@ -8,13 +8,7 @@ comments: yes
 
 只是书呆一枚。
 
-书呆正在呆之物：
-
-<script type="text/javascript" src="http://www.douban.com/service/badge/yanshuoIam/?selection=latest&amp;picsize=medium&amp;hideself=on&amp;show=dolist&amp;n=9&amp;hidelogo=on&amp;cat=book&amp;columns=3"></script>
-
-书呆最近呆过之物：
-
-<script type="text/javascript" src="http://www.douban.com/service/badge/yanshuoIam/?selection=latest&amp;picsize=medium&amp;hideself=on&amp;show=collection&amp;n=9&amp;hidelogo=on&amp;cat=book&amp;columns=3"></script>
+书呆正在呆之物和呆过之物在这里 <https://book.douban.com/people/yanshuoIam/>
 
 ### 关于该网站
 
