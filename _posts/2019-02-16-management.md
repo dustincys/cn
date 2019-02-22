@@ -4,7 +4,7 @@ category: 随笔
 title: 天王盖地虎，宝塔镇河妖
 matheq: no
 comments: yes
-tags: [变化社会中的政治秩序, 功能社会, 随笔]
+tags: [变化社会中的政治秩序, 功能社会, 随笔, 理性主义与自由主义的不可调和]
 share: yes
 toc: no
 ---
