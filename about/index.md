@@ -10,6 +10,7 @@ comments: yes
 
 书呆正在呆之物和呆过之物在这里 <https://book.douban.com/people/yanshuoIam/>
 
+
 <script type="text/javascript" src="http://www.douban.com/service/badge/yanshuoIam/?selection=latest&amp;picsize=small&amp;show=collection&amp;n=6&amp;cat=book&amp;columns=2"></script>
 
 ### 关于该网站
