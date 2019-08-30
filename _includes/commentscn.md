@@ -1,5 +1,5 @@
 <!-- 来必力City版安装代码 -->
-<div id="lv-container" data-id="city" data-uid="MTAyMC8zODAzNS8xNDU2NQ==" class="comments">
+<div id="lv-container" data-id="city" data-uid="MTAyMC8zODAzNS8xNDU2NQ==" class="comments" style="display: none;">
 <script type="text/javascript">
    (function(d, s) {
        var j, e = d.getElementsByTagName(s)[0];
