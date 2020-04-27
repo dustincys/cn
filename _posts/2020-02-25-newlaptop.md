@@ -8,12 +8,18 @@ tags: [电脑, Linux]
 share: yes
 toc: no
 ---
+<style type="text/css" rel="stylesheet">
+table, td, th {
+    border: 1px solid;
+    padding: 1em;
+border-collapse: collapse;
+}
+</style>
 hifvwm的逻辑是把所有窗口都最大化，按照任务，分类别排成九宫格桌面。
 类似如下
 
 任务1：
 
-{:class="table table-bordered"}
 -------------|----------|------------
  Email       | PDF      | Dictionary 
  Terminal    | Emacs    | Firefox    
@@ -21,7 +27,6 @@ hifvwm的逻辑是把所有窗口都最大化，按照任务，分类别排成�
 
 任务2：
 
-{:class="table table-bordered"}
 -------------|----------|------------
 Else       　| Figures | Else
 Adobe Illustrator | Photoshop   | Firefox 
