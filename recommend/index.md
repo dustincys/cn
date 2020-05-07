@@ -26,6 +26,12 @@ share: yes
 
 [hifvwm](https://github.com/dustincys/hifvwm)，符合人类思维直觉，打开再多的窗口也不会“蒙圈”。
 
+屏幕截图：
+
+|![s1](https://raw.githubusercontent.com/dustincys/hifvwm/screenshots/screenshot-2020-04-27%5B00%3A16%5D.jpg)|![s2](https://raw.githubusercontent.com/dustincys/hifvwm/screenshots/Screenshot%20from%202020-04-27%2000-22-12.png)|![s3](https://raw.githubusercontent.com/dustincys/hifvwm/screenshots/screenshot-2020-04-27%5B00%3A19%5D.jpg)|
+|-|-|-|
+|![s4](https://raw.githubusercontent.com/dustincys/hifvwm/screenshots/screenshot-2020-04-27%5B00%3A20%5D.jpg)|![s5](https://raw.githubusercontent.com/dustincys/hifvwm/screenshots/screenshot-2020-04-27%5B00%3A23%5D.jpg)|![s6](https://raw.githubusercontent.com/dustincys/hifvwm/screenshots/screenshot-2020-04-27%5B00%3A24%5D.jpg)|
+
 ## 听广播
 
 推荐个广播流媒体：[CRI轻松调频](http://english.cri.cn/easyfm/index.htm)。
@@ -36,39 +42,6 @@ share: yes
 
 <script src="https://gist.github.com/dustincys/7c9a20a8ac555b9d04f6.js"></script>
 
-## Tmux
-
-这货能解决“开多个终端蒙圈了”之问题。
-也有许多大侠喜欢用这个加上vim和debug工具组成一个类似IDE的截面。
-另外也有大侠喜欢用这个替代screen。
-配置文件`.tmux.conf`[下载地址](https://gist.github.com/dustincys/5593b68fed0cb23a9766)
-
-使用Tmux最大的好处是可以一键打开工作环境。
-举个例子，书呆开机后需要在终端逐个打开以下程序：
-
-1. 谷歌代理，goagent，有时候谷歌代理不好用，需要查看错误输出信息
-2. 打开广播，就是上面的广播脚本，mplayer 死循环，即可以随时检验网络链接状况，又可以随时薅起耳机听广播
-3. 打开邮件，mutt，收发和阅读邮件
-4. 打开rss阅读器，newsbeauter，查看最新的博客、文献
-5. 打开本机工作文件夹
-6. 打开实验室服务器ssh链接
-
-每次开机之后，只需要执行以下脚本就可以一次打开所有的环境：
-
-<script src="https://gist.github.com/dustincys/7f7769d7d585a31cff39.js"></script>
-
-## fontconfig-infinality
-
-[fontconfig-infinality](http://www.webupd8.org/2013/06/better-font-rendering-in-linux-with.html "fontconfig-infinality")是一只调整字体风格的工具，呆萌的操作，傲娇的效果！
-
-## ranger
-
-一款终端的轻量文件管理器，其中的书签功能可节约输入文件路径操作的步骤。
-
-## rofi
-
-索引式启动、切换程序的利器。
-看似比较低效，因为需要输入才能切换程序，但如果使用多显示器，每个显示器使用了多个桌面（如awesome wm），用该利器是效率倍增器。
 
 ## Goldendict
 
@@ -87,67 +60,3 @@ qt-style.css	[下载地址](https://gist.github.com/dustincys/9739972)
 vim下英文写作／翻译时使用goldendict方法，
 
 	nnoremap <leader>d  :silent !goldendict <cword><CR>
-
-## Rednotebook
-
-### 软件截图
-
-<a class="fancybox" rel="gallery1" href="https://2s66lw.bl3301.livefilestore.com/y2pqsmYB8dWoASLLAdBHGhkj-6J7Or4gMSLNDh78eoK4VCqgkOAmJbzPWf8YQNUkq1jTZsVlnzZKE3eQQANNVcedeYl828f0L3WhWj5B0X0r0wqEf78wXwXfaa6iROYCAovXXNXjUN5StBemGsQWZwUZCNR1a-ktQKOL4AejUTdrEY/rednotebook.png" title="rednotebook"><img src="https://2s66lw.bl3301.livefilestore.com/y2pqsmYB8dWoASLLAdBHGhkj-6J7Or4gMSLNDh78eoK4VCqgkOAmJbzPWf8YQNUkq1jTZsVlnzZKE3eQQANNVcedeYl828f0L3WhWj5B0X0r0wqEf78wXwXfaa6iROYCAovXXNXjUN5StBemGsQWZwUZCNR1a-ktQKOL4AejUTdrEY/rednotebook.png" alt="rednotebook" /></a>
-
-### 设置方法
-- 软件安装位置：
-
-	/user/share/rednotebook/rednotebook/
-
-- 改标签云颜色的css设置在下面的文件中：
-
-	/gui/clouds.py
-
-<script src="https://gist.github.com/dustincys/6ea8484ed0394eb04db8.js"></script>
-
-- 改预览界面颜色，修改显示公式编号等在下面的文件中：
-
-	/util/markup.py
-
-<script src="https://gist.github.com/dustincys/ad0c571edf3e630e08cc.js"></script>
-- 改编辑器背景为黑色在下面的文件中：
-
-	/gui/editor.py
-
-	只需要在下面的函数中添加两行代码：
-
-{% highlight python linenos %}
-def __init__(self, day_text_view, undo_redo_manager):
-	self.day_text_view = day_text_view self.day_text_buffer = t2t_highlight.get_highlight_buffer()
-	self.day_text_view.set_buffer(self.day_text_buffer)
-	self.day_text_view.modify_base(gtk.STATE_NORMAL, gtk.gdk.color_parse('black'))
-	self.day_text_view.modify_text(gtk.STATE_NORMAL, gtk.gdk.color_parse('white'))
-{% endhighlight %}
-
-也可以直接用书呆修改好的：[下载地址](https://github.com/dustincys/rednotebook)。
-
-> 注: 同类工具任何一种均不如 emacs orgmode
-
-## Newsbeuter
-
-### 软件截图
-<a class="fancybox" rel="gallery1" href="https://2s66lw.bl3301.livefilestore.com/y2pPLGSxB1EwSVBe4Xc2mfCEJ8Ap9ue3HuSwgK7E543O_IQ3od7nouwNValZB8GWlfZpFbudr9coDPsUbrRphVgqOxWHlJiJjkdZcf_qwtcSkhaXq04H-89v0R_oEvxxXn0hYCWNA-EN_rYQuTOsV0-bA/newsbeuter.png" title="newsbeuter"><img src="https://2s66lw.bl3301.livefilestore.com/y2pPLGSxB1EwSVBe4Xc2mfCEJ8Ap9ue3HuSwgK7E543O_IQ3od7nouwNValZB8GWlfZpFbudr9coDPsUbrRphVgqOxWHlJiJjkdZcf_qwtcSkhaXq04H-89v0R_oEvxxXn0hYCWNA-EN_rYQuTOsV0-bA/newsbeuter.png" alt="newsbeuter" /></a>
-
-### 设置方法
-生物信息学相关的xml文件[下载地址](https://gist.github.com/dustincys/0eebb15c7891b4b50936)
-
-## Okular
-
-### 软件截图
-<a class="fancybox" rel="gallery1" href="https://2s66lw.bl3301.livefilestore.com/y2pHJunrSvKSsym6f9i5xigmyBP0AUsf3P08ASBIe6-V5rIosqpqxPwCRnywWqWcRC6qS2GPYymcL_MPVyDHJgP6bwP_vwwrX0nWf2FO4BSkw-qcj761hKWVh3XUuYvuHTz3yULuaKgdkCRvEew5KSCrnWiHd1mQdbShS0Rg-dPdYo/okular.png" title="Okular"><img src="https://2s66lw.bl3301.livefilestore.com/y2pHJunrSvKSsym6f9i5xigmyBP0AUsf3P08ASBIe6-V5rIosqpqxPwCRnywWqWcRC6qS2GPYymcL_MPVyDHJgP6bwP_vwwrX0nWf2FO4BSkw-qcj761hKWVh3XUuYvuHTz3yULuaKgdkCRvEew5KSCrnWiHd1mQdbShS0Rg-dPdYo/okular.png" alt="Okular" /></a>
-
-### 设置方法
-
-在菜单中的改变颜色设置改变纸张颜色，在注释选项中改变注释颜色。
-
-## Firefox 
-推荐zotero插件、Stylish插件。
-### 软件截图
-<a class="fancybox" rel="gallery1" href="https://2s66lw.bl3301.livefilestore.com/y2pvy0Pae81GlyW08y5SbpiwWdE2zvuR8EkVPujLiZxBnWFb3hIWZiyhd3ng4mcdFYaw_TCo0myU48pgO5UtjtG7KV1KDaVWLvMpsaJ5KK9D3BBqCmBHTEK-FoVCWcnTuRZD9WXuS1ATxJ8t-NOFOYQiDoASsB-DrJgqEKkvLoTjrI/firefox.png" title="Stylish"><img src="https://2s66lw.bl3301.livefilestore.com/y2pvy0Pae81GlyW08y5SbpiwWdE2zvuR8EkVPujLiZxBnWFb3hIWZiyhd3ng4mcdFYaw_TCo0myU48pgO5UtjtG7KV1KDaVWLvMpsaJ5KK9D3BBqCmBHTEK-FoVCWcnTuRZD9WXuS1ATxJ8t-NOFOYQiDoASsB-DrJgqEKkvLoTjrI/firefox.png" alt="Stylish" /></a>
-
-
