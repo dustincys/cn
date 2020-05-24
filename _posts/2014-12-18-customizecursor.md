@@ -1,6 +1,6 @@
 ---
 layout: post 
-category : 生活
+category: else
 title: ubuntu用户，改改鼠标吧！
 matheq: no
 comments: yes

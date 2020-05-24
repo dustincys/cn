@@ -1,6 +1,6 @@
 ---
 layout: post
-category: 建站
+category: technology
 title: 更改为https
 matheq: no
 comments: yes

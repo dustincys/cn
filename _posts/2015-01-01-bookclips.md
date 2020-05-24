@@ -1,6 +1,6 @@
 ---
 layout: post 
-category : 生活
+category: else
 title: 2014读书剪辑
 matheq: no
 comments: yes

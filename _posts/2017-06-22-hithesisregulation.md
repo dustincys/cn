@@ -1,6 +1,6 @@
 ---
 layout: post
-category: 学术
+category: technology
 title: 规范的正确打开方式
 matheq: yes
 comments: yes

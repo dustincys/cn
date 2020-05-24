@@ -1,6 +1,6 @@
 ---
 layout: post 
-category : 学术
+category: technology
 title: 再说计算机专业的误区
 matheq: no
 comments: yes

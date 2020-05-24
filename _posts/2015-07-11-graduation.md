@@ -1,6 +1,6 @@
 ---
 layout: post 
-category: 生活
+category: else
 title: 有关开题的两则段子
 matheq: no
 comments: yes

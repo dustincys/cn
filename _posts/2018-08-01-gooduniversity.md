@@ -1,6 +1,6 @@
 ---
 layout: post
-category: 生活
+category: else
 title: 一个好大学到底有什么用？
 matheq: no
 comments: yes

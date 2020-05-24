@@ -1,6 +1,6 @@
 ---
 layout: post 
-category : 学术
+category: technology
 title: LaTeX编辑器大杀器
 matheq: no
 comments: yes

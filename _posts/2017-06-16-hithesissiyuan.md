@@ -1,6 +1,6 @@
 ---
 layout: post
-category: 生活
+category: else
 title: 为了大唐中兴！
 matheq: no
 comments: yes

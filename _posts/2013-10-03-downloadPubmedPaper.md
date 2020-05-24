@@ -1,6 +1,6 @@
 ---
 layout: post
-category :  学术
+category: technology
 matheq: no
 recentvisitors: yes
 title: 批量下载Pubmed文献

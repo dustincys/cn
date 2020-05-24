@@ -1,6 +1,6 @@
 ---
 layout: post 
-category: 学术
+category: technology
 title: 书呆使用rss
 matheq: no
 comments: yes

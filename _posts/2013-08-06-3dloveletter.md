@@ -1,6 +1,6 @@
 ---
 layout: post
-category :  学术
+category: technology
 matheq: yes
 recentvisitors: yes
 comments: yes

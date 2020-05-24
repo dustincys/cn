@@ -1,6 +1,6 @@
 ---
 layout: post
-category: 随笔
+category: else
 title: 天王盖地虎，宝塔镇河妖
 matheq: no
 comments: yes

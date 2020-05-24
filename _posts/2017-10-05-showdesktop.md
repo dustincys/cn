@@ -1,6 +1,6 @@
 ---
 layout: post
-category: 编码
+category: technology
 title: FVWM的类似Windows的显示桌面功能
 matheq: no
 comments: yes

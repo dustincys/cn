@@ -1,6 +1,6 @@
 ---
 layout: post 
-category : 学术
+category: technology
 title: 四大俗
 matheq: no
 comments: yes

@@ -1,6 +1,6 @@
 ---
 layout: post 
-category : 学术
+category: technology
 title: 多重比较纠正和其局限性
 matheq: yes
 comments: :yes

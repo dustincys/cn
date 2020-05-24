@@ -1,6 +1,6 @@
 ---
 layout: post
-category: 生活
+category: else
 title: 刘备也蠢过
 matheq: no
 comments: yes

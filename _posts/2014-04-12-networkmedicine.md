@@ -1,6 +1,6 @@
 ---
 layout: post 
-category : 学术
+category: technology
 title: 网络医学以及网络医学中的潜假设 
 matheq: no
 comments: yes

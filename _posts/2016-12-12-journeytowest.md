@@ -1,6 +1,6 @@
 ---
 layout: post
-category: 生活
+category: else
 title: 关于《西游记》第八回
 matheq: no
 comments: yes

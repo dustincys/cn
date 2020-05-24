@@ -1,6 +1,6 @@
 ---
 layout: post
-category: 生活
+category: else
 title: 骂人诗两首
 matheq: no
 comments: yes

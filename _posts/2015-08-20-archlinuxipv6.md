@@ -1,6 +1,6 @@
 ---
 layout: post 
-category: 生活
+category: else
 title: 哈工大宿舍Archlinux的ipv6配置方法
 matheq: no
 comments: yes

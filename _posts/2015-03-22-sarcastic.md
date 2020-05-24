@@ -1,6 +1,6 @@
 ---
 layout: post 
-category: 学术
+category: technology
 title: 靠不着谱
 matheq: no
 comments: yes

@@ -1,6 +1,6 @@
 ---
 layout: post 
-category : 学术
+category: technology
 title: “土法炼钢”——“反复制造车轮子”
 matheq: no
 comments: yes

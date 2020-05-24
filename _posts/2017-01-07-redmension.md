@@ -1,6 +1,6 @@
 ---
 layout: post
-category: 生活
+category: else
 title: 也评林黛玉
 matheq: no
 comments: yes

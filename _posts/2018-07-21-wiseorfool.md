@@ -1,6 +1,6 @@
 ---
 layout: post
-category: 读书
+category: book
 title: 是愚蠢地精明还是精明地愚蠢？
 matheq: no
 comments: yes

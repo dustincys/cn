@@ -1,6 +1,6 @@
 ---
 layout: post
-category: technology
+category:  technology
 title: 全屏逻辑
 matheq: no
 comments: yes

@@ -1,6 +1,6 @@
 ---
 layout: post
-category: 读书
+category: book
 title: 贾宝玉愚蠢的体现
 matheq: no
 comments: yes

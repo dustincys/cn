@@ -1,6 +1,6 @@
 ---
 layout: post 
-category: 生活
+category: else
 title: 网站主题大改
 matheq: no
 comments: yes

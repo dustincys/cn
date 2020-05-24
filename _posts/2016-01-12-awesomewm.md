@@ -1,6 +1,6 @@
 ---
 layout: post
-category: 生活
+category: else
 title: 那么样自由地切换程序
 matheq: no
 comments: yes

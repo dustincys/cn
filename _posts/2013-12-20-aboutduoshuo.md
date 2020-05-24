@@ -1,6 +1,6 @@
 ---
 layout: post 
-category :  学术
+category: technology
 recentvisitors: yes
 title: 剪不断、理还乱
 comments: yes

@@ -1,6 +1,6 @@
 ---
 layout: post
-category: 生活
+category: else
 title: AI诈骗——科技灾难
 matheq: no
 comments: yes

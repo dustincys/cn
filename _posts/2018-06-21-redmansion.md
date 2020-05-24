@@ -1,6 +1,6 @@
 ---
 layout: post
-category: 生活
+category: else
 title: 红楼诗一首
 matheq: no
 comments: yes

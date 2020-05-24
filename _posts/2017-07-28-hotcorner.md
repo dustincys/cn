@@ -1,6 +1,6 @@
 ---
 layout: post
-category: 学术
+category: technology
 title: Fvwm+brightside
 matheq: no
 comments: yes

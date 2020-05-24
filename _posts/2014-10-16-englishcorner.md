@@ -1,6 +1,6 @@
 ---
 layout: post 
-category : 生活
+category: else
 title: 哈尔滨英语最好的中国人
 matheq: no
 comments: yes

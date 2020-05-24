@@ -1,6 +1,6 @@
 ---
 layout: post
-category: 生活
+category: else
 title: 才华信美多娇
 matheq: no
 comments: yes

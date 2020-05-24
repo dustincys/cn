@@ -1,6 +1,6 @@
 ---
 layout: post 
-category: 学术
+category: technology
 title: 先验链之“Hello world!”
 matheq: yes
 comments: yes

@@ -1,6 +1,6 @@
 ---
 layout: post
-category: 生活
+category: else
 title: 电脑不如新
 matheq: no
 comments: yes

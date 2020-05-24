@@ -1,6 +1,6 @@
 ---
 layout: post 
-category: 生活
+category: else
 title: 再再说计算机专业
 matheq: no
 comments: yes

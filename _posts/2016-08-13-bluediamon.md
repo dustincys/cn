@@ -1,6 +1,6 @@
 ---
 layout: post
-category: 生活
+category: else
 title: 动画片《蓝宝石之谜》
 matheq: no
 comments: yes

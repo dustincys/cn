@@ -1,6 +1,6 @@
 ---
 layout: post 
-category: 生活
+category: else
 title: 强迫症不是天生的
 matheq: no
 comments: yes

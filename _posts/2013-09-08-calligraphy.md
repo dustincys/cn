@@ -3,7 +3,7 @@ layout: post
 comments: yes
 recentvisitors: yes
 share: yes
-category :  生活
+category: else
 title: 获好友赠墨宝一枚
 tags : [书法]
 share: yes

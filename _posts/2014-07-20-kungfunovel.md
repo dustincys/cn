@@ -1,6 +1,6 @@
 ---
 layout: post 
-category : 生活
+category: else
 title: 坏蛋级别
 matheq: no
 comments: yes

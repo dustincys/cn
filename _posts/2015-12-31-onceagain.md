@@ -1,6 +1,6 @@
 ---
 layout: post
-category: 生活
+category: else
 title: 最初的年华
 matheq: no
 comments: yes
