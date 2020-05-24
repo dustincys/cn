@@ -1,0 +1,19 @@
+---
+layout: post
+category: technology
+title: hithesis v3 进化
+matheq: no
+comments: yes
+tags: [hithesis, v3.0.0]
+share: yes
+toc: no
+---
+窝工山hithesis派不止老刀客(Doctor)一只痴人，某天在[百晓生兵器谱](https://github.com/dustincys/hithesis/network)中突然发现有几只头领(Master)带几只后生(Bachelor)痴迷吸星大法，霸道地逆转经脉，强行融合[book](https://ctan.org/pkg/book?lang=en)和[article](https://ctan.org/pkg/article)两股异种真气[^alpha]。殊不知这种修炼方法已与LaTeX心法大相径庭，极易走火入魔。
+
+这是不熟悉hithesis派武学架构导致。窝工山hithesis派所有武学都记录在[hithesis.dtx](https://github.com/dustincys/hithesis/blob/master/hithesis.dtx)秘籍中，打开秘籍方法记录在[hithesis.ins](https://github.com/dustincys/hithesis/blob/master/hithesis.ins)中。一本武学秘籍中可以记录两种以上的武功，例如现在[hithesis.dtx](https://github.com/dustincys/hithesis/blob/master/hithesis.dtx)中含有`hithesisbook.cls`和`hithesisart.cls`和`hithesisartplus.cls`三门不同类型的武功。不是一本秘籍只能记录一种武功，强行合异种真气融入一种武功中这是个误区。
+
+过于痴迷于记住招式，容易忽视了剑意，所有习武之人包括老刀客都容易犯的通病。
+老刀客决定留出本科压缩版论文的cls给有志于维护hithesis的痴人，最后pull到hithesis.dtx秘籍完成窝工山hithesis派武学之一统。
+当然，这些工作是爱心发电，只能通过[乞讨要饭](https://github.com/dustincys/hithesis#apply-to-sponsor)生存，老刀客一人要饭有点无聊。
+
+[^alpha]: [hithesis-alpha](https://github.com/Regulust/hithesis-alpha)和[hithesis-beta和alpha的衍生](https://github.com/WangYihang/hithesis) 
