@@ -9,7 +9,7 @@ kramdown:
         enable_coderay: true
         syntax_highlighter: rouge
         syntax_highlighter_opts:
-                line_numbers:  nil
+                line_numbers: false
 
 permalink: /:year/:month/:title/
 url: https://yanshuo.name/cn
