@@ -8,7 +8,7 @@ tags: [hithesis, 歧义, latex]
 share: yes
 toc: no
 ---
-#### 之一，　版芯歧义
+#### 之一，版芯歧义
 继[前文][hithesishangjv]所述的[《本科毕业论文规范》][bachelorregulation]中的行距歧义，我
 工规范又一次被小伙伴们发现了重大歧义。我工两大规范[^regulation]大部分都内容是一
 致的，只有封面、目录格式等少数几处不同。关于版芯的规定，在[《研究生论文规范》

@@ -8,7 +8,7 @@ tags: [工程架构, 代码]
 share: yes
 toc: no
 ---
-(数据科学)[https://en.wikipedia.org/wiki/Data_science]的代码工程架构比计算科学要复杂。
+[数据科学](https://en.wikipedia.org/wiki/Data_science)的代码工程架构比计算科学要复杂。
 因为：
 
 - 数据的特性比较高，每一类数据甚至每一批数据都有较强的自身特性。例如，[批次效应](http://chenyin.top/bioinfo/20190319-cca5.html)。
