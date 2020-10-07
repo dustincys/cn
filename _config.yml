@@ -1,6 +1,7 @@
 markdown:       kramdown
 kramdown:
         input: GFM
+        remove_line_breaks_for_cjk: true
         extensions:
                 - autolink
                 - footnotes
@@ -8,7 +9,8 @@ kramdown:
         enable_coderay: true
         syntax_highlighter: rouge
         syntax_highlighter_opts:
-                ine_numbers:  nil
+                line_numbers:  nil
+
 permalink: /:year/:month/:title/
 url: https://yanshuo.name/cn
 homepage: https://yanshuo.name
