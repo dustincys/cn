@@ -26,31 +26,18 @@ toc: no
 
 	|
 	|---Project 1
-	  |
 	  |---Database
-	  | | 
 	  | |---Public Database (不同工程所共有的知识)
-	  | | 
 	  | |---Private Database (特异的知识)
-	  |
 	  |---Data　(数据输入)
-	  |
 	  |---Code
-	    |
 	    |---SRC
-	    | |
 	    | |---Public (不同工程所共有的数据分析和处理代码)
-	    | |
 	    | |---Private (非共有的数据分析和处理代码)
-	    |
 	    |---Pipeline
-	      |
 	      |---Public (共有流程)
-	      | |
 	      | |---Step 1
-	      |
 	      |---Private (私有流程)
-	        |
 	        |---Callback 1 (回调)
 
 以上是工程内部的架构。
@@ -58,22 +45,16 @@ toc: no
 
 	|
 	|---Project database
-	  |
 	  |---General knowledge (类似生物知识中本体结构)
-	    | 
 	    |---Next level knowledge
         
 共有的数据处理流程为：
 
 	|
 	|---Project pipeline
-	  |
 	  |---Process 1
-	    | 
 	    |---Tool/Software 1
-	      |
 	      |---Parameter a
-	        |
 	        |---Parameter b
         
 其中的参数寻优可以为网格式循环穷举，也可以使用梯度下降或者MCMC之类。
