@@ -8,9 +8,7 @@ comments: yes
 
 只是书呆一枚。
 
-书呆正在呆之物和呆过之物在这里 <https://book.douban.com/people/yanshuoIam/>
-
- <script type="text/javascript" src="http://www.douban.com/service/badge/yanshuoIam/?selection=latest&amp;picsize=small&amp;show=collection&amp;n=8&amp;cat=book&amp;columns=2" async = true></script>
+书呆正在呆之物和呆过之物[在这里](https://book.douban.com/people/yanshuoIam/)
 
 ### 关于该网站
 
@@ -26,17 +24,15 @@ comments: yes
 
 此网站的快捷键和按钮说明：
 
-{% highlight text %}
-按钮
-	小屏幕中右上角是菜单按钮
-	大屏幕中右下角有很风骚的导航按钮
-快捷键
-	在博页和博文中
-		m  菜单
-	在博文中
-		h  上一博文
-		l  下一博文
-		c  跳到评论位置
-		s  跳到分享按钮位置
-		p  返回到博文顶部
-{% endhighlight %}
+    按钮
+        小屏幕中右上角是菜单按钮
+        大屏幕中右下角有很风骚的导航按钮
+    快捷键
+        在博页和博文中
+            m  菜单
+        在博文中
+            h  上一博文
+            l  下一博文
+            c  跳到评论位置
+            s  跳到分享按钮位置
+            p  返回到博文顶部
