@@ -58,3 +58,16 @@ toc: no
 	        |---Parameter b
         
 其中的参数寻优可以为网格式循环穷举，也可以使用梯度下降或者MCMC之类。
+
+基于[python Jupiter note](https://towardsdatascience.com/structure-your-data-science-projects-6c6c8653c16a)的各种工程架构在生物数据分析中显得不够灵活。
+因为有些人喜欢写文档，有些人不喜欢写文档，有的人喜欢用网页版云笔记，有些人喜欢word。
+其实最简单最方便的方案是自己写一个模板，然后基于该模板构建文件夹架构。
+是不是听起来很复杂，其实很简单，先在`$HOME`文件夹下建一个`templates`的文件夹，然后在该文件夹下建立如上所述文件夹结构。
+然后写个小脚本`newproject.sh`内容为：
+
+```bash
+#!/usr/bin/env bash
+cp -r ~/templates/project $1
+```
+这样只需要执行一个`newpost project1`这样的命令就可在当前文件夹下生成一个工程架构了。
+
