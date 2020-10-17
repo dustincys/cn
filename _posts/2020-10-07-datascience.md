@@ -25,33 +25,33 @@ toc: no
 以上种种，导致[数据科学](https://en.wikipedia.org/wiki/Data_science)可重复性差，甚至可以说花样繁多。针对以上种种特点，数据科学的工程架构应该具备区分非特异性知识与特异性知识、多种复杂I/O结构、复杂pipeline并行/串行处理、数据模型验证以及参数寻优的特点。
 
 	|
-	|---Project 1
-	  |---Database
-	  | |---Public Database (不同工程所共有的知识)
-	  | |---Private Database (特异的知识)
-	  |---Data　(数据输入)
-	  |---Code
-	    |---SRC
-	    | |---Public (不同工程所共有的数据分析和处理代码)
-	    | |---Private (非共有的数据分析和处理代码)
-	    |---Pipeline
-	      |---Public (共有流程)
-	      | |---Step 1
-	      |---Private (私有流程)
-	        |---Callback 1 (回调)
+	|---project
+	  |---knowledge
+	  | |---public (不同工程所共有的知识)
+	  | |---private (特异的知识)
+	  |---data　(数据输入)
+	  |---code
+	    |---src
+	    | |---public (不同工程所共有的数据分析和处理代码)
+	    | |---private (非共有的数据分析和处理代码)
+	    |---pipeline
+	      |---public (共有流程)
+	      | |---step1
+	      |---private (私有流程)
+	        |---callback (回调)
 
 以上是工程内部的架构。
 其中，共有知识、共有pipeline中是层次(树形)架构：
 
 	|
-	|---Project database
-	  |---General knowledge (类似生物知识中本体结构)
-	    |---Next level knowledge
+	|---knowledge
+	  |---general (类似生物知识中本体结构)
+	    |---less general
         
 共有的数据处理流程为：
 
 	|
-	|---Project pipeline
+	|---pipeline
 	  |---Process 1
 	    |---Tool/Software 1
 	      |---Parameter a
