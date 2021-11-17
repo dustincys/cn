@@ -16,3 +16,7 @@ url: https://yanshuo.name/cn
 homepage: https://yanshuo.name
 author: 石见石页
 highlighter: rouge
+port: 4000
+host: 127.0.0.1
+plugins:
+  - jekyll-feed
