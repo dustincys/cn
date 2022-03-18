@@ -26,6 +26,10 @@ share: yes
 
 <a class="fancybox" rel="gallary1" href="http://i.imgur.com/CkNRhNC.gif" title="立体情书"><img src="http://i.imgur.com/CkNRhNC.gif" alt="立体情书"/></a>
 
+或者动态的：
+
+<iframe width="100%" height="400" frameborder="0" scrolling="no" src="https://dustincys.github.io/slides/3DHeart.html"></iframe>
+
 #### 代码
 
 {% highlight r %}
