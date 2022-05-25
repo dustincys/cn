@@ -41,6 +41,8 @@ if git status &> /dev/null; then
         * )
             echo -n $(pwd)
         ;;
+    esac
+fi
 ```
 
 然后在ranger的rc.conf中添加类似快捷键：
