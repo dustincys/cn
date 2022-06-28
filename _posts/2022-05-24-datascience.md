@@ -19,7 +19,6 @@ toc: no
 为快速打开每个“小箱子”，即快速在工程内部跳转，可以用类似如下逻辑获取目标路径：
 
 ```sh
-
 if git status &> /dev/null; then
     ProjectRoot=$(git rev-parse --show-toplevel)
     CodeDir=$ProjectRoot/Code
@@ -45,16 +44,18 @@ if git status &> /dev/null; then
 fi
 ```
 
-然后在ranger的rc.conf中添加类似快捷键：
-
+1. 然后在ranger的rc.conf中添加类似快捷键：
 ```
 map gc eval from ranger.ext.spawn import spawn; fm.cd(spawn("above.script.sh code").strip());fm.ui.win.redrawwin() 
 ...
 ```
 
-emacs的ranger.el中的`ranger-go`函数中可以添加：
+2. emacs的ranger.el中的`ranger-go`函数中可以添加：
 ```lisp
 ('c (string-trim (shell-command-to-string "above.script.sh code")))
 ```
 在函数的末尾可以添加：`(redraw-frame)`可以实现跳转刷新。
 
+3. 在shell中可以用类似`alias gc='cd $(projectJump.sh code)'`的方式进行跳转。
+
+这样就可以在各个应用层使用同样的逻辑进行跳转。
