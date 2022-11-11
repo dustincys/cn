@@ -51,5 +51,5 @@ toc: no
 
 #### 相关的ipv6配置
 
-- [哈工大宿舍ubuntu的ipv6配置方法](https://yanshuo.name/cn/2014/12/ipv6/ "哈工大宿舍ubuntu的ipv6配置方法")
-- [Archlinux，ipv6的修罗场！](https://yanshuo.name/cn/2015/07/ipv6/,"Archlinux，ipv6的修罗场！")
+- [哈工大宿舍ubuntu的ipv6配置方法](https://yanshuo.site/cn/2014/12/ipv6/ "哈工大宿舍ubuntu的ipv6配置方法")
+- [Archlinux，ipv6的修罗场！](https://yanshuo.site/cn/2015/07/ipv6/,"Archlinux，ipv6的修罗场！")

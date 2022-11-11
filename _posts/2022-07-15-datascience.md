@@ -47,7 +47,7 @@ toc: no
            :empty-lines-before 1)
           ))
 ```
-其中`projectJump.sh`为[上一篇](https://yanshuo.name/cn/2022/05/datascience/)中的跳转脚本。
+其中`projectJump.sh`为[上一篇](https://yanshuo.site/cn/2022/05/datascience/)中的跳转脚本。
 ranger中设置：
 ```shell
 map ,fan shell -w emacsclient -t -s tmux:$(tmux display -p '#S-#I') -a '' "org-protocol://capture?template=F&url=$(realpath %s)"

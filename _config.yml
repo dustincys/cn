@@ -12,8 +12,8 @@ kramdown:
                 line_numbers: false
 
 permalink: /:year/:month/:title/
-url: https://yanshuo.name/cn
-homepage: https://yanshuo.name
+url: https://yanshuo.site/cn
+homepage: https://yanshuo.site
 author: 石见石页
 highlighter: rouge
 port: 4000
