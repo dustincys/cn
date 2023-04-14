@@ -1,10 +1,10 @@
 ---
 layout: post
 category: technology
-title: 数据科学杂谈之四--奇异博士的传送门
+title: 数据科学杂谈之五--奇异博士的传送门
 matheq: no
 comments: yes
-tags: [数据科学, 工程]
+tags: [数据科学, 工程, 数据科学杂谈]
 share: yes
 toc: no
 ---

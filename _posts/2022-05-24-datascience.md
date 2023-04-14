@@ -1,10 +1,10 @@
 ---
 layout: post
 category: technology
-title: 数据科学杂谈之二
+title: 数据科学杂谈之三--快速跳转
 matheq: no
 comments: yes
-tags: [数据科学, 工程]
+tags: [数据科学, 工程, 数据科学杂谈]
 share: yes
 toc: no
 ---

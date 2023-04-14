@@ -1,10 +1,10 @@
 ---
 layout: post
 category: technology
-title: 数据科学杂谈之三
+title: 数据科学杂谈之四--数据存档
 matheq: no
 comments: yes
-tags: [数据科学, emacs, org, org-roam, org-protocal]
+tags: [数据科学, emacs, org, org-roam, org-protocal, 数据科学杂谈]
 share: yes
 toc: no
 ---

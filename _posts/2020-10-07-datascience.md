@@ -1,10 +1,10 @@
 ---
 layout: post
 category: technology
-title: 数据科学的工程架构
+title: 数据科学杂谈之一--工程架构
 matheq: no
 comments: yes
-tags: [工程架构, 代码]
+tags: [工程架构, 代码, 数据科学杂谈]
 share: yes
 toc: no
 ---
