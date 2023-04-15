@@ -1,3 +1,4 @@
+<div id="comment_thread"></div>
 <script src="https://giscus.app/client.js"
         data-repo="dustincys/cn"
         data-repo-id="MDEwOlJlcG9zaXRvcnkzMDU5MzQ0Nw=="
