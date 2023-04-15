@@ -47,7 +47,7 @@ layout: default
 {% endif %}
 
 {% if page.comments %}
-	{% include comments.md %}
+    {% include comment_giscus.md %}
 {% assign iscomments='1' %}
 {% else %}
 {% assign iscomments='0' %}
