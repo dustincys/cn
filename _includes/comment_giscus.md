@@ -1,4 +1,4 @@
-<div id="comment_thread"></div>
+<div id="comment_thread">
 <script src="https://giscus.app/client.js"
         data-repo="dustincys/cn"
         data-repo-id="MDEwOlJlcG9zaXRvcnkzMDU5MzQ0Nw=="
@@ -14,3 +14,4 @@
         crossorigin="anonymous"
         async>
 </script>
+</div>
