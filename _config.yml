@@ -12,8 +12,8 @@ kramdown:
                 line_numbers: false
 
 permalink: /:year/:month/:title/
-url: https://yanshuo.site/cn
-homepage: https://yanshuo.site
+url: https://dustincys.github.io/cn
+homepage: https://dustincys.github.io
 author: 石见石页
 highlighter: rouge
 # port: 4000

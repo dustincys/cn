@@ -22,7 +22,7 @@ share: yes
 Function: Download literature base on PubMed ID
 Author:  Chu Yanshuo
 Version: Python 2.75
-Contact: chu at yanshuo.site
+Contact: chu at dustincys.github.io
 """
 import sys
 import xml.dom.minidom
