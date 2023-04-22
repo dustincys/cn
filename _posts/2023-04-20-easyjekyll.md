@@ -11,9 +11,17 @@ toc: no
 
 > 真正的自由是“我不想怎么样就不怎么样”。
 
-之前用[easy-jekyll](https://github.com/masasam/emacs-easy-jekyll)每次想写点东西，需要打开这个插件，进入一个复杂页面，有各种快捷键，生成新博客的markdown文件或者其他操作。
-我不想这么麻烦，想写点东西的时候，最好是打开capture，然后可以预览内容，选者哪一个文件，然后直接在capture窗口中编辑。
-然后就如下所示：
+之前用[easy-jekyll](https://github.com/masasam/emacs-easy-jekyll)每次想写点东西，需要打开这个插件，进入一个复杂页面，有各种快捷键，生成新博客的`markdown`文件或者其他操作。
+我不想这么麻烦，想写点东西的时候，最好是打开`capture`，然后可以预览内容，选者哪一个文件，然后直接在`capture`窗口中编辑。
+如何写到一半觉得没什么意思，那么就自动删除。
+这样就彻底实现`capture`自由！
+如下面代码所示，功能有以下几个方面：
+1. 使用`helm`模糊搜索博文的`markdown`文件
+2. 在搜索过程中自动预览文件内容
+3. 如果没有选项则生成以搜索字符串为内容，以当前时间戳为前缀的`markdown`新文件为目标文件的`capture`
+4. 在`capture`窗口中显示该目标文件全部内容
+5. 在`capture`结束，自动检查文件是不是空文件，如果是空文件，那么删除该文件
+
 ```lisp
 (when (configuration-layer/package-used-p 'helm)
   (defun blog-helm-find-files (dir)
@@ -77,12 +85,31 @@ Previews the contents of a file in a temporary buffer."
             (kill-buffer "*helm-blog persistent*")
             (helm-set-attr 'previewp nil)))))
 
+  (defun blog-org-capture-after-finalize (file)
+    "Function to be called after the capture is finalized.
+      FILE is the target file name."
+    (if (get-buffer "*helm-blog persistent*")
+        (kill-buffer "*helm-blog persistent*"))
+    (when (and (file-exists-p file)
+               (let ((contents (with-temp-buffer
+                                 (insert-file-contents-literally file)
+                                 (buffer-string))))
+                 (or
+                  (= 0 (string-match-p "^[[:space:]\n]*$" contents))
+                  (string-empty-p contents))))
+      (delete-file file)
+      (message "Deleted empty file: %s" file)))
+
   (add-to-list 'org-capture-templates
                '("b" "blog" plain (file+function (lambda () (blog-helm-find-files "~/github/blog/cn/_posts/"))
                                                  (lambda () (goto-char (point-max))))
                  "%?"
-                 :jump-to-captured t
-                 :unnarrowed t))
+                 :unnarrowed t
+                 :kill-buffer-on-finish t
+                 :after-finalize (lambda ()
+                                   (blog-org-capture-after-finalize
+                                    (buffer-file-name (marker-buffer org-capture-last-stored-marker))))
+                 ))
   )
 ```
 
