@@ -20,7 +20,13 @@ toc: no
 2. 在搜索过程中自动预览文件内容
 3. 如果没有选项则生成以搜索字符串为内容，以当前时间戳为前缀的`markdown`新文件为目标文件的`capture`
 4. 在`capture`窗口中显示该目标文件全部内容
-5. 在`capture`结束，自动检查文件是不是空文件，如果是空文件，那么删除该文件
+5. 在`capture`结束之前
+   1. 检查tags:中是否有大些字母，如果有则转换为小写
+   2. 检查capture中内容是否含有`https://yanshuo.site`和
+      `https://slide.yanshuo.site`，如果有则转分别转换为
+      `https://dustincys.github.io`和`https://dustincys.github.io/slide`。这是为
+      了确保域名失效之后，依然还能使用。
+6. 在`capture`结束，自动检查文件是不是空文件，如果是空文件，那么删除该文件
 
 ```lisp
 (defun my-blog/post-init-default-org-config ()
