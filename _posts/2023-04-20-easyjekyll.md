@@ -23,7 +23,17 @@ toc: no
 5. 在`capture`结束，自动检查文件是不是空文件，如果是空文件，那么删除该文件
 
 ```lisp
-(when (configuration-layer/package-used-p 'helm)
+(defun my-blog/post-init-default-org-config ()
+  (defun mapcar* (function &rest args)
+    "Apply FUNCTION to successive cars of all ARGS.
+          Return the list of results."
+    ;; If no list is exhausted,
+    (if (not (memq nil args))
+        ;; apply function to cars.
+        (cons (apply function (mapcar 'car args))
+              (apply 'mapcar* function
+                     ;; Recurse for rest of elements.
+                     (mapcar 'cdr args)))))
   (defun blog-helm-find-files (dir)
     "Show all files in a directory using Helm."
     (interactive "D")
@@ -58,7 +68,7 @@ toc: no
   (defun blog-helm-file-persistent-action (candidate)
     "Persistent action for file-related functionality.
 
-Previews the contents of a file in a temporary buffer."
+    Previews the contents of a file in a temporary buffer."
     (if (file-exists-p candidate)
         (let ((buf (get-buffer-create "*helm-blog persistent*")))
           (cl-flet ((preview (candidate)
@@ -100,16 +110,25 @@ Previews the contents of a file in a temporary buffer."
       (delete-file file)
       (message "Deleted empty file: %s" file)))
 
+  (defun blog-org-capture-replace-function ()
+    (with-current-buffer (org-capture-get :buffer)
+      (save-excursion
+        (goto-char (point-min))
+        (while (search-forward-regexp "^\\(tags:.*\\)" nil t)
+          (replace-match (downcase (match-string 1)))))
+      (replace-string "https://yanshuo.site" "https://dustincys.github.io" nil (point-min) (point-max))
+      (replace-string "https://slide.yanshuo.site" "https://dustincys.github.io/slide" nil (point-min) (point-max))))
+
   (add-to-list 'org-capture-templates
                '("b" "blog" plain (file+function (lambda () (blog-helm-find-files "~/github/blog/cn/_posts/"))
                                                  (lambda () (goto-char (point-max))))
                  "%?"
                  :unnarrowed t
                  :kill-buffer-on-finish t
+                 :before-finalize blog-org-capture-replace-function
                  :after-finalize (lambda ()
                                    (blog-org-capture-after-finalize
                                     (buffer-file-name (marker-buffer org-capture-last-stored-marker))))
-                 ))
-  )
+                 )))
 ```
 
