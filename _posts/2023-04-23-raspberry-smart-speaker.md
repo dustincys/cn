@@ -10,7 +10,7 @@ toc: no
 ---
 
 有一天在网上看到一个新闻很有感触，其中的插图是一对父女一起做了一对纸恐龙。
-![插图](https://p8.itc.cn/images01/20211013/2293417ae1f94b18b47cc20348f102b8.jpeg)
+<a class="fancybox" rel="gallery1" href="https://p8.itc.cn/images01/20211013/2293417ae1f94b18b47cc20348f102b8.jpeg" title="纸恐龙"><img src="https://p8.itc.cn/images01/20211013/2293417ae1f94b18b47cc20348f102b8.jpeg" alt="纸恐龙" /></a>
 其实这就是最好的教育，不需要任何语言。
 哲学中的说法就是：“真理无法用语言表达”。
 钓鱼爱好者的乐趣是钓鱼，而不是吃鱼。
@@ -39,3 +39,4 @@ toc: no
 个性化的[智能音
 箱](https://blog.csdn.net/qq_34935373/article/details/112796278)/智能摄像头，即个性化的听觉/视觉捕获，结合大语言模型，即语言输出，能极大扩展人的感知和表达能力。
 这可能是一个真正的AI贾维斯的前体。
+
