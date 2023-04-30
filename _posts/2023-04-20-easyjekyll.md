@@ -28,7 +28,9 @@ toc: no
       `https://slide.yanshuo.site`，如果有则转分别转换为
       `https://dustincys.github.io`和`https://dustincys.github.io/slide`。这是为
       了确保域名失效之后，依然还能使用。
-6. 在`capture`结束，自动检查文件是不是空文件，如果是空文件，那么删除该文件
+6. 在`capture`结束，自动检查文件是不是空文件
+   1. 如果是空文件，那么删除该文件
+   2. 如果不是空文件，那么自动打开后台服务器，浏览网页
 
 ```lisp
 (defun my-blog/post-init-default-org-config ()
@@ -60,18 +62,26 @@ toc: no
                                                       (current-time))
                                                      "-"
                                                      candidate
-                                                     ".md")))))
-                               )
+                                                     ".md"))))))
                      :filtered-candidate-transformer (lambda (candidate _source)
                                                        (if candidate
-                                                           candidate
-                                                         (list (propertize helm-pattern 'face 'font-lock-warning-face))))
+                                                           (append
+                                                            candidate
+                                                            (list
+                                                             (propertize
+                                                              helm-pattern
+                                                              'face
+                                                              'font-lock-warning-face)))
+                                                         (list (propertize
+                                                                helm-pattern
+                                                                'face
+                                                                'font-lock-warning-face))))
                      :persistent-action 'blog-helm-file-persistent-action
                      :persistent-help "Preview file"
                      :follow 1
                      )
-          :buffer "*find blog*"
-          ))
+          :initial-input "2"
+          :buffer "*find blog*"))
 
   (defun blog-helm-file-persistent-action (candidate)
     "Persistent action for file-related functionality.
@@ -108,15 +118,17 @@ toc: no
       FILE is the target file name."
     (if (get-buffer "*helm-blog persistent*")
         (kill-buffer "*helm-blog persistent*"))
-    (when (and (file-exists-p file)
-               (let ((contents (with-temp-buffer
-                                 (insert-file-contents-literally file)
-                                 (buffer-string))))
-                 (or
-                  (= 0 (string-match-p "^[[:space:]\n]*$" contents))
-                  (string-empty-p contents))))
-      (delete-file file)
-      (message "Deleted empty file: %s" file)))
+    (if (and (file-exists-p file)
+             (let ((contents (with-temp-buffer
+                               (insert-file-contents-literally file)
+                               (buffer-string))))
+               (or
+                (= 0 (string-match-p "^[[:space:]\n]*$" contents))
+                (string-empty-p contents))))
+        (prog1
+            (delete-file file)
+          (message "Deleted empty file: %s" file))
+      (blog-easy-jekyll-preview file)))
 
   (defun blog-org-capture-replace-function ()
     (with-current-buffer (org-capture-get :buffer)
@@ -126,6 +138,41 @@ toc: no
           (replace-match (downcase (match-string 1)))))
       (replace-string "https://yanshuo.site" "https://dustincys.github.io" nil (point-min) (point-max))
       (replace-string "https://slide.yanshuo.site" "https://dustincys.github.io/slide" nil (point-min) (point-max))))
+  (defun blog-easy-jekyll-preview (file)
+    "Preview jekyll at localhost."
+    (if (file-exists-p file)
+        (let* ((filename (file-name-nondirectory file))
+               (s_list (split-string filename "[-.]"))
+               (blog-preview-url (format "%s%s/%s/%s/" easy-jekyll-preview-url
+                                         (nth 0 s_list)
+                                         (nth 1 s_list)
+                                         (when (string-match
+                                                "[0-9]\\{4\\}-[0-9]\\{2\\}-[0-9]\\{2\\}-\\(.*\\).md"
+                                                filename)
+                                           (match-string 1 filename))
+                                         )))
+          (easy-jekyll-with-env
+           (when easy-jekyll-publish-production
+             (setenv "JEKYLL_ENV" "development"))
+           (if (process-live-p easy-jekyll--server-process)
+               (browse-url blog-preview-url)
+             (progn
+               (setq easy-jekyll--server-process
+                     (start-process "jekyll-serve" easy-jekyll--preview-buffer
+                                    "bundle" "exec" "jekyll" "serve" easy-jekyll-serve-flags easy-jekyll-serve-value easy-jekyll-serve-flags2 easy-jekyll-serve-value2))
+               (while easy-jekyll--preview-loop
+                 (if (equal (easy-jekyll--preview-status) "200")
+                     (progn
+                       (setq easy-jekyll--preview-loop nil)
+                       (browse-url blog-preview-url)))
+                 (sleep-for 0 100)
+                 (if (and (eq (process-status easy-jekyll--server-process) 'exit)
+                          (not (equal (process-exit-status easy-jekyll--server-process) 0)))
+                     (progn
+                       (switch-to-buffer easy-jekyll--preview-buffer)
+                       (error "Jekyll error look at %s buffer" easy-jekyll--preview-buffer))))
+               (setq easy-jekyll--preview-loop t)
+               (run-at-time easy-jekyll-previewtime nil 'easy-jekyll--preview-end)))))))
 
   (add-to-list 'org-capture-templates
                '("b" "blog" plain (file+function (lambda () (blog-helm-find-files "~/github/blog/cn/_posts/"))
@@ -136,7 +183,5 @@ toc: no
                  :before-finalize blog-org-capture-replace-function
                  :after-finalize (lambda ()
                                    (blog-org-capture-after-finalize
-                                    (buffer-file-name (marker-buffer org-capture-last-stored-marker))))
-                 )))
+                                    (buffer-file-name (marker-buffer org-capture-last-stored-marker)))))))
 ```
-
