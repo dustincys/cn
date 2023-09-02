@@ -5,3 +5,8 @@ _posts/*~
 media/
 nohup.out
 *~
+.bund
+/.bundle/
+/Gemfile
+/Gemfile.lock
+/vendor/
