@@ -1,7 +1,7 @@
 ---
 layout: post
 category: technology
-title: 数据科学杂谈之十一--知识管理
+title: 知识管理
 matheq: no
 comments: yes
 tags: [信息管理, 知识管理]
