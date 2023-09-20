@@ -1,10 +1,10 @@
 ---
 layout: post
 category: technology
-title: 知识管理
+title: 自由博客系统之二--知识管理
 matheq: no
 comments: yes
-tags: [信息管理, 知识管理]
+tags: [信息管理, 知识管理, 自由博客系统]
 share: yes
 toc: no
 ---
@@ -88,4 +88,3 @@ toc: no
             :persistent-help "Preview file"
             :follow 1)))
 ```
-

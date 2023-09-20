@@ -1,10 +1,10 @@
 ---
 layout: post
 category: technology
-title: 自由博客
+title: 自由博客系统之一--瞬时捕捉
 matheq: no
 comments: yes
-tags: [自由, 博客, easyjekyll]
+tags: [自由博客系统, easyjekyll]
 share: yes
 toc: no
 ---
