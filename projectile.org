@@ -1,0 +1,8 @@
+* Note
+
+** TODO 这里可以添加自定义主题                                         :cn:
+[2023-04-15 Sat 13:32] In file: [[file:///home/dustin/data/github/blog/cn/_includes/comment_giscus.md::13][comment_giscus.md]]
+#+BEGIN_SRC markdown
+        data-theme="light"
+#+END_SRC
+
