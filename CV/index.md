@@ -1,6 +1,6 @@
 ---
-layout: page 
-title: 软件工具推荐
+layout: page
+title: 简历
 comments: yes
 toc: no
 share: no
