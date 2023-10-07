@@ -30,11 +30,16 @@ MD安德森癌症中心的单细胞测序数据动态可视化网站。
 
 * [pysubsimtree](https://github.com/dustincys/pysubsimtree)
 
+<a class="fancybox" rel="pysubsim-tree" href="https://raw.githubusercontent.com/dustincys/cn/assets/pysubsim-tree.png" title="pysubsim-tree"><img src="https://raw.githubusercontent.com/dustincys/cn/assets/pysubsim-tree.png" alt="pysubsim-tree" /></a>
+
+
 pysubsim-tree是由python开发的生物信息学工具，用于模拟肿瘤中不同亚克隆的体细胞结
 构变异（SV），例如缺失，插入，插入，重复，反转，易位，易位，拷贝数变化（CNV），
 体细胞拷贝数变异（SCNA）和染色体倍数异常。
 
 * [WDNfinder](https://github.com/dustincys/WDNfinder)
+
+<a class="fancybox" rel="wdnfinder" href="https://raw.githubusercontent.com/dustincys/cn/assets/wdnfinder.png" title="结构可控有权重和无权重网络示例"><img src="https://raw.githubusercontent.com/dustincys/cn/assets/wdnfinder.png" alt="结构可控有权重和无权重网络示例" /></a>
 
 结构可控的有权重网络中，计算并返回最小驱动集合。
 
@@ -61,6 +66,8 @@ pysubsim-tree是由python开发的生物信息学工具，用于模拟肿瘤中�
 ## 论文排版
 
 * [hithesis](https://github.com/hithesis/hithesis)
+
+<a class="fancybox" rel="hithesis" href="https://raw.githubusercontent.com/dustincys/cn/assets/hithesis.png" title="hithesis"><img src="https://raw.githubusercontent.com/dustincys/cn/assets/hithesis.png" alt="hithesis" /></a>
 
 窝工毕业论文模板。
 
