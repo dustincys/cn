@@ -1,0 +1,71 @@
+/*------------------------------------
+* sext
+*
+* @author linghua.zhang@me.com
+* @link http://lhzhang.com/
+* @update 2011-12-20
+* 
+* |/ | (~ (~
+* |\.|._)._)
+* --------------------------------- */
+@import url(https://fonts.gmirror.org/css?family=Snippet); 
+body{font-size:14px;font-family:"Snippet","Hiragino Sans GB","Microsoft YaHei",Trebuchet,"Trebuchet MS",Tahoma,"Lucida Grande","Lucida Sans Unicode",Verdana,sans-serif;color:#000000;background-color:#ffffff;}
+*{padding:0;margin: 0;border:none;outline:none;}
+a{color:#4775E7;text-decoration:none;}
+a:hover{color:#D54773;text-decoration:underline;}
+hr{margin:.7em 0;border-top:1px dashed #d0d0d0;border-bottom:1px dashed #f9f9f9;}
+p{padding:.5em 0;}
+li{padding:.2em 0;}
+ol,ul{list-style-position:inside;}
+ol ul, ul ol, ul ul, ol ol {margin-left:1em;}
+pre code{margin:1em 0;font-size:13px;line-height:1.6;display:block;overflow:auto;}
+blockquote{display:block;text-align:justify;border-left:4px solid #eeeeee;}
+blockquote{margin:1em 0em;padding-left:1.5em;}
+blockquote p{margin:0;padding:.5em 0;}
+#container{width:90%;margin:2em auto;display:block;}
+.content h1{padding:.5em 0;}
+.content img{max-width:80%;display:block;margin:4px auto;-webkit-box-shadow:#999 1px 1px 4px;-moz-box-shadow:#999 1px 1px 4px;box-shadow:#999 1px 1px 4px; }
+#tag_cloud{margin-bottom: 1em;font-weight:bold;}
+#tag_cloud a:hover{color:#D54773 !important;text-decoration:none;}
+.listing-item,.listing-seperator{list-style-type:none;}
+.listing-item a{padding:.2em 1em;}
+.listing-item time{color:#999999;}
+.listing-seperator{font-weight:bold;}
+.meta{text-align:right;font-size:12px;}
+div.toc-header{float:right;padding:12px;border: 1px solid #ddd;margin: 2px;}
+header{padding:.5em 0;border-bottom: 1px solid #cccccc;text-align:center;}
+nav{font-family:"Snippet","Microsoft YaHei",微软雅黑, Lucida Grande,Tahoma, sans-serif;font-weight:bold;font-size:1.1em;text-transform:uppercase;text-align:center;border-bottom:1px solid #cccccc;}
+nav a{display:inline-block;padding:.7em 1em;color:#000000;}
+nav a:hover{background-color:#4775E7;text-decoration:none;color:#f9f9f9;-webkit-transition:color .2s linear;}
+.post{padding:.5em 0em;}
+h1{font-family:"Snippet","Hiragino Sans GB","Microsoft YaHei",sans-serif;font-size:1.6em;color:#000;}
+h2{font-family:"Snippet","Hiragino Sans GB","Microsoft YaHei",sans-serif;font-size:1.4em;color:#111;}
+h3{font-family:"Snippet","Hiragino Sans GB","Microsoft YaHei",sans-serif;font-size:1.2em;color:#222;}
+h4{font-family:"Snippet","Hiragino Sans GB","Microsoft YaHei",sans-serif;font-size:1em;color:#333;}
+pre,code{font-family:Menlo,"Andale Mono",Consolas,"Courier New",Monaco,monospace;font-size:13px;}
+code{background-color:#f7f7f7;border:1px solid #e1e1e8;padding:3px 4px;}
+embed,object,iframe{display:block;margin:4px auto;}
+.gist{font-size: 12px;line-height:1.6;}
+.clickable-header {
+    cursor:pointer;
+}
+.clickable-header:hover {
+    text-decoration:underline;
+}
+.top-level-header {
+    display:inline;
+}
+.back-to-top {
+    margin-left:5px;
+    cursor:pointer;
+}
+ div.date{
+    text-align:left; 
+ }
+ div.title{
+border-top:1px solid #ccc;                                                                                          
+text-align:center;
+}
+div.item{
+}
+

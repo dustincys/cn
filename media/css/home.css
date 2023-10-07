@@ -1,0 +1,105 @@
+@font-face {
+	font-family: "SentyZHAO";
+	src: url("/fontmin/SentyZHAO.eot"); /* IE9 */
+	src: url("/fontmin/SentyZHAO.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+	url("/fontmin/SentyZHAO.woff") format("woff"), /* chrome, firefox */
+	url("/fontmin/SentyZHAO.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+	url("/fontmin/SentyZHAO.svg#SentyZHAO") format("svg"); /* iOS 4.1- */
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "SentyPea";
+	src: url("/fontmin/SentyPea.eot"); /* IE9 */
+	src: url("/fontmin/SentyPea.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+	url("/fontmin/SentyPea.woff") format("woff"), /* chrome, firefox */
+	url("/fontmin/SentyPea.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+	url("/fontmin/SentyPea.svg#SentyPea") format("svg"); /* iOS 4.1- */
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+    font-family: "SentySnow";
+    src: url("/fontmin/SentySnowMountain.eot"); /* IE9 */
+    src: url("/fontmin/SentySnowMountain.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("/fontmin/SentySnowMountain.woff") format("woff"), /* chrome, firefox */
+    url("/fontmin/SentySnowMountain.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("/fontmin/SentySnowMountain.svg#Senty Snow Mountain 新蒂雪山体") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
+
+.headname {
+	text-align:center;
+	font-size:2em;
+	line-height:2em;
+	font-family: "SentySnow";
+}
+.header {
+	text-align: center;
+  margin-bottom: 50px;
+}
+.header .slogan {
+	font-family: "SentyPea";
+	font-size: 18px;
+}
+.article {
+	position: relative;
+	text-align: center;
+	height: 300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.article pre {
+	text-align: center;
+	height: 100%;
+	font-family: "SentyZHAO";
+	writing-mode: tb-rl;
+	-webkit-writing-mode: vertical-rl;
+	writing-mode: vertical-rl;
+	margin: 0 auto;
+	font-size: 30px;
+	overflow: hidden;
+	display: inline;
+}
+.article pre {
+	line-height: 1.8em;
+}
+.article .author {
+	font-family: "SentyZHAO";
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	background: transparent url("/img/bg.jpg") left top no-repeat;
+	background-size: 80px 80px;
+	color: #fff;
+	line-height: 80px;
+	bottom: 20px;
+	font-size: 22px;
+	right: -20px;
+}
+.myblog {
+    display: inline-block;
+    /* border: 1px solid #000; */
+    /* height: 40px; */
+    /* width: 196px; */
+    /* line-height: 34px; */
+    /* border-radius: 30px; */
+    /* background: #fff; */
+    /* text-decoration: none; */
+    font-family: "SentyPea";
+    font-size: 24px;
+    text-align: center;
+    color: #000;
+}
+.myblog:hover {
+	background: #000;
+	color: #fff;
+}
+.container {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+}
+
