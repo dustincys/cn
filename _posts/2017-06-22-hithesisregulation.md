@@ -94,6 +94,6 @@ b_3) / 2$$。
 
 [bachelorregulation]: https://jwc.hit.edu.cn/2566/list.htm
 [masterregulation]: https://hitgs.hit.edu.cn/aa/fd/c3425a109309/page.htm
-[hithesishangjv]: https://yanshuo.site/cn/2017/06/hithesissiyuan/
+[hithesishangjv]: https://dustincys.github.io/cn/2017/06/hithesissiyuan/
 [plutothesis]: https://github.com/dustincys/PlutoThesis
 [hithesis]: https://github.com/dustincys/hithesis

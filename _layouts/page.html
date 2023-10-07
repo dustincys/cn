@@ -1,19 +1,18 @@
 ---
 layout: default
 ---
-<div id="container">
-
-  <nav class="cbp-spmenu cbp-spmenu-vertical" id="cbp-spmenu-s1">
-	<p><img class="miniAvata" src="//dustincys.github.io/media/avatar/mini.jpg" ></img></p>
-	<a title="关于" class="" href="{{ site.url }}/about/">关于</a>
-        <a title="博文目录" class="" href="{{ site.url }}/">博文目录</a>
-	<a title="软件工具推荐" class="" href="{{ site.url }}/recommend/">软件工具推荐</a>
-        <a title="类别" class="" href="{{ site.url }}/categories/">类别</a>
-        <a title="标签" class="" href="{{ site.url }}/tags/">标签</a>
-	<a title="链接" class="" href="{{ site.url }}/links/">链接</a>
-	<a title="订阅我" class="" href="{{ site.url }}/feed/">订阅我</a>
-	<a title="返回首页" class="" href="{{ site.homepage }}/">返回首页</a>
+<div class="headline" >
+<nav class="cbp-spmenu cbp-spmenu-vertical" id="cbp-spmenu-s1">
+	  <!-- <p><img class="miniAvata" src="//dustincys.github.io/media/avatar/mini.jpg" ></img></p> -->
+	  <a title="砚硕" class="anav" href="{{ site.url }}/" style="font-weight:bold;">石见 石页</a>
+    <a title="博客" class="anav" href="{{ site.url }}/blog/">博客</a>
+	  <a title="软件" class="anav" href="{{ site.url }}/software/">软件</a>
+	  <a title="幻灯片" class="anav" href="{{ site.url }}/ppt/">幻灯片</a>
+	  <a title="发表文章" class="anav" href="{{ site.url }}/publication/">发表文章</a>
+	  <a title="链接" class="anav" href="{{ site.url }}/links/">链接</a>
 </nav>
+</div>
+<div id="container">
 <div id="headofpost" class="post">
     <header>
         <h1>{{ page.title }}</h1>
@@ -54,16 +53,16 @@ layout: default
 
 {% assign barsDTB='1' %}
 <script>
-/* <![CDATA[ */
-(new Bars()).init({
-	pageWidth		:600,
-	nodeId			:'bars',
-	nodeWidth		:50,
-	distanceToBottom	:{{barsDTB | plus: isshare| plus:  iscomments| times: 50 | plus: 125 }},
-	hideRegionHeight	:-1,
-        text			:'<i class="fa fa-bars fa-2x down"></i>'
-});
-/* ]]> */
+ /* <![CDATA[ */
+ (new Bars()).init({
+	   pageWidth		:600,
+	   nodeId			:'bars',
+	   nodeWidth		:50,
+	   distanceToBottom	:{{barsDTB | plus: isshare| plus:  iscomments| times: 50 | plus: 125 }},
+	   hideRegionHeight	:-1,
+     text			:'<i class="fa fa-bars fa-2x down"></i>'
+ });
+ /* ]]> */
 </script>
 
 {% if page.share %}

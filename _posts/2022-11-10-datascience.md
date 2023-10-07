@@ -9,14 +9,14 @@ share: yes
 toc: no
 ---
 
-本篇是[上一篇“数据科学杂谈之二”](http://yanshuo.site/cn/2022/05/datascience/)的扩展。
+本篇是[上一篇“数据科学杂谈之二”](http://dustincys.github.io/cn/2022/05/datascience/)的扩展。
 
 <a class="fancybox" rel="gallery1" title="Portal" href="https://raw.githubusercontent.com/dustincys/cn/assets/doctorstrange-drstrange.gif"><img src="https://raw.githubusercontent.com/dustincys/cn/assets/doctorstrange-drstrange.gif" alt="Portal" /></a>
 
 很多小伙伴都有一个这样一个梦想：能有奇异博士的打开传送门的能力，这样就可以节省大量时间。
 例如，从办公室到实验室之间，瞬间传送。
 在现实中实现不了，在计算机中完全可以实现。
-对于某[数据分析工程文件夹架构](https://yanshuo.site/cn/2020/10/datascience/)如下：
+对于某[数据分析工程文件夹架构](https://dustincys.github.io/cn/2020/10/datascience/)如下：
 
 <a class="fancybox" rel="gallery1" title="Scheme_of_path" href="https://raw.githubusercontent.com/dustincys/cn/assets/scheme_of_path.png"><img src="https://raw.githubusercontent.com/dustincys/cn/assets/scheme_of_path.png" alt="Scheme_of_path" /></a>
 
@@ -198,5 +198,5 @@ jump () {
 以上小伙伴可能会说，这些都是没有意义的，因为写以上这段脚本耗费的时间可能远大于其节省的时间。
 这个观点非常幼稚。
 因为如果将该脚本放置于Linux应用层的低端，那么其运行频率将指数增长，最后节省的时间也是指数增长，其结果远远超乎想象。
-关于如何放置于Linux应用层低端的Portal在[上一篇“数据科学杂谈之二”](http://yanshuo.site/cn/2022/05/datascience/)有所述。
+关于如何放置于Linux应用层低端的Portal在[上一篇“数据科学杂谈之二”](http://dustincys.github.io/cn/2022/05/datascience/)有所述。
 
