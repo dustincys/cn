@@ -2,6 +2,7 @@
 title: 博客
 layout: page
 matheq: yes
+toc: yes
 ---
 
 “牢骚太盛防肠断”，不如寄托在这里。
@@ -17,7 +18,7 @@ matheq: yes
   {% capture y %}{{post.date | date:"%Y"}}{% endcapture %}
   {% if year != y %}
     {% assign year = y %}
-    <li class="listing-seperator">{{ y }}</li>
+    <h3 id="{{ y }}" class="listing-seperator">{{ y }}</h3>
   {% endif %}
   <li class="listing-item">
 <div class="item">
