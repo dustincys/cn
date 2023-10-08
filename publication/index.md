@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 发表文章
-comments: yes
+comments: no
 toc: no
 share: no
 ---

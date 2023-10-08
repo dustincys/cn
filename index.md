@@ -1,7 +1,9 @@
 ---
 layout: page
 title: 石见 石页
-comments: yes
+comments: no
+toc: no
+share: no
 ---
 
 
