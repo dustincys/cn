@@ -81,7 +81,7 @@ div.item{ text-align:left; }
 .cbp-spmenu {
     position: fixed;
     left: calc(50% - 425px); /* Adjust horizontal position */
-    transform: translateX(-125px); /* Adjust horizontal position */
+    transform: translateX(-125.5px); /* Adjust horizontal position */
     top: 50%; /* Center vertically */
     display: flex;
     flex-direction: row;
