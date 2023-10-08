@@ -13,9 +13,8 @@ layout: default
 </nav>
 </div>
 <div id="container">
-<div id="headofpost" class="post">
     <header>
-        <h1>{{ page.title }}</h1>
+        <headertitle>{{ page.title }}</headertitle>
         <hr class="style1"/>
         <!-- body has the class "cbp-spmenu-push" -->
         <div class="container">
@@ -27,12 +26,12 @@ layout: default
             </div>
         </div>
     </header>
+    <div id="headofpost" class="post">
     {% if page.toc %}
     {% include toc.md %}
     {% endif %}
     {{ content }}
 </div>
-
 
 {% if page.share %}
 <div id="baidusharebuttons" class="baidubutton">

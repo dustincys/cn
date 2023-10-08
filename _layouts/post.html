@@ -13,20 +13,20 @@ layout: default
 </nav>
 </div>
 <div id="container">
-<div class="post" id="headofpost">
-    <header>
-        <h1>{{ page.title }}</h1>
-        <hr class="style1"/>
-        <!-- body has the class "cbp-spmenu-push" -->
-        <div class="container">
-            <div class="main">
-                <section class="buttonset">
-                    <!-- Class "cbp-spmenu-open" gets applied to menu and "cbp-spmenu-push-toleft" or "cbp-spmenu-push-toright" to the body -->
-                    <button id="showRightPush"><i class="fa fa-bars"></i></button>
-                </section>
-            </div>
+<header>
+    <headertitle>{{ page.title }}</headertitle>
+    <hr class="style1"/>
+    <!-- body has the class "cbp-spmenu-push" -->
+    <div class="container">
+        <div class="main">
+            <section class="buttonset">
+                <!-- Class "cbp-spmenu-open" gets applied to menu and "cbp-spmenu-push-toleft" or "cbp-spmenu-push-toright" to the body -->
+                <button id="showRightPush"><i class="fa fa-bars"></i></button>
+            </section>
         </div>
-    </header>
+    </div>
+</header>
+<div class="post" id="headofpost">
     {% if page.toc %}
     {% include toc.md %}
     {% endif %}
