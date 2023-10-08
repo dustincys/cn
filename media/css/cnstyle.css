@@ -14,14 +14,16 @@ pre code{margin:1em 0;line-height:1.3;display:block;overflow:hidden;}
 blockquote{display:block;border-left:4px solid #d2d2d2;font-family:'楷体','幼圆','Snippet','Hiragino Sans GB','source-han-serif-sc','Source Han Serif SC','Source Han Serif CN','Source Han Serif TC','Source Han Serif TW','Source Han Serif','Songti SC','仿宋','FangSong','NSimSun',"Microsoft YaHei";}
 blockquote{margin:1em 1em;padding-left:1.5em;}
 blockquote p{margin:0;padding:.5em 0;text-indent:0em;}
-#container{width:850px;margin:auto;display:block;margin-top:78px;margin-bottom:78px;}
-.post{padding:4em 6em 4em 6em; border: 1px solid rgb(204, 204, 204);margin-bottom:2em;}
+#container{width:850px;border-left: 1px solid rgb(204, 204, 204);margin:auto;display:block;margin-bottom:78px;}
+.post{padding:1em 0 0 2em; margin-bottom:2em;}
 #headofpost > p{font-weight:500;}
-.baidubutton{padding:2em 6em; border: 1px solid rgb(204, 204, 204);margin-top:2em;margin-bottom:2em;display:none;}
+.baidubutton{padding:2em 0 0 1em; border-top: 1px solid rgb(204, 204, 204);margin-top:2em;margin-bottom:2em;display:none;}
 .comments{padding:2em 6em; border: 1px solid rgb(204, 204, 204);margin-top:2em;margin-bottom:2em;}
-#comment_thread{padding:2em 6em; border: 1px solid rgb(204, 204, 204);margin-top:2em;margin-bottom:2em;display:none;}
-.post > header:nth-child(1){margin-bottom:1.5em;}
-.post > header:nth-child(1) > h1:nth-child(1){ margin-bottom: 0em;text-align:center;}
+#comment_thread{padding:2em 0 0 1em; border-top: 1px solid rgb(204, 204, 204);margin-top:2em;margin-bottom:2em;display:none;}
+/* .post > header:nth-child(1){margin-bottom:1.5em;} */
+/* .post > header:nth-child(1) > h1:nth-child(1){ margin-bottom: 0em;text-align:center;} */
+header {padding: 78px 0 0 0;}
+headertitle {font-size: 2em;padding-left: 1em; font-weight:bold;}
 hr.style1{border: 0;height: 1px;background-image: -webkit-linear-gradient(left, #d2d2d2, #d2d2d2, #d2d2d2); background-image: -moz-linear-gradient(left, #d2d2d2, #d2d2d2, #d2d2d2); background-image: -ms-linear-gradient(left, #d2d2d2, #d2d2d2, #d2d2d2); background-image: -o-linear-gradient(left, #d2d2d2, #d2d2d2, #d2d2d2);margin:0;}
 .post img{max-width:90%;display:block;margin-left:auto;margin-right:auto;-webkit-box-shadow:#999 1px 1px 4px;-moz-box-shadow:#999 1px 1px 4px;box-shadow:#999 1px 1px 4px; }
 .post iframe{max-width:90%;display:block;margin-left:auto;margin-right:auto;-webkit-box-shadow:#999 1px 1px 4px;-moz-box-shadow:#999 1px 1px 4px;box-shadow:#999 1px 1px 4px; }
@@ -31,8 +33,7 @@ hr.style1{border: 0;height: 1px;background-image: -webkit-linear-gradient(left, 
 .listing-item a{padding:.2em 1em;}
 .listing-item time{color:#999999;}
 .listing-seperator{font-weight:bold;margin-left:-1em;}
-div.toc-header{float:right;padding:1em;border: 1px solid #ddd; margin-top: 1em; margin-left: 1em;  max-width: 40%;}
-.toc-title{margin-left:1em;}
+div.toc-header{position: absolute; left: calc(50% - 425px); transform: translateX(-100%); text-align: right;max-width:200px;}
 nav{font-family:'source-han-serif-sc','Source Han Serif SC','Source Han Serif CN','Source Han Serif TC','Source Han Serif TW','Source Han Serif','Songti SC','仿宋','FangSong','NSimSun',"Microsoft YaHei";font-size:20px;text-transform:uppercase;text-align:center;}
 nav a{display:block;padding:14px 20px;color:#000000;border-bottom:none;}
 .anav + .anav {border-left: 1px solid #ccc;}
