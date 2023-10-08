@@ -13,7 +13,7 @@ $(document).ready(function() {
   var return_to_top = '<i class="icon-arrow-up back-to-top">&uarr;</i>'
   //var return_to_top = ''
 
-  var level = get_level(headers[0]), this_level, html = "<i></i> <ul>";
+  var level = get_level(headers[0]), this_level, html = "<ul>";
   headers.on('click', function() {
     if (!no_back_to_top_links) window.location.hash = this.id
   }).addClass('clickable-header').each(function(_, header) {
@@ -21,12 +21,12 @@ $(document).ready(function() {
     if (!no_back_to_top_links && this_level === highest_level) {
       $(header).addClass('top-level-header').after(return_to_top)
     }
-    if (this_level === level) // same level as before; same indenting
-      html += "<li><a href='#" + header.id + "'>" + header.innerHTML + "</a>";
-    else if (this_level < level) // higher level than before; end parent ol
-      html += "</li></ul></li><li><a href='#" + header.id + "'>" + header.innerHTML + "</a>";
-    else if (this_level > level) // lower level than before; expand the previous to contain a ol
-      html += "<ul><li><a href='#" + header.id + "'>" + header.innerHTML + "</a>";
+    <!-- if (this_level === level) // same level as before; same indenting -->
+      html += "<a href='#" + header.id + "'>" + header.innerHTML + "</a><br  style='margin:0.5em 0; display:block;' />";
+    <!-- else if (this_level < level) // higher level than before; end parent ol -->
+      <!-- html += "</ul></li><li><a href='#" + header.id + "'>" + header.innerHTML + "</a>"; -->
+    <!-- else if (this_level > level) // lower level than before; expand the previous to contain a ol -->
+      <!-- html += "<ul><li><a href='#" + header.id + "'>" + header.innerHTML + "</a>"; -->
     level = this_level; // update for the next one
   });
   html += "</ul>";
@@ -40,7 +40,7 @@ $(document).ready(function() {
 });
 </script>
 <div class="toc-header">
-<div class="toc-title" style="font-weight: bold; padding:0.5em 0; border-bottom:1px #cccccc solid;"> 内容索引 </div>
+<div class="toc-title" style="font-weight: bold; font-size: 1.2em; padding:0.5em 0; border-bottom:1px #cccccc solid;"> 内容索引 </div>
 <div class="toc"></div>
 </div>
 
