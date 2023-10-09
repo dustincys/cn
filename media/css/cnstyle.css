@@ -17,9 +17,9 @@ blockquote p{margin:0;padding:.5em 0;text-indent:0em;}
 #container{width:850px;border-left: 1px solid rgb(204, 204, 204);margin:auto;display:block;margin-bottom:78px;}
 .post{padding:1em 0 0 2em; margin-bottom:2em;}
 #headofpost > p{font-weight:500;}
-.baidubutton{padding:2em 0 0 1em; border-top: 1px solid rgb(204, 204, 204);margin-top:2em;margin-bottom:2em;display:none;}
+.baidubutton{padding:2em 0 0 1em; border-top: 1px solid rgb(204, 204, 204);margin-top:2em;margin-bottom:2em;}
 .comments{padding:2em 6em; border: 1px solid rgb(204, 204, 204);margin-top:2em;margin-bottom:2em;}
-#comment_thread{padding:2em 0 0 1em; border-top: 1px solid rgb(204, 204, 204);margin-top:2em;margin-bottom:2em;display:none;}
+#comment_thread{padding:2em 0 0 1em; border-top: 1px solid rgb(204, 204, 204);margin-top:2em;margin-bottom:2em;}
 /* .post > header:nth-child(1){margin-bottom:1.5em;} */
 /* .post > header:nth-child(1) > h1:nth-child(1){ margin-bottom: 0em;text-align:center;} */
 header {padding: 78px 0 0 0;}

@@ -58,8 +58,8 @@ GoTop.prototype = {
 		}
 
 		topLink.click(function(event) {
-				$("#baidusharebuttons").hide();
-				$("#comment_thread").hide();
+				// $("#baidusharebuttons").hide();
+				// $("#comment_thread").hide();
 				$(".headline").show();
 		});
 		// 节点到屏幕右边的距离
