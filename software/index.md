@@ -11,7 +11,7 @@ share: no
 
 * [msphy-SCNAClonal](https://github.com/dustincys/msphy-SCNAClonal)
 
-<a class="fancybox" rel="msphy" href="https://raw.githubusercontent.com/dustincys/cn/assets/tree1.png" title="多阶段树"><img src="https://raw.githubusercontent.com/dustincys/cn/assets/tree1.png" alt="多阶段树" width=300 /></a>
+<a class="fancybox" rel="msphy" href="https://raw.githubusercontent.com/dustincys/cn/assets/tree1.png" title="多阶段树"><img src="https://raw.githubusercontent.com/dustincys/cn/assets/tree1.png" alt="多阶段树" /></a>
 
 一种基于狄利克雷过程的多阶段树学习机，可用来对不同时空的肿瘤测序数据进行亚克隆进
 化树学习。
