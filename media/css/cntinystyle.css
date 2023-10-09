@@ -29,7 +29,7 @@ hr.style1{border: 0;height: 1px;background-image: -webkit-linear-gradient(left, 
 nav{font-family:"Snippet","Microsoft YaHei",微软雅黑, Lucida Grande,Tahoma, sans-serif;font-weight:bold;font-size:1.1em;text-transform:uppercase;text-align:center;border-bottom:1px solid #cccccc;}
 a:hover{border-bottom:none}
 #bars,#share,#comment,#go-top{border-bottom:none;}
-nav a{display:block;padding:.7em 1em;color:#000000;border-bottom:none;}
+nav a{display:block;padding:.2em 1em;color:#000000;border-bottom:none;}
 nav a:hover{background-color:#4775E7;text-decoration:none;color:#f9f9f9;-webkit-transition:color .2s linear;}
 h1{font-family:'source-han-serif-sc','Source Han Serif SC','Source Han Serif CN','Source Han Serif TC','Source Han Serif TW','Source Han Serif',"楷体",sans-serif,'Snippet','Hiragino Sans GB','Songti SC','仿宋','FangSong','NSimSun',"Microsoft YaHei";font-size:1.6em;color:#000;}
 h2{font-family:'source-han-serif-sc','Source Han Serif SC','Source Han Serif CN','Source Han Serif TC','Source Han Serif TW','Source Han Serif',"Snippet","Hiragino Sans GB","楷体",sans-serif,'Snippet','Hiragino Sans GB','Songti SC','仿宋','FangSong','NSimSun',"Microsoft YaHei";font-size:1.4em;color:#111;padding:0.5em 0;}
@@ -69,7 +69,7 @@ fa.fa-angle-double-up.fa-2x {display: none;}
 /* hidden menu  */
 .ubutton{ display: none; }
 .container{ text-align: right; margin-top: -1.1em; }
-#showRightPush{ color: #d2d2d2; background: white; }
+#showRightPush{ color: #d2d2d2; background: white; border: 1px solid #d2d2d2; padding: 2px;}
 .cbp-spmenu { position: fixed;}
 .cbp-spmenu h3 { color: #afdefa; font-size: 1.9em; padding: 20px; margin: 0; font-weight: 300; background: #0d77b6; }
 .cbp-spmenu a { display: block; font-weight: 300; }

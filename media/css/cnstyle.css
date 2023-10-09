@@ -78,26 +78,8 @@ div.item{ text-align:left; }
 .toc > ul > li > ul{ padding:0.4em 0em 0em 0em; }
 /* hidden menu  */ 
 .container{ display:none; }
-.cbp-spmenu {
-    position: fixed;
-    left: calc(50% - 425px); /* Adjust horizontal position */
-    transform: translateX(-125.5px); /* Adjust horizontal position */
-    top: 50%; /* Center vertically */
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    width: 100%;
-    top: 0;}
-.headline {
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 48px;
-    background-color: white;
-    border-bottom: 1px solid #CCC; /* Adjust the line style and color as needed */
-    z-index: 9998; /* Ensure it's below the flex container */
-}
-
+.cbp-spmenu {position: fixed; left: calc(50% - 425px); transform: translateX(-125.5px); display: flex; flex-direction: row; justify-content: left; top: 0;}
+.headline {position: fixed; left: 0; right: 0; height: 48px; background-color: white; border-bottom: 1px solid #CCC; z-index: 9998;}
 .cbp-spmenu h3 { color: #afdefa; font-size: 1.9em; padding: 20px; margin: 0; background: #0d77b6; }
 .cbp-spmenu a { display: block; line-height:1; }
 .cbp-spmenu a:hover { background: #777777; }
