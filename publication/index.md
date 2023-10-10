@@ -9,7 +9,7 @@ share: no
 > 这里展示几个主要工作，完整的列表可看我的[谷歌学术](https://scholar.google.com.hk/citations?user=f9muy-gAAAAJ&hl=en&oi=ao)
 
 
-* Chu, Yanshuo, et al. "Pan-cancer T cell atlas links a cellular stress response state to immunotherapy resistance." [Nature Medicine](https://www.nature.com/articles/s41591-023-02371-y) (2023): 1-13. [Google scholar](https://scholar.google.com.hk/citations?view_op=view_citation&hl=en&user=f9muy-gAAAAJ&citation_for_view=f9muy-gAAAAJ:JV2RwH3_ST0C)
+* Chu, Yanshuo, et al. "Pan-cancer T cell atlas links a cellular stress response state to immunotherapy resistance." [Nature Medicine](https://www.nature.com/articles/s41591-023-02371-y) (2023): 1-13.
 
 <a class="fancybox" rel="gallery1" href="https://raw.githubusercontent.com/dustincys/cn/assets/1685113897528.jpg" title="肿瘤微环境中的应激T细胞"><img src="https://raw.githubusercontent.com/dustincys/cn/assets/1685113897528.jpg" alt="肿瘤微环境中的应激T细胞" /></a>
 
@@ -29,3 +29,4 @@ share: no
 细胞识别为一个明显独特的群体，与其他CD4+或CD8+ T细胞亚群不同，并使用多种空间分析
 方法原位验证它们的存在。
 
+* Sang T Kim, Yanshuo Chu, et al. "Distinct molecular and immune hallmarks of inflammatory arthritis induced by immune checkpoint inhibitors for cancer therapy" [Nature Communications](https://www.nature.com/articles/s41467-022-29539-3) 13.1 (2022): 1970.

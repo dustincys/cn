@@ -7,6 +7,9 @@ share: no
 
 ---
 
+> 其他软件信息可查看我的[Github](https://github.com/dustincys)
+
+
 ## 生物信息
 
 * [SCRP](https://singlecell.mdanderson.org/)
