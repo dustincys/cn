@@ -36,7 +36,7 @@ hr.style1{border: 0;height: 1px;background-image: -webkit-linear-gradient(left, 
 div.toc-header{position: absolute; left: calc(50% - 425px); transform: translateX(-100%); text-align: right;max-width:200px;}
 nav{font-family:'source-han-serif-sc','Source Han Serif SC','Source Han Serif CN','Source Han Serif TC','Source Han Serif TW','Source Han Serif','Songti SC','仿宋','FangSong','NSimSun',"Microsoft YaHei";font-size:20px;text-transform:uppercase;text-align:center;}
 nav a{display:block;padding:14px 20px;color:#000000;border-bottom:none;}
-.anav + .anav {border-left: 1px solid #ccc;}
+.anav{border-left: 1px solid #ccc;}
 nav a:hover{background-color:#777777;text-decoration:none;color:#f9f9f9; -webkit-transition:color .2s linear;}
 h1{font-family:'source-han-serif-sc','Source Han Serif SC','Source Han Serif CN','Source Han Serif TC','Source Han Serif TW','Source Han Serif',"楷体",sans-serif,'Snippet','Hiragino Sans GB','Songti SC','仿宋','FangSong','NSimSun',"Microsoft YaHei";font-size:1.6em;color:#000;}
 h2{font-family:'source-han-serif-sc','Source Han Serif SC','Source Han Serif CN','Source Han Serif TC','Source Han Serif TW','Source Han Serif',"Snippet","Hiragino Sans GB","楷体",sans-serif,'Snippet','Hiragino Sans GB','Songti SC','仿宋','FangSong','NSimSun',"Microsoft YaHei";font-size:1.4em;color:#111;padding:0.5em 0;}
@@ -73,13 +73,18 @@ div.item{ text-align:left; }
 .shareto { max-width: 100%; display: block; }
 .shareto span { float: left; padding-right: 15px; line-height: 1.667; }
 .meta{ margin: 0.5em 1em 0.5em 1em; padding-left: 1.5em; border-left: 4px solid #D2D2D2; }
-.toc > ul{ padding:0.5em 15px 0 0; }
-.toc > ul > li{ padding:0.4em 0em 0em 0em; }
+.toc > ul{ padding:0.5em 15px 0 0; margin-left: 0; }
+.toc > ul ul{ padding:0.5em 15px 0 0; margin-left: 0; }
+.toc > li{ padding:0.5em 15px 0 0; margin-left: 0; }
+.toc > ul > li{ padding:0.4em 0em 0em 0em; direction: rtl;}
 .toc > ul > li > ul{ padding:0.4em 0em 0em 0em; }
+.toc {padding-right:1em;}
 /* hidden menu  */ 
 .container{ display:none; }
-.cbp-spmenu {position: fixed; left: calc(50% - 425px); transform: translateX(-125.5px); display: flex; flex-direction: row; justify-content: left; top: 0;}
+.cbp-spmenu {position: fixed;top: 0;}
 .headline {position: fixed; left: 0; right: 0; height: 48px; background-color: white; border-bottom: 1px solid #CCC; z-index: 9998;}
+#myname {position: fixed; left: calc(50% - 425px); transform: translateX(-100%);}
+#titlepages {position: fixed; left: calc(50% - 425px); display: inline-flex; flex-direction: row; justify-content: left;}
 .cbp-spmenu h3 { color: #afdefa; font-size: 1.9em; padding: 20px; margin: 0; background: #0d77b6; }
 .cbp-spmenu a { display: block; line-height:1; }
 .cbp-spmenu a:hover { background: #777777; }

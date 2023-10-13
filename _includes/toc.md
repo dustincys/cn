@@ -21,12 +21,12 @@ $(document).ready(function() {
     if (!no_back_to_top_links && this_level === highest_level) {
       $(header).addClass('top-level-header').after(return_to_top)
     }
-    <!-- if (this_level === level) // same level as before; same indenting -->
-      html += "<a href='#" + header.id + "'>" + header.innerHTML + "</a><br  style='margin:0.5em 0; display:block;' />";
-    <!-- else if (this_level < level) // higher level than before; end parent ol -->
-      <!-- html += "</ul></li><li><a href='#" + header.id + "'>" + header.innerHTML + "</a>"; -->
-    <!-- else if (this_level > level) // lower level than before; expand the previous to contain a ol -->
-      <!-- html += "<ul><li><a href='#" + header.id + "'>" + header.innerHTML + "</a>"; -->
+    if (this_level === level) // same level as before; same indenting
+      html += "<li><a href='#" + header.id + "'>" + header.innerHTML + "</a>";
+    else if (this_level < level) // higher level than before; end parent ol
+      html += "</ul></li><li><a href='#" + header.id + "'>" + header.innerHTML + "</a>";
+    else if (this_level > level) // lower level than before; expand the previous to contain a ol
+      html += "<ul><li><a href='#" + header.id + "'>" + header.innerHTML + "</a>";
     level = this_level; // update for the next one
   });
   html += "</ul>";
