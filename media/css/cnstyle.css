@@ -33,7 +33,7 @@ hr.style1{border: 0;height: 1px;background-image: -webkit-linear-gradient(left, 
 .listing-item a{padding:.2em 1em;}
 .listing-item time{color:#999999;}
 .listing-seperator{font-weight:bold;margin-left:-1em;}
-div.toc-header{position: absolute; left: calc(50% - 425px); transform: translateX(-100%); text-align: right;max-width:200px;}
+div.toc-header{position: absolute; left: calc(50% - 425px); transform: translateX(-100%); text-align: right;max-width:230px;}
 nav{font-family:'source-han-serif-sc','Source Han Serif SC','Source Han Serif CN','Source Han Serif TC','Source Han Serif TW','Source Han Serif','Songti SC','仿宋','FangSong','NSimSun',"Microsoft YaHei";font-size:20px;text-transform:uppercase;text-align:center;}
 nav a{display:block;padding:14px 20px;color:#000000;border-bottom:none;}
 .anav{border-left: 1px solid #ccc;}
@@ -73,11 +73,8 @@ div.item{ text-align:left; }
 .shareto { max-width: 100%; display: block; }
 .shareto span { float: left; padding-right: 15px; line-height: 1.667; }
 .meta{ margin: 0.5em 1em 0.5em 1em; padding-left: 1.5em; border-left: 4px solid #D2D2D2; }
-.toc > ul{ padding:0.5em 15px 0 0; margin-left: 0; }
-.toc > ul ul{ padding:0.5em 15px 0 0; margin-left: 0; }
-.toc > li{ padding:0.5em 15px 0 0; margin-left: 0; }
-.toc > ul > li{ padding:0.4em 0em 0em 0em; direction: rtl;}
-.toc > ul > li > ul{ padding:0.4em 0em 0em 0em; }
+.toc ul{ padding:0.5em 10px 0 0; margin-left: 0; }
+.toc li{ padding:0.5em 0px 0 0; margin-left: 0; direction: rtl;}
 .toc {padding-right:1em;}
 /* hidden menu  */ 
 .container{ display:none; }

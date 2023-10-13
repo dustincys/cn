@@ -22,11 +22,11 @@ $(document).ready(function() {
       $(header).addClass('top-level-header').after(return_to_top)
     }
     if (this_level === level) // same level as before; same indenting
-      html += "<li><a href='#" + header.id + "'>" + header.innerHTML + "</a>";
+      html += "<li><a href='#" + header.id + "'>" + header.innerHTML + "</a></li>";
     else if (this_level < level) // higher level than before; end parent ol
-      html += "</ul></li><li><a href='#" + header.id + "'>" + header.innerHTML + "</a>";
+      html += "</ul><li><a href='#" + header.id + "'>" + header.innerHTML + "</a></li>";
     else if (this_level > level) // lower level than before; expand the previous to contain a ol
-      html += "<ul><li><a href='#" + header.id + "'>" + header.innerHTML + "</a>";
+      html += "<ul><li><a href='#" + header.id + "'>" + header.innerHTML + "</a></li>";
     level = this_level; // update for the next one
   });
   html += "</ul>";
