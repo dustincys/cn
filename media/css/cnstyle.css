@@ -33,7 +33,7 @@ hr.style1{border: 0;height: 1px;background-image: -webkit-linear-gradient(left, 
 .listing-item a{padding:.2em 1em;}
 .listing-item time{color:#999999;}
 .listing-seperator{font-weight:bold;margin-left:-1em;}
-div.toc-header{position: absolute; left: calc(50% - 425px); transform: translateX(-100%); text-align: right;max-width:230px;}
+div.toc-header{position: absolute; left: calc(50% - 425.5px); transform: translateX(-100%); text-align: right;max-width:230px;}
 nav{font-family:'source-han-serif-sc','Source Han Serif SC','Source Han Serif CN','Source Han Serif TC','Source Han Serif TW','Source Han Serif','Songti SC','仿宋','FangSong','NSimSun',"Microsoft YaHei";font-size:20px;text-transform:uppercase;text-align:center;}
 nav a{display:block;padding:14px 20px;color:#000000;border-bottom:none;}
 .anav{border-left: 1px solid #ccc;}
@@ -80,8 +80,8 @@ div.item{ text-align:left; }
 .container{ display:none; }
 .cbp-spmenu {position: fixed;top: 0;}
 .headline {position: fixed; left: 0; right: 0; height: 48px; background-color: white; border-bottom: 1px solid #CCC; z-index: 9998;}
-#myname {position: fixed; left: calc(50% - 425px); transform: translateX(-100%);}
-#titlepages {position: fixed; left: calc(50% - 425px); display: inline-flex; flex-direction: row; justify-content: left;}
+#myname {position: fixed; left: calc(50% - 425.5px); transform: translateX(-100%);}
+#titlepages {position: fixed; left: calc(50% - 425.5px); display: inline-flex; flex-direction: row; justify-content: left;}
 .cbp-spmenu h3 { color: #afdefa; font-size: 1.9em; padding: 20px; margin: 0; background: #0d77b6; }
 .cbp-spmenu a { display: block; line-height:1; }
 .cbp-spmenu a:hover { background: #777777; }
