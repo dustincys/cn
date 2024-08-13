@@ -111,3 +111,5 @@ html body div#container div.post ul li p, html body div#container div.post ol li
 div.footnotes ol li {padding: 0 0; font-weight:inherit;}
 .footnotes {font-size: 16px; line-height: 1.667; border-top: 1px solid #ccc; margin-top: 1em;}
 .MathJax_Display{overflow:auto;}
+
+table{margin:auto;}
