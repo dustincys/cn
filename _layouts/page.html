@@ -33,8 +33,13 @@ layout: default
     {% if page.toc %}
     {% include toc.md %}
     {% endif %}
+
+    {% if page.bookcarousel %}
+    {% include bookcarousel.html %}
+    {% endif %}
+
     {{ content }}
-</div>
+    </div>
 
 {% if page.share %}
 <div id="baidusharebuttons" class="baidubutton">
