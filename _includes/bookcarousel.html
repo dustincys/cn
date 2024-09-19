@@ -2,16 +2,16 @@
 
 
 <div class="my-book-carousel">
-        <div><img src="https://raw.githubusercontent.com/dustincys/cn/assets/35433917.jpg" alt="九王夺嫡" /></div>
-        <div><img src="https://raw.githubusercontent.com/dustincys/cn/assets/36598490.jpg" alt="朱元璋传" /></div>
-        <div><img src="https://raw.githubusercontent.com/dustincys/cn/assets/bhshzdzzzx.jpg" alt="变化社会中的政治秩序" /></div>
-        <div><img src="https://raw.githubusercontent.com/dustincys/cn/assets/dzlgz.jpg" alt="东周列国志" /></div>
-        <div><img src="https://raw.githubusercontent.com/dustincys/cn/assets/eyhwj.jpg" alt="二月河文集" /></div>
-        <div><img src="https://raw.githubusercontent.com/dustincys/cn/assets/hfz.jpg" alt="韩非子" /></div>
-        <div><img src="https://raw.githubusercontent.com/dustincys/cn/assets/hlm.jpg" alt="红楼梦" /></div>
-        <div><img src="https://raw.githubusercontent.com/dustincys/cn/assets/lsscdyl.jpg" alt="历史深处的忧虑" /></div>
-        <div><img src="https://raw.githubusercontent.com/dustincys/cn/assets/xyj.jpg" alt="西游记" /></a></div>
-        <div><img src="https://raw.githubusercontent.com/dustincys/cn/assets/zj.jpg" alt="正见" /></div>
+        <div><img data-lazy="https://raw.githubusercontent.com/dustincys/cn/assets/35433917.jpg" alt="九王夺嫡" /></div>
+        <div><img data-lazy="https://raw.githubusercontent.com/dustincys/cn/assets/36598490.jpg" alt="朱元璋传" /></div>
+        <div><img data-lazy="https://raw.githubusercontent.com/dustincys/cn/assets/bhshzdzzzx.jpg" alt="变化社会中的政治秩序" /></div>
+        <div><img data-lazy="https://raw.githubusercontent.com/dustincys/cn/assets/dzlgz.jpg" alt="东周列国志" /></div>
+        <div><img data-lazy="https://raw.githubusercontent.com/dustincys/cn/assets/eyhwj.jpg" alt="二月河文集" /></div>
+        <div><img data-lazy="https://raw.githubusercontent.com/dustincys/cn/assets/hfz.jpg" alt="韩非子" /></div>
+        <div><img data-lazy="https://raw.githubusercontent.com/dustincys/cn/assets/hlm.jpg" alt="红楼梦" /></div>
+        <div><img data-lazy="https://raw.githubusercontent.com/dustincys/cn/assets/lsscdyl.jpg" alt="历史深处的忧虑" /></div>
+        <div><img data-lazy="https://raw.githubusercontent.com/dustincys/cn/assets/xyj.jpg" alt="西游记" /></a></div>
+        <div><img data-lazy="https://raw.githubusercontent.com/dustincys/cn/assets/zj.jpg" alt="正见" /></div>
 </div>
 
 
@@ -24,29 +24,10 @@
      $('.my-book-carousel').slick({
          centerMode: true,
          centerPadding: '60px',
+         lazyLoad: 'ondemand',
          slidesToShow: 3,
          adaptiveHeight: true,
          variableWidth: true,
-         responsive: [
-             {
-                 breakpoint: 768,
-                 settings: {
-                     arrows: false,
-                     centerMode: true,
-                     centerPadding: '40px',
-                     slidesToShow: 3
-                 }
-             },
-             {
-                 breakpoint: 480,
-                 settings: {
-                     arrows: false,
-                     centerMode: true,
-                     centerPadding: '40px',
-                     slidesToShow: 1
-                 }
-             }
-         ],
          autoplay: true,
          autoplaySpeed: 500,
      });
