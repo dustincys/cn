@@ -64,6 +64,15 @@ Spacemacs layer
 
 #### 浏览器插件
 
+* [GPT2Org](https://addons.mozilla.org/en-US/firefox/addon/gpt2org/)
+
+![GPT2Org](https://addons.mozilla.org/user-media/addon_icons/2876/2876588-64.png)
+
+Get summary from a webpage by providing the necessary prompt and API key.
+Subsequently, the obtained summary can be organized and stored in a structured
+format, such as an Org file within the Emacs environment or an Org-roam node by
+org protocol.
+
 * [org-capture-extension](https://github.com/dustincys/org-capture-extension)
 
 支持org-roam的capture
