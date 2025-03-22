@@ -4,7 +4,7 @@ category: technology
 title: 数据科学杂谈之十二--强AI背景下如何科学地科研？
 matheq: no
 comments: yes
-tags: [注意力, 科研，数据科学杂谈]
+tags: [注意力, 科研, 数据科学杂谈]
 share: yes
 toc: no
 ---
