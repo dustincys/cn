@@ -9,6 +9,12 @@ share: yes
 toc: no
 ---
 
+
+> 某个科研大咖要去看文献，每天都要手动去上网搜索，然后读摘要等等，判断哪些文献是感兴趣的文献等等。
+> 如同去超市买食物，需要去超市 -> 挑哪些食物符合口味 -> 查看食物保质期 -> 购买 -> 做饭 -> 吃。
+> 这个过程分散了注意力。
+> 而节省注意力的办法是，让超市每天根据我们的口味把最新的食材都带到我们家里，做好食物放在桌子上，我们挑想吃的食物直接吃。
+>
 > 本文涉及到的代码在这里：[article-summarizer](https://github.com/dustincys/article-summarizer)  
 > 本文涉及到的软件的录屏：
 <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114204841345191&bvid=BV1RoXHYZE4n&cid=29005123322&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
@@ -27,6 +33,7 @@ toc: no
 2. 能够对信息优先级排序
 3. 能够批量地调用AI进行信息凝练
 4. 能够方便地安排处理信息的日程
+
 
 [elfeed](https://github.com/skeeto/elfeed)和[elfeed-score](https://github.com/sp1ff/elfeed-score)具备批量地获取主流科研杂志的feed，并设置排序方式。
 而下一步需要对获取到的文献进行AI总结，总结的逻辑是，在更新elfeed之后加入hook:
@@ -358,3 +365,4 @@ async function createCompletion(articleText) {
                :empty-lines 1)
 ```
 这样就完成了自动化精准抓取文献、文献优先级个性化排序、异步AI总结、信息抓取和日程安排全流程开发。
+
