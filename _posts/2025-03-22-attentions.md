@@ -22,8 +22,8 @@ toc: no
 强AI背景下，如何愉快地玩耍才能不泯然众人矣？
 总所周知，“[Attention is all you need](https://proceedings.neurips.cc/文献_files/文献/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf)”，所以注意力已经是个人最宝贵的资源，如何节省该资源需要先明确如下几个事实：
 
-1. 强AI导致信息膨胀
-2. 流量经济导致“信息海啸”
+1. 强AI导致“信息海啸”
+2. 流量经济导致“信息轰炸”
 3. 海量信息稀释了个人的注意力
 
 前文中提到，在强AI背景下，每个人的信息输入输出模式如同“[编码器](https://dustincys.github.io/cn/2024/03/my-GPT/)”，所以尽最大可能节省注意力是我们破局的关键。
@@ -33,7 +33,6 @@ toc: no
 2. 能够对信息优先级排序
 3. 能够批量地调用AI进行信息凝练
 4. 能够方便地安排处理信息的日程
-
 
 [elfeed](https://github.com/skeeto/elfeed)和[elfeed-score](https://github.com/sp1ff/elfeed-score)具备批量地获取主流科研杂志的feed，并设置排序方式。
 而下一步需要对获取到的文献进行AI总结，总结的逻辑是，在更新elfeed之后加入hook:
