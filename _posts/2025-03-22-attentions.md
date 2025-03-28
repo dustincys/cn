@@ -17,7 +17,7 @@ toc: no
 >
 > 本文涉及到的代码在这里：[article-summarizer](https://github.com/dustincys/article-summarizer)  
 > 本文涉及到的软件的录屏：
-<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114204841345191&bvid=BV1RoXHYZE4n&cid=29005123322&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114239687626348&bvid=BV1dModYPE3c&cid=29113779352&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 
 强AI背景下，如何愉快地玩耍才能不泯然众人矣？
 总所周知，“[Attention is all you need](https://proceedings.neurips.cc/文献_files/文献/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf)”，所以注意力已经是个人最宝贵的资源，如何节省该资源需要先明确如下几个事实：
