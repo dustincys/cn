@@ -95,17 +95,20 @@ This includes:
                      tagged-files
                      agenda-files))
         (setq my-org/daily-last-filter-tag-date today)
-        (seq-uniq (append
-                   (seq-filter
-                    (lambda (file)
-                      (when (and file (file-exists-p file))
-                        (with-current-buffer (find-file-noselect file)
-                          (let ((is-agenda-file (my-org/org-agenda-update-tag)))
-                            (when (buffer-modified-p)
-                              (save-buffer))
-                            is-agenda-file))))
-                    tagged-files)
-                   agenda-files)))))
+        (prog2
+            (org-roam-db-sync)
+            (seq-uniq (append
+                       (seq-filter
+                        (lambda (file)
+                          (when (and file (file-exists-p file))
+                            (with-current-buffer (find-file-noselect file)
+                              (let ((is-agenda-file (my-org/org-agenda-update-tag)))
+                                (when (buffer-modified-p)
+                                  (save-buffer))
+                                is-agenda-file))))
+                        tagged-files)
+                       agenda-files))
+          (org-roam-db-sync)))))
 ```
 但为了优化计算，每天只更新一次。
 所以需要设置一个全局变量来判断。
@@ -126,4 +129,3 @@ This includes:
     (when (fboundp fn)
       (advice-add fn :before #'my-org/org-agenda-files-update)))
 ```
-
