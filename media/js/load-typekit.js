@@ -1,47 +1,73 @@
 (function(d) {
-  // Detect if font is already installed
+  // Base font detection
   var canvas = document.createElement("canvas");
   var context = canvas.getContext("2d");
   var text = "abcdefghijklmnopqrstuvwxyz0123456789";
   context.font = "72px monospace";
   var baseWidth = context.measureText(text).width;
 
-  var fonts = [' SC', ' CN', ' TC', ' TW', ''];
-  for (var i = 0; i < fonts.length; i++) {
-    context.font = "72px '" + 'Source Han Serif' + fonts[i] + "', monospace";
-    if (context.measureText(text).width != baseWidth) return; // Font already present
+  // Possible variants
+  var variants = [' SC', ' CN', ' TC', ' TW', ''];
+  var neededVariant = null;
+
+  for (var i = 0; i < variants.length; i++) {
+    context.font = "72px 'Source Han Serif" + variants[i] + "', monospace";
+    if (context.measureText(text).width != baseWidth) {
+      // Font is already present
+      return;
+    }
+    // Pick the first variant for loading
+    if (!neededVariant) neededVariant = variants[i];
   }
+
+  // Fallback to regular if none detected
+  if (neededVariant === null) neededVariant = '';
 
   // Add wf-loading class
   var h = d.documentElement;
   h.className += " wf-loading";
 
   // Timeout fallback
-  var t = setTimeout(function(){
+  var timeout = setTimeout(function() {
     h.className = h.className.replace(/\bwf-loading\b/g,"") + " wf-inactive";
+    document.body.style.fontFamily = "monospace"; // fallback
   }, 3000);
 
-  // Load font via jsDelivr
+  // Map variants to jsDelivr URLs
+  var variantUrls = {
+    "SC": "https://cdn.jsdelivr.net/gh/adobe-fonts/source-han-serif/Subset/OTF/SourceHanSerifSC-Regular.otf",
+    "CN": "https://cdn.jsdelivr.net/gh/adobe-fonts/source-han-serif/Subset/OTF/SourceHanSerifCN-Regular.otf",
+    "TC": "https://cdn.jsdelivr.net/gh/adobe-fonts/source-han-serif/Subset/OTF/SourceHanSerifTC-Regular.otf",
+    "TW": "https://cdn.jsdelivr.net/gh/adobe-fonts/source-han-serif/Subset/OTF/SourceHanSerifTW-Regular.otf",
+    "": "https://cdn.jsdelivr.net/gh/adobe-fonts/source-han-serif/Subset/OTF/SourceHanSerif-Regular.otf"
+  };
+
+  var fontFamilyName = neededVariant ? "Source Han Serif " + neededVariant : "Source Han Serif";
+  var fontUrl = variantUrls[neededVariant];
+
+  // Add @font-face dynamically
   var style = document.createElement("style");
   style.innerHTML = `
     @font-face {
-      font-family: 'Source Han Serif';
-      src: url('https://cdn.jsdelivr.net/gh/adobe-fonts/source-han-serif/Subset/OTF/SourceHanSerifCN-Regular.otf') format('opentype');
+      font-family: '${fontFamilyName}';
+      src: url('${fontUrl}') format('opentype');
       font-weight: normal;
       font-style: normal;
     }
   `;
   d.head.appendChild(style);
 
-  // Wait until font is loaded
-  var font = new FontFace('Source Han Serif', 'url(https://cdn.jsdelivr.net/gh/adobe-fonts/source-han-serif/Subset/OTF/SourceHanSerifCN-Regular.otf)');
+  // Load only the needed font
+  var font = new FontFace(fontFamilyName, `url(${fontUrl})`);
   font.load().then(function(loadedFont) {
     document.fonts.add(loadedFont);
-    clearTimeout(t);
+    clearTimeout(timeout);
     h.className = h.className.replace(/\bwf-loading\b/g,"") + " wf-active";
-  }).catch(function(){
-    clearTimeout(t);
+    document.body.style.fontFamily = `'${fontFamilyName}', monospace`;
+  }).catch(function() {
+    clearTimeout(timeout);
     h.className = h.className.replace(/\bwf-loading\b/g,"") + " wf-inactive";
+    document.body.style.fontFamily = "monospace"; // fallback
   });
 
 })(document);
