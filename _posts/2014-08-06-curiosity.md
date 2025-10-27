@@ -20,4 +20,4 @@ sudo apt-get install gnome-desktop
 
 结果～～～我！又！重！装！系！统！了！！  
 好奇害死猫……
-![while bee cat dog enconter](http://i.imgur.com/7pr9uy1.jpg "while bee cat dog enconter")
+![while bee cat dog enconter](https://cdn.jsdelivr.net/gh/dustincys/cn@assets/7pr9uy1.jpg "while bee cat dog enconter")

@@ -24,7 +24,7 @@ share: yes
 
 #### 立体情书
 
-<a class="fancybox" rel="gallary1" href="http://i.imgur.com/CkNRhNC.gif" title="立体情书"><img src="http://i.imgur.com/CkNRhNC.gif" alt="立体情书"/></a>
+<a class="fancybox" rel="gallary1" href="https://cdn.jsdelivr.net/gh/dustincys/cn@assets/CkNRhNC.gif" title="立体情书"><img src="https://cdn.jsdelivr.net/gh/dustincys/cn@assets/CkNRhNC.gif" alt="立体情书"/></a>
 
 或者动态的：
 
