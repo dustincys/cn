@@ -14,7 +14,7 @@ share: no
 
 * [SCRP](https://singlecell.mdanderson.org/)
 
-<a class="fancybox" rel="SCRP" href="https://raw.githubusercontent.com/dustincys/cn/assets/scrp.png" title="SCRP"><img src="https://raw.githubusercontent.com/dustincys/cn/assets/scrp.png" alt="SCRP" /></a>
+<a class="fancybox" rel="SCRP" href="https://cdn.jsdelivr.net/gh/dustincys/cn@assets/scrp.png" title="SCRP"><img src="https://cdn.jsdelivr.net/gh/dustincys/cn@assets/scrp.png" alt="SCRP" /></a>
 
 MD安德森癌症中心的单细胞测序数据动态可视化网站。
 
@@ -24,7 +24,7 @@ MD安德森癌症中心的单细胞测序数据动态可视化网站。
 
 * [pysubsimtree](https://github.com/dustincys/pysubsimtree)
 
-<a class="fancybox" rel="pysubsim-tree" href="https://raw.githubusercontent.com/dustincys/cn/assets/pysubsim-tree.png" title="pysubsim-tree"><img src="https://raw.githubusercontent.com/dustincys/cn/assets/pysubsim-tree.png" alt="pysubsim-tree" /></a>
+<a class="fancybox" rel="pysubsim-tree" href="https://cdn.jsdelivr.net/gh/dustincys/cn@assets/pysubsim-tree.png" title="pysubsim-tree"><img src="https://cdn.jsdelivr.net/gh/dustincys/cn@assets/pysubsim-tree.png" alt="pysubsim-tree" /></a>
 
 
 pysubsim-tree是由python开发的生物信息学工具，用于模拟肿瘤中不同亚克隆的体细胞结
@@ -35,7 +35,7 @@ pysubsim-tree是由python开发的生物信息学工具，用于模拟肿瘤中�
 
 * [msphy-SCNAClonal](https://github.com/dustincys/msphy-SCNAClonal)
 
-<a class="fancybox" rel="msphy" href="https://raw.githubusercontent.com/dustincys/cn/assets/tree1.png" title="多阶段树"><img src="https://raw.githubusercontent.com/dustincys/cn/assets/tree1.png" alt="多阶段树" /></a>
+<a class="fancybox" rel="msphy" href="https://cdn.jsdelivr.net/gh/dustincys/cn@assets/tree1.png" title="多阶段树"><img src="https://cdn.jsdelivr.net/gh/dustincys/cn@assets/tree1.png" alt="多阶段树" /></a>
 
 一种基于狄利克雷过程的多阶段树学习机，可用来对不同时空的肿瘤测序数据进行亚克隆进
 化树学习。
@@ -44,7 +44,7 @@ pysubsim-tree是由python开发的生物信息学工具，用于模拟肿瘤中�
 
 * [WDNfinder](https://github.com/dustincys/WDNfinder)
 
-<a class="fancybox" rel="wdnfinder" href="https://raw.githubusercontent.com/dustincys/cn/assets/wdnfinder.png" title="结构可控有权重和无权重网络示例"><img src="https://raw.githubusercontent.com/dustincys/cn/assets/wdnfinder.png" alt="结构可控有权重和无权重网络示例" /></a>
+<a class="fancybox" rel="wdnfinder" href="https://cdn.jsdelivr.net/gh/dustincys/cn@assets/wdnfinder.png" title="结构可控有权重和无权重网络示例"><img src="https://cdn.jsdelivr.net/gh/dustincys/cn@assets/wdnfinder.png" alt="结构可控有权重和无权重网络示例" /></a>
 
 结构可控的有权重网络中，计算并返回最小驱动集合。
 
@@ -120,7 +120,7 @@ org protocol.
 
 * [hithesis](https://github.com/hithesis/hithesis)
 
-<a class="fancybox" rel="hithesis" href="https://raw.githubusercontent.com/dustincys/cn/assets/hithesis.png" title="hithesis"><img src="https://raw.githubusercontent.com/dustincys/cn/assets/hithesis.png" alt="hithesis" /></a>
+<a class="fancybox" rel="hithesis" href="https://cdn.jsdelivr.net/gh/dustincys/cn@assets/hithesis.png" title="hithesis"><img src="https://cdn.jsdelivr.net/gh/dustincys/cn@assets/hithesis.png" alt="hithesis" /></a>
 
 窝工毕业论文模板。
 

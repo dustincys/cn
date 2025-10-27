@@ -11,14 +11,14 @@ toc: no
 
 本篇是[上一篇“数据科学杂谈之二”](http://dustincys.github.io/cn/2022/05/datascience/)的扩展。
 
-<a class="fancybox" rel="gallery1" title="Portal" href="https://raw.githubusercontent.com/dustincys/cn/assets/doctorstrange-drstrange.gif"><img src="https://raw.githubusercontent.com/dustincys/cn/assets/doctorstrange-drstrange.gif" alt="Portal" /></a>
+<a class="fancybox" rel="gallery1" title="Portal" href="https://cdn.jsdelivr.net/gh/dustincys/cn@assets/doctorstrange-drstrange.gif"><img src="https://cdn.jsdelivr.net/gh/dustincys/cn@assets/doctorstrange-drstrange.gif" alt="Portal" /></a>
 
 很多小伙伴都有一个这样一个梦想：能有奇异博士的打开传送门的能力，这样就可以节省大量时间。
 例如，从办公室到实验室之间，瞬间传送。
 在现实中实现不了，在计算机中完全可以实现。
 对于某[数据分析工程文件夹架构](https://dustincys.github.io/cn/2020/10/datascience/)如下：
 
-<a class="fancybox" rel="gallery1" title="Scheme_of_path" href="https://raw.githubusercontent.com/dustincys/cn/assets/scheme_of_path.png"><img src="https://raw.githubusercontent.com/dustincys/cn/assets/scheme_of_path.png" alt="Scheme_of_path" /></a>
+<a class="fancybox" rel="gallery1" title="Scheme_of_path" href="https://cdn.jsdelivr.net/gh/dustincys/cn@assets/scheme_of_path.png"><img src="https://cdn.jsdelivr.net/gh/dustincys/cn@assets/scheme_of_path.png" alt="Scheme_of_path" /></a>
 
 奇异博士的传送门功能是从绿色路径的pipeline5文件夹打开传送门，直接传送到红色路径的pipeline5文件夹中，逻辑是
 ```shell

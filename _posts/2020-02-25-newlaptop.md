@@ -41,7 +41,7 @@ hifvwm的逻辑是，由于现在空间和物资足够（内存大和CPU强）�
 土豪既然资源多，那么就把所有的书都打开最大（全屏），用不着合上摞起来（最小化）。只需要稍微提醒一下有没有大书本下还覆盖着别的小书本，因为这种情况已经很罕见，几乎没有什么人上自习同时复习9本书以上的了。例如下图Emacs全屏之下还覆盖这一个firefox，在左下角提醒一下覆盖这窗口类别和对应数量即可。
 实际上这种情况很罕见，因为firefox和emacs会被管家自动分开。
 
-<a class="fancybox" rel="gallery1" href="https://raw.githubusercontent.com/dustincys/cn/assets/screenshot-2020-02-25%5B21%3A52%5D.jpg" title="全屏提醒"><img src="https://raw.githubusercontent.com/dustincys/cn/assets/screenshot-2020-02-25%5B21%3A52%5D.jpg" alt="全屏提醒" /></a>
+<a class="fancybox" rel="gallery1" href="https://cdn.jsdelivr.net/gh/dustincys/cn@assets/screenshot-2020-02-25%5B21%3A52%5D.jpg" title="全屏提醒"><img src="https://cdn.jsdelivr.net/gh/dustincys/cn@assets/screenshot-2020-02-25%5B21%3A52%5D.jpg" alt="全屏提醒" /></a>
 
 提醒的方法如下：
 

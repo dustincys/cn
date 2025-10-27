@@ -11,7 +11,7 @@ share: no
 
 * Chu, Yanshuo, et al. "Pan-cancer T cell atlas links a cellular stress response state to immunotherapy resistance." [Nature Medicine](https://www.nature.com/articles/s41591-023-02371-y) (2023): 1-13.
 
-<a class="fancybox" rel="gallery1" href="https://raw.githubusercontent.com/dustincys/cn/assets/1685113897528.jpg" title="肿瘤微环境中的应激T细胞"><img src="https://raw.githubusercontent.com/dustincys/cn/assets/1685113897528.jpg" alt="肿瘤微环境中的应激T细胞" /></a>
+<a class="fancybox" rel="gallery1" href="https://cdn.jsdelivr.net/gh/dustincys/cn@assets/1685113897528.jpg" title="肿瘤微环境中的应激T细胞"><img src="https://cdn.jsdelivr.net/gh/dustincys/cn@assets/1685113897528.jpg" alt="肿瘤微环境中的应激T细胞" /></a>
 
 上图中，高分辨率空间分析图像显示肿瘤微环境中受应激的 T 细胞。 在图像中，肿瘤细胞
 显示为棕褐色，成纤维细胞显示为黄色，T 细胞显示为酒色。 处于应激反应状态的 T 细胞

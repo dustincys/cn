@@ -10,7 +10,7 @@ toc: no
 ---
 
 
-<a class="fancybox" rel="gallery1" href="https://raw.githubusercontent.com/dustincys/cn/assets/nantong.png" title="南通小学试卷"><img src="https://raw.githubusercontent.com/dustincys/cn/assets/nantong.png" alt="南通小学试卷" /></a>
+<a class="fancybox" rel="gallery1" href="https://cdn.jsdelivr.net/gh/dustincys/cn@assets/nantong.png" title="南通小学试卷"><img src="https://cdn.jsdelivr.net/gh/dustincys/cn@assets/nantong.png" alt="南通小学试卷" /></a>
 
 
 推广这个题目的条件，设被绕圈的大圆半径为$$a$$，内小圆半径为$$b$$，外圆半径为$$c$$，只有一个限定条件：$$a > b$$。
