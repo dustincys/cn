@@ -50,13 +50,13 @@ pysubsim-tree是由python开发的生物信息学工具，用于模拟肿瘤中�
 
 ## 数据科学
 
-* [数据科学的工程环境](https://yanshuo.site/cn/tags/#%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6%E6%9D%82%E8%B0%88)
+* [数据科学的工程环境](https://dustincys.github.io/cn/tags/#%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6%E6%9D%82%E8%B0%88)
 
 ## 信息技术
 
 ### 信息发布
 
-* [自由博客系统](https://yanshuo.site/cn/tags/#%E8%87%AA%E7%94%B1%E5%8D%9A%E5%AE%A2%E7%B3%BB%E7%BB%9F)
+* [自由博客系统](https://dustincys.github.io/cn/tags/#%E8%87%AA%E7%94%B1%E5%8D%9A%E5%AE%A2%E7%B3%BB%E7%BB%9F)
 
 Spacemacs layer
 
@@ -64,7 +64,9 @@ Spacemacs layer
 
 #### 浏览器插件
 
-* [GPT2Org](https://addons.mozilla.org/en-US/firefox/addon/gpt2org/)
+* GPT2Org**
+- [firefox addon](https://addons.mozilla.org/en-US/firefox/addon/gpt2org/)
+- [chrome store](https://chromewebstore.google.com/detail/gpt2org/nedljjoclmlgpobfohcnanjipnblgjbo)
 
 ![GPT2Org](https://addons.mozilla.org/user-media/addon_icons/2876/2876588-64.png)
 
@@ -72,6 +74,8 @@ Get summary from a webpage by providing the necessary prompt and API key.
 Subsequently, the obtained summary can be organized and stored in a structured
 format, such as an Org file within the Emacs environment or an Org-roam node by
 org protocol.
+
+blog: https://dustincys.github.io/cn/2025/03/attentions/
 
 * [org-capture-extension](https://github.com/dustincys/org-capture-extension)
 
