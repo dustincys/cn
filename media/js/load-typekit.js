@@ -35,11 +35,11 @@
 
   // Map variants to jsDelivr URLs
   var variantUrls = {
-    "SC": "https://cdn.jsdelivr.net/gh/adobe-fonts/source-han-serif/Subset/OTF/SourceHanSerifSC-Regular.otf",
-    "CN": "https://cdn.jsdelivr.net/gh/adobe-fonts/source-han-serif/Subset/OTF/SourceHanSerifCN-Regular.otf",
-    "TC": "https://cdn.jsdelivr.net/gh/adobe-fonts/source-han-serif/Subset/OTF/SourceHanSerifTC-Regular.otf",
-    "TW": "https://cdn.jsdelivr.net/gh/adobe-fonts/source-han-serif/Subset/OTF/SourceHanSerifTW-Regular.otf",
-    "": "https://cdn.jsdelivr.net/gh/adobe-fonts/source-han-serif/Subset/OTF/SourceHanSerif-Regular.otf"
+    "SC": "https://cdn.jsdelivr.net/gh/adobe-fonts/source-han-serif@release/OTF/SimplifiedChinese/SourceHanSerifSC-SemiBold.otf",
+      "CN": "https://cdn.jsdelivr.net/gh/adobe-fonts/source-han-serif@release/OTF/SimplifiedChinese/SourceHanSerifSC-SemiBold.otf",
+    "TC": "https://cdn.jsdelivr.net/gh/adobe-fonts/source-han-serif@release/OTF/TraditionalChinese/SourceHanSerifTC-SemiBold.otf",
+      "TW": "https://cdn.jsdelivr.net/gh/adobe-fonts/source-han-serif@release/OTF/TraditionalChineseHK/SourceHanSerifHC-SemiBold.otf",
+      "": "https://cdn.jsdelivr.net/gh/adobe-fonts/source-han-serif@release/OTF/SimplifiedChinese/SourceHanSerifSC-SemiBold.otf"
   };
 
   var fontFamilyName = neededVariant ? "Source Han Serif " + neededVariant : "Source Han Serif";
