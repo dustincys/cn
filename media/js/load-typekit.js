@@ -43,6 +43,9 @@
 
     var fontFamilyName = neededVariant ? "Source Han Serif " + neededVariant : "Source Han Serif";
     var fontUrl = variantUrls[neededVariant];
+    console.log("fontUrl:");
+    console.log(fontUrl);
+
 
     // Add @font-face dynamically
     var style = document.createElement("style");
