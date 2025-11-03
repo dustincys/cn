@@ -1,5 +1,5 @@
 @font-face {
-    font-family: "SentySnow";
+    font-family: 'SentySnow';
 	  src: url("https://cdn.jsdelivr.net/gh/dustincys/dustincys.github.com@master/fontmin/HanyiSentySnowMountain.woff2") format('woff2');
 }
 @font-face {
@@ -10,6 +10,7 @@
          url('https://cdn.jsdelivr.net/gh/yihui/cron/fonts/SourceHanSerifCN-Regular-yihui.woff2') format('woff2');
 }
 body{font-size: 20px; font-weight:500; line-height:1.667; font-family: 'Source Han Serif CN', serif; color:#000000; background-color:#ffffff;}
+#myname {font-weight: bold; font-family: 'SentySnow';}
 *{padding:0;margin: 0;border:none;outline:none;}
 a{color: #000; text-decoration: none; padding-bottom: 2px; border-bottom: 1px solid;
 -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; transition: all 0.3s ease;}
