@@ -3,7 +3,7 @@
     src: local('Source Han Serif CN'), local('Source Han Serif SC'),
          local('Source Han Serif TC'), local('Source Han Serif TW'),
          local('Source Han Serif'), local('Noto Serif CJK SC'), local('Songti SC'), local('SimSong'),
-         url('https://cdn.jsdelivr.net/gh/dustincys/dustincys.github.com@master/fontmin/SourceHanSerifSC-SemiBold.woff2') format('woff2');
+         url('https://cdn.jsdelivr.net/gh/yihui/cron/fonts/SourceHanSerifCN-Regular-yihui.woff2') format('woff2');
 }
 body{font-size: 20px; font-weight:500; line-height:1.667; font-family: 'Source Han Serif CN', serif; color:#000000; background-color:#ffffff;}
 *{padding:0;margin: 0;border:none;outline:none;}
