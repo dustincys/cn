@@ -17,7 +17,6 @@
     font-display: swap;
 }
 #myname {font-weight: bold; font-family: 'SentySnow';}
-#titlepages {font-weight: bold; font-family: 'SentyPea';}
 body{font-size:20px;font-family:'source-han-serif-sc','Source Han Serif SC','Source Han Serif CN','Source Han Serif TC','Source Han Serif TW','Source Han Serif','Songti SC','仿宋','FangSong','NSimSun',"Snippet","Hiragino Sans GB","Microsoft YaHei",Trebuchet,"Trebuchet MS",Tahoma,"Lucida Grande","Lucida Sans Unicode",Verdana,sans-serif;background-color:#ffffff;line-height:1.667}
 *{padding:0;margin: 0;border:none;outline:none;}
 a{color: #000; text-decoration: none; padding-bottom: 2px; border-bottom: 1px solid;
@@ -101,7 +100,7 @@ div.item{ text-align:left; }
 .cbp-spmenu {position: fixed;top: 0;}
 .headline {position: fixed; left: 0; right: 0; height: 48px; background-color: white; border-bottom: 1px solid #CCC; z-index: 9998;}
 #myname {position: fixed; left: calc(50% - 425.5px); transform: translateX(-100%);}
-#titlepages {position: fixed; left: calc(50% - 425.5px); display: inline-flex; flex-direction: row; justify-content: left;}
+#titlepages {font-weight: bold; font-family: 'SentyPea'; position: fixed; left: calc(50% - 425.5px); display: inline-flex; flex-direction: row; justify-content: left;}
 .cbp-spmenu h3 { color: #afdefa; font-size: 1.9em; padding: 20px; margin: 0; background: #0d77b6; }
 .cbp-spmenu a { display: block; line-height:1; }
 .cbp-spmenu a:hover { background: #777777; }
