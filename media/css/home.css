@@ -1,25 +1,25 @@
 @font-face {
-	font-family: "SentyPea";
-	src: url("https://cdn.jsdelivr.net/gh/dustincys/dustincys.github.com@master/fontmin/HanyiSentyPea.woff2") format('woff2');
+    font-family: "SentyPea";
+    src: url("https://cdn.jsdelivr.net/gh/dustincys/dustincys.github.com@master/fontmin/SentyPea-ysc.woff2") format("woff2");
+    font-display: swap;
 }
-
 @font-face {
     font-family: "SentySnow";
-	  src: url("https://cdn.jsdelivr.net/gh/dustincys/dustincys.github.com@master/fontmin/HanyiSentySnowMountain.woff2") format('woff2');
+    src: url("https://cdn.jsdelivr.net/gh/dustincys/dustincys.github.com@master/fontmin/SentySnowMountain-ysc.woff2") format("woff2");
+    font-display: swap;
 }
-
 .headname {
 	text-align:center;
 	font-size:2em;
 	line-height:2em;
-	font-family: "SentySnow";
+	font-family: "SentySnow", serif;
 }
 .header {
 	text-align: center;
   margin-bottom: 50px;
 }
 .header .slogan {
-	font-family: "SentyPea";
+	font-family: "SentyPea", serif;
 	font-size: 18px;
 }
 .article {
@@ -31,14 +31,7 @@
 }
 .myblog {
     display: inline-block;
-    /* border: 1px solid #000; */
-    /* height: 40px; */
-    /* width: 196px; */
-    /* line-height: 34px; */
-    /* border-radius: 30px; */
-    /* background: #fff; */
-    /* text-decoration: none; */
-    font-family: "SentyPea";
+    font-family: "SentyPea", serif;
     font-size: 24px;
     text-align: center;
     color: #000;

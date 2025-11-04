@@ -1,16 +1,24 @@
 @font-face {
-    font-family: 'SentySnow';
-	  src: url("https://cdn.jsdelivr.net/gh/dustincys/dustincys.github.com@master/fontmin/HanyiSentySnowMountain.woff2") format('woff2');
-}
-@font-face {
     font-family: 'Source Han Serif CN';
     src: local('Source Han Serif CN'), local('Source Han Serif SC'),
          local('Source Han Serif TC'), local('Source Han Serif TW'),
          local('Source Han Serif'), local('Noto Serif CJK SC'), local('Songti SC'), local('SimSong'),
-         url('https://cdn.jsdelivr.net/gh/yihui/cron/fonts/SourceHanSerifCN-Regular-yihui.woff2') format('woff2');
+         url('https://cdn.jsdelivr.net/gh/dustincys/cron/fonts/SourceHanSerifCN-SemiBold-ysc.woff2') format('woff2');
+    font-display: swap;
+}
+@font-face {
+    font-family: "SentyPea";
+    src: url("https://cdn.jsdelivr.net/gh/dustincys/dustincys.github.com@master/fontmin/SentyPea-ysc.woff2") format("woff2");
+    font-display: swap;
+}
+@font-face {
+    font-family: "SentySnow";
+    src: url("https://cdn.jsdelivr.net/gh/dustincys/dustincys.github.com@master/fontmin/SentySnowMountain-ysc.woff2") format("woff2");
+    font-display: swap;
 }
 #myname {font-weight: bold; font-family: 'SentySnow';}
-body{font-size:20px;font-family:'source-han-serif-sc','Source Han Serif SC','Source Han Serif CN','Source Han Serif TC','Source Han Serif TW','Source Han Serif','Songti SC','仿宋','FangSong','NSimSun',"Snippet","Hiragino Sans GB","Microsoft YaHei",Trebuchet,"Trebuchet MS",Tahoma,"Lucida Grande","Lucida Sans Unicode",Verdana,sans-serif;background-color:#ffffff;line-height:1.667}
+#titlepages {font-weight: bold; font-family: 'SentyPea';}
+body{font-size:20px;font-family:'Source Han Serif CN''source-han-serif-sc','Source Han Serif SC','Source Han Serif TC','Source Han Serif TW','Source Han Serif','Songti SC','仿宋','FangSong','NSimSun',"Snippet","Hiragino Sans GB","Microsoft YaHei",Trebuchet,"Trebuchet MS",Tahoma,"Lucida Grande","Lucida Sans Unicode",Verdana,sans-serif;background-color:#ffffff;line-height:1.667}
 *{padding:0;margin: 0;border:none;outline:none;}
 a{color: #000; text-decoration: none; padding-bottom: 2px; border-bottom: 1px solid;
 -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; transition: all 0.3s ease;}
@@ -23,15 +31,15 @@ ol,ul{list-style-position: outside; margin-left:1em;padding:0.5em 0;}
 ol ul, ul ol, ul ul, ol ol {margin-left:1em;}
 pre code{margin:1em 0;line-height:1.3;display:block;overflow:hidden;}
 .highlight{background: none !important;}
-blockquote{display:block;border-left:4px solid #d2d2d2;font-family:'楷体','幼圆','Snippet','Hiragino Sans GB','source-han-serif-sc','Source Han Serif SC','Source Han Serif CN','Source Han Serif TC','Source Han Serif TW','Source Han Serif','Songti SC','仿宋','FangSong','NSimSun',"Microsoft YaHei";}
+blockquote{display:block;border-left:4px solid #d2d2d2;font-family:'楷体','幼圆','Snippet','Hiragino Sans GB','Source Han Serif CN''source-han-serif-sc','Source Han Serif SC','Source Han Serif TC','Source Han Serif TW','Source Han Serif','Songti SC','仿宋','FangSong','NSimSun',"Microsoft YaHei";}
 blockquote{margin:1em 1em;padding-left:1.5em;}
 blockquote p{margin:0;padding:.5em 0;text-indent:0em;}
 #container{width:850px;border-left: 1px solid rgb(204, 204, 204);margin:auto;display:block;margin-bottom:78px;}
 .post{padding:1em 0 0 2em; margin-bottom:2em;}
 #headofpost > p{font-weight:500;}
-.baidubutton{padding:2em 0 0 1em; border-top: 1px solid rgb(204, 204, 204);margin-top:2em;margin-bottom:2em;}
+.baidubutton{padding:2em 0 0 1em; border-top: 1px solid rgb(204, 204, 204);margin-top:2em;margin-bottom:2em;display:none;}
 .comments{padding:2em 6em; border: 1px solid rgb(204, 204, 204);margin-top:2em;margin-bottom:2em;}
-#comment_thread{padding:2em 0 0 1em; border-top: 1px solid rgb(204, 204, 204);margin-top:2em;margin-bottom:2em;}
+#comment_thread{padding:2em 0 0 1em; border-top: 1px solid rgb(204, 204, 204);margin-top:2em;margin-bottom:2em;display:none;}
 /* .post > header:nth-child(1){margin-bottom:1.5em;} */
 /* .post > header:nth-child(1) > h1:nth-child(1){ margin-bottom: 0em;text-align:center;} */
 header {padding: 78px 0 0 0;}
@@ -45,14 +53,14 @@ hr.style1{border: 0;height: 1px;background-image: -webkit-linear-gradient(left, 
 .listing-item a{padding:.2em 1em;}
 .listing-item time{color:#999999;}
 .listing-seperator{font-weight:bold;margin-left:-1em;}
-div.toc-header{position: absolute; left: calc(50% - 425.5px); transform: translateX(-100%); text-align: right;max-width:230px;}
-nav{font-family:'source-han-serif-sc','Source Han Serif SC','Source Han Serif CN','Source Han Serif TC','Source Han Serif TW','Source Han Serif','Songti SC','仿宋','FangSong','NSimSun',"Microsoft YaHei";font-size:20px;text-transform:uppercase;text-align:center;}
+div.toc-header{position: absolute; left: calc(50% - 425.5px); transform: translateX(-100%); text-align: right;max-width:200px;}
+nav{font-family:'Source Han Serif CN''source-han-serif-sc','Source Han Serif SC','Source Han Serif TC','Source Han Serif TW','Source Han Serif','Songti SC','仿宋','FangSong','NSimSun',"Microsoft YaHei";font-size:20px;text-transform:uppercase;text-align:center;}
 nav a{display:block;padding:14px 20px;color:#000000;border-bottom:none;}
-.anav{border-left: 1px solid #ccc;}
+.anav + .anav {border-left: 1px solid #ccc;}
 nav a:hover{background-color:#777777;text-decoration:none;color:#f9f9f9; -webkit-transition:color .2s linear;}
-h1{font-family:'source-han-serif-sc','Source Han Serif SC','Source Han Serif CN','Source Han Serif TC','Source Han Serif TW','Source Han Serif',"楷体",sans-serif,'Snippet','Hiragino Sans GB','Songti SC','仿宋','FangSong','NSimSun',"Microsoft YaHei";font-size:1.6em;color:#000;}
-h2{font-family:'source-han-serif-sc','Source Han Serif SC','Source Han Serif CN','Source Han Serif TC','Source Han Serif TW','Source Han Serif',"Snippet","Hiragino Sans GB","楷体",sans-serif,'Snippet','Hiragino Sans GB','Songti SC','仿宋','FangSong','NSimSun',"Microsoft YaHei";font-size:1.4em;color:#111;padding:0.5em 0;}
-h3{font-family:'source-han-serif-sc','Source Han Serif SC','Source Han Serif CN','Source Han Serif TC','Source Han Serif TW','Source Han Serif',"Snippet","Hiragino Sans GB","楷体",sans-serif,'Snippet','Hiragino Sans GB','Songti SC','仿宋','FangSong','NSimSun',"Microsoft YaHei";font-size:1.2em;color:#222;padding:0.5em 0;}
+h1{font-family:'Source Han Serif CN''source-han-serif-sc','Source Han Serif SC','Source Han Serif TC','Source Han Serif TW','Source Han Serif',"楷体",sans-serif,'Snippet','Hiragino Sans GB','Songti SC','仿宋','FangSong','NSimSun',"Microsoft YaHei";font-size:1.6em;color:#000;}
+h2{font-family:'Source Han Serif CN''source-han-serif-sc','Source Han Serif SC','Source Han Serif TC','Source Han Serif TW','Source Han Serif',"Snippet","Hiragino Sans GB","楷体",sans-serif,'Snippet','Hiragino Sans GB','Songti SC','仿宋','FangSong','NSimSun',"Microsoft YaHei";font-size:1.4em;color:#111;padding:0.5em 0;}
+h3{font-family:'Source Han Serif CN''source-han-serif-sc','Source Han Serif SC','Source Han Serif TC','Source Han Serif TW','Source Han Serif',"Snippet","Hiragino Sans GB","楷体",sans-serif,'Snippet','Hiragino Sans GB','Songti SC','仿宋','FangSong','NSimSun',"Microsoft YaHei";font-size:1.2em;color:#222;padding:0.5em 0;}
 h4{font-size:1em;font-weight: bold;color:#333;padding:0.5em 0;}
 pre,code{font-family:Menlo,"Andale Mono",Consolas,"Courier New",Monaco,monospace;}
 pre,code:hover{overflow:auto;}
@@ -75,7 +83,7 @@ div.item{ text-align:left; }
 /*********************************************************\
  * baidu share
 \*********************************************************/
-.bdsharebuttonbox a{ width: 31px!important; height: 32px!important; margin: 0 6px 0 0!important; background: url(/slides/share_icon.png) no-repeat!important; padding-bottom: 0; border-bottom: none;}
+.bdsharebuttonbox a{ width: 31px!important; height: 32px!important; margin: 0 6px 0 0!important; background: url(https://cdn.jsdelivr.net/gh/dustincys/slides@master/slides/share_icon.png) no-repeat!important; padding-bottom: 0; border-bottom: none;}
 .bdsharebuttonbox a.bds_tsina { background-position: -36px 0!important; }
 .bdsharebuttonbox a.bds_renren { background-position: -108px 0!important; }
 .bdsharebuttonbox a.bds_qzone { background-position: 0 0!important; }
@@ -85,15 +93,31 @@ div.item{ text-align:left; }
 .shareto { max-width: 100%; display: block; }
 .shareto span { float: left; padding-right: 15px; line-height: 1.667; }
 .meta{ margin: 0.5em 1em 0.5em 1em; padding-left: 1.5em; border-left: 4px solid #D2D2D2; }
-.toc ul{ padding:0.5em 10px 0 0; margin-left: 0; }
-.toc li{ padding:0.5em 0px 0 0; margin-left: 0; direction: rtl;}
-.toc {padding-right:1em;}
+.toc > ul{ padding:0.4em 0em 0em 0em; }
+.toc > ul > li{ padding:0.4em 0em 0em 0em; }
+.toc > ul > li > ul{ padding:0.4em 0em 0em 0em; }
 /* hidden menu  */ 
 .container{ display:none; }
-.cbp-spmenu {position: fixed;top: 0;}
-.headline {position: fixed; left: 0; right: 0; height: 48px; background-color: white; border-bottom: 1px solid #CCC; z-index: 9998;}
-#myname {position: fixed; left: calc(50% - 425.5px); transform: translateX(-100%);}
-#titlepages {position: fixed; left: calc(50% - 425.5px); display: inline-flex; flex-direction: row; justify-content: left;}
+.cbp-spmenu {
+    position: fixed;
+    left: calc(50% - 425.5px); /* Adjust horizontal position */
+    transform: translateX(-125px); /* Adjust horizontal position */
+    top: 50%; /* Center vertically */
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    width: 100%;
+    top: 0;}
+.headline {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 48px;
+    background-color: white;
+    border-bottom: 1px solid #CCC; /* Adjust the line style and color as needed */
+    z-index: 9998; /* Ensure it's below the flex container */
+}
+
 .cbp-spmenu h3 { color: #afdefa; font-size: 1.9em; padding: 20px; margin: 0; background: #0d77b6; }
 .cbp-spmenu a { display: block; line-height:1; }
 .cbp-spmenu a:hover { background: #777777; }
@@ -123,5 +147,3 @@ html body div#container div.post ul li p, html body div#container div.post ol li
 div.footnotes ol li {padding: 0 0; font-weight:inherit;}
 .footnotes {font-size: 16px; line-height: 1.667; border-top: 1px solid #ccc; margin-top: 1em;}
 .MathJax_Display{overflow:auto;}
-
-table{margin:auto;}
