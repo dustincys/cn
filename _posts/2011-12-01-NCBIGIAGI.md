@@ -14,7 +14,7 @@ PS： 一生命学院老师试了多个具有该转换功能网页失败之后�
 
 ### 用户界面
 
-<a class="fancybox" rel="gallary1" href="https://cdn.jsdelivr.net/gh/dustincys/cn@assets/0xvA7Ac.jpg" title="UI of tool"><img src="https://cdn.jsdelivr.net/gh/dustincys/cn@assets/0xvA7Ac.jpg" alt="UI of tool"/></a>
+<a class="fancybox" rel="gallary1" href="https://cdn.jsdelivr.net/gh/dustincys/cn@refs/heads/assets/0xvA7Ac.jpeg" title="UI of tool"><img src="https://cdn.jsdelivr.net/gh/dustincys/cn@refs/heads/assets/0xvA7Ac.jpeg" alt="UI of tool"/></a>
 
 [下载地址](http://ishare.iask.sina.com.cn/f/21695346.html)
 
