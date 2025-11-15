@@ -70,6 +70,7 @@ toc: no
 ```elisp
   (cl-defstruct hl-node title begin level children parent)
 
+
   (defun my-org/parse-headline-tree ()
     "Return headline tree for current buffer."
     (let* ((parsed (org-element-parse-buffer))
@@ -96,6 +97,7 @@ toc: no
                     n))
         (fix root))))
 
+
   (defun my-org/set-parents (node &optional parent)
     (setf (hl-node-parent node) parent)
     (dolist (c (hl-node-children node))
@@ -109,7 +111,7 @@ toc: no
       (match-string 1 s)))
 
 
-  (defun my-org/helm-select-from-tree (node)
+  (defun my-org/helm-select-from-tree (node &optional file)
     "Recursively choose a headline from NODE. Return either:
  - an hl-node
  - or (node . new-title) for insertion."
@@ -140,33 +142,39 @@ toc: no
           (lambda (choice)
             (cond
              ((eq choice :up)
-              (my-org/helm-select-from-tree parent))
-             ((eq choice :cancel)
-              :cancel)
-             ((eq choice :open-backlinks)
-              ;; Call backlink selector for current file
-              (let ((current-file (buffer-file-name)))
-                (my-org/helm-open-backlinks current-file)))
+              (my-org/helm-select-from-tree parent file))
+
              ;; open linked node
              ((eq choice :open-link)
               (let ((target (org-roam-node-from-id node-id)))
                 (when target
-                  (find-file (org-roam-node-file target))
-                  (goto-char (point-min))
-                  (my-org/helm-select-from-tree
-                   (my-org/set-parents
-                    (my-org/parse-headline-tree))))))
+                  (let ((next-file (org-roam-node-file target)))
+                    (find-file next-file)
+                    (goto-char (point-min))
+                    (my-org/helm-select-from-tree
+                     (my-org/set-parents
+                      (my-org/parse-headline-tree))
+                     next-file)))))
+
              ((memq choice '(:create-with-prefix :create-no-prefix))
               ;; Return: (node . (choice . typed-text))
-              (cons node (cons choice helm-pattern))))))
+              (cons file (cons node (cons choice helm-pattern))))
+
+             ((eq choice :open-backlinks)
+              ;; Call backlink selector for current file
+              (my-org/helm-open-backlinks file))
+
+             ((eq choice :cancel)
+              :cancel)
+             )))
+
         ;; ---- Source 2 ----
         (helm-build-sync-source "Headlines"
           :candidates child-cands
           :action (lambda (choice)
-                    (my-org/helm-select-from-tree choice)))))))
+                    (my-org/helm-select-from-tree choice file)))))))
 
 
-  ;; (my-org/helm-select-from-tree (my-org/set-parents (my-org/parse-headline-tree)))
   (defun my-org/roam-capture-to-tree ()
     "Use the headline tree selector and insert according to returned action.
 Return the point where the content ends up."
@@ -179,32 +187,34 @@ Return the point where the content ends up."
                    (org-element-cache-reset)
                    (my-org/set-parents (my-org/parse-headline-tree))))
            ;; Step 2: let user select headline or create new
-           (result (my-org/helm-select-from-tree root))
-           parent-node typed insert-point)
-      ;; Step 3: switch to actual file buffer for insertion
-      (find-file file)
+           (result (my-org/helm-select-from-tree root file))
+           parent-node typed)
+      ;; (find-file file)
+      ;; (message "result: %S" result)
       (pcase result
         ;; Cancel
         (:cancel
-         nil)
+         (user-error "cancel"))
+
         ;; Create with prefix: insert typed headline under parent
-        (`(,parent . (:create-with-prefix . ,typed))
-         (setq parent-node parent)
+        (`(,target-file . (,parent-node . (:create-with-prefix . ,typed)))
+         (find-file target-file)
          (goto-char (hl-node-begin parent-node))
          (unless (string-empty-p typed)
            (org-end-of-subtree t)
            (unless (bolp) (insert "\n"))
            (insert (make-string (+ 1 (hl-node-level parent-node)) ?*) " " typed))
-         (setq insert-point (point)))
+         (cons target-file (point-marker))
+         )
         ;; Create NO prefix: insert empty under parent
-        (`(,parent . (:create-no-prefix . ,_typed))
-         (setq parent-node parent)
+        (`(,target-file . (,parent-node . (:create-no-prefix . ,_typed)))
+         (find-file target-file)
          (goto-char (hl-node-begin parent-node))
-         (setq insert-point (point)))
+         (cons target-file (point-marker)))
         ;; Should not happen
         (_
-         nil))
-      insert-point))
+         (user-error "cancle")))))
+
   (defun my-org/get-backlink-nodes (file)
     "Return a list of (source-id . source-file) that link to FILE."
     (org-roam-db-query
@@ -239,6 +249,7 @@ Returns the node struct of the selected backlink file."
                           (goto-char (point-min))
                           (my-org/helm-select-from-tree
                            (with-current-buffer (current-buffer)
-                             (my-org/set-parents (my-org/parse-headline-tree))))))))))
+                             (my-org/set-parents (my-org/parse-headline-tree)))
+                           file )))))))
 ```
 
