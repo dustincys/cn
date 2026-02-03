@@ -64,9 +64,7 @@ Spacemacs layer
 
 #### 浏览器插件
 
-* GPT2Org**
-- [firefox addon](https://addons.mozilla.org/en-US/firefox/addon/gpt2org/)
-- [chrome store](https://chromewebstore.google.com/detail/gpt2org/nedljjoclmlgpobfohcnanjipnblgjbo)
+* GPT2Org： [firefox addon](https://addons.mozilla.org/en-US/firefox/addon/gpt2org/) [chrome store](https://chromewebstore.google.com/detail/gpt2org/nedljjoclmlgpobfohcnanjipnblgjbo)
 
 ![GPT2Org](https://addons.mozilla.org/user-media/addon_icons/2876/2876588-64.png)
 
