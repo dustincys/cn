@@ -124,5 +124,10 @@ blog: https://dustincys.github.io/cn/2025/03/attentions/
 
 <a class="fancybox" rel="hithesis" href="https://cdn.jsdelivr.net/gh/dustincys/cn@assets/hithesis.png" title="hithesis"><img src="https://cdn.jsdelivr.net/gh/dustincys/cn@assets/hithesis.png" alt="hithesis" /></a>
 
-窝工毕业论文模板。
+窝工毕业论文模板
 
+
+## 课堂教学
+
+* [classroom](https://github.com/dustincys/classroom)
+课堂随机提问系统
