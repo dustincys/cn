@@ -73,7 +73,7 @@ Subsequently, the obtained summary can be organized and stored in a structured
 format, such as an Org file within the Emacs environment or an Org-roam node by
 org protocol.
 
-blog: https://dustincys.github.io/cn/2025/03/attentions/
+blog: [https://dustincys.github.io/cn/2025/03/attentions/](https://dustincys.github.io/cn/2025/03/attentions/)
 
 * [org-capture-extension](https://github.com/dustincys/org-capture-extension)
 
@@ -129,5 +129,6 @@ blog: https://dustincys.github.io/cn/2025/03/attentions/
 
 ## 课堂教学
 
-* [classroom](https://github.com/dustincys/classroom)
+<img src="https://raw.githubusercontent.com/dustincys/cn/refs/heads/assets/classroom-call-logo.png" alt="logo" width="150" >
+* [classroom-call](https://github.com/dustincys/classroom-call)
 课堂随机提问系统
