@@ -129,6 +129,6 @@ blog: [https://dustincys.github.io/cn/2025/03/attentions/](https://dustincys.git
 
 ## 课堂教学
 
-<img src="https://raw.githubusercontent.com/dustincys/cn/refs/heads/assets/classroom-call-logo.png" alt="logo" width="150" >
+<img src="https://cdn.jsdelivr.net/gh/dustincys/cn@refs/heads/assets/classroom-call-logo.png" alt="logo" width="150" >
 * [classroom-call](https://github.com/dustincys/classroom-call)
 课堂随机提问系统
