@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 简历
+title: 推荐
 comments: no
 toc: no
 share: no
