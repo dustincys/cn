@@ -132,3 +132,9 @@ blog: [https://dustincys.github.io/cn/2025/03/attentions/](https://dustincys.git
 <img src="https://cdn.jsdelivr.net/gh/dustincys/cn@refs/heads/assets/classroom-call-logo.png" alt="logo" width="150" >
 * [classroom-call](https://github.com/dustincys/classroom-call)
 课堂随机提问系统
+
+## 多媒体
+
+<img src="https://cdn.jsdelivr.net/gh/dustincys/emacs-radio@main/icon/EmacsRadioIcon.png" alt="logo" width="150" >
+* [emacs-radio](https://github.com/dustincys/emacs-radio)
+放在 Emacs 里的网络收音机：TSV 电台表 → FFmpeg 异步探测 → Helm 搜索 → mpv 播放，mode-line 显示音量波形与播放状态。
