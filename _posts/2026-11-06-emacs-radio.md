@@ -27,8 +27,15 @@ toc: yes
 手机上也安装了收音机App，在老美开车的时候，听怀集音乐之声，在德州乡村小路上，有一种恍若隔世的感觉。
 现在手机上的收音机App竟然一个赛一个地收费，广告还特别多，塞一堆花花绿绿的推荐，反而把"拧开就听"的干净劲儿给弄丢了。这不叫听广播，这叫刷广告。
 
-那就不如自己做一个。于是有了 [emacs-radio](https://github.com/dustincys/emacs-radio)——一个放在 Emacs 里的网络收音机。既然手机 App 不可靠，就在自己最顺手的编辑器里听。
-一边读写代码一边听广播，快乐的日子又来了！
+那就不如自己做一个。于是有了 [emacs-radio](https://github.com/dustincys/emacs-radio)——一个放在 Emacs 里的网络收音机。既然手机 App 不可靠，就在自己最顺手的编辑器里听。一边写代码、写邮件，一边听着英文广播；想歇歇脑子，就切到新闻、音乐，或者听一段评书。多美好。
+
+<img src="https://cdn.jsdelivr.net/gh/dustincys/emacs-radio@main/icon/EmacsRadioIcon.png" alt="Emacs Radio 图标" width="128" style="box-shadow:none;">
+
+下面是演示视频：
+
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%; overflow: hidden; margin: 1em 0;">
+  <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=117572901079753&bvid=BV1bH476KErQ&cid=43397220544&p=1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; max-width: 100%; border: 0; box-shadow: none;" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+</div>
 
 ## 它是怎么工作的
 
@@ -91,6 +98,16 @@ sudo apt install ffmpeg mpv
 之后 `M-x emacs-radio`（或 `C-c r r`）就能用 Helm 搜索这份验证过的清单。缓存启动时自动加载，只有流地址大面积失效时才需要重新扫描。
 
 电台表 `radio_sources.tsv` 只有三列：`分类`、`电台`、`URL`，制表符分隔。仓库里已经附了一份覆盖全国几十个省市台、中央台和国际英语频道的清单，直接可用，也可以照格式自己添。扫描不会改动这份原始表，想加台、想换源，改 TSV 再扫一次即可。
+
+## 界面
+
+`M-x emacs-radio` 弹出来的 Helm 电台列表长这样，按播放次数从高到低排，常听的台自然浮在最上面：
+
+<a class="fancybox" rel="emacs-radio" href="https://cdn.jsdelivr.net/gh/dustincys/emacs-radio@main/screenshot/radio_station.png" title="电台列表"><img src="https://cdn.jsdelivr.net/gh/dustincys/emacs-radio@main/screenshot/radio_station.png" alt="电台列表" /></a>
+
+播放时，mode-line 上会多出一小段随音量起伏的绿色波形——它不是花架子，而是通过 mpv 的 `astats` 滤镜实时算出来的响度包络；左键点一下就能暂停：
+
+<a class="fancybox" rel="emacs-radio" href="https://cdn.jsdelivr.net/gh/dustincys/emacs-radio@main/screenshot/status_line.png" title="mode-line 状态与波形"><img src="https://cdn.jsdelivr.net/gh/dustincys/emacs-radio@main/screenshot/status_line.png" alt="mode-line 状态与波形" /></a>
 
 ## 几个贴心的地方
 
